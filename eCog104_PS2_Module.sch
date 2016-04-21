@@ -55,6 +55,10 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="3" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -63,6 +67,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -76,19 +81,30 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="no" active="yes"/>
 <layer number="133" name="Ports" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="134" name="Port2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="135" name="Port3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -115,9 +131,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="4" fill="9" visible="no" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -198,67 +226,6 @@ DIN A3, landscape with location and doc. field</description>
 <rectangle x1="3.546" y1="6.126" x2="4.054" y2="6.634" layer="52" rot="R270"/>
 <rectangle x1="3.546" y1="3.586" x2="4.054" y2="4.094" layer="52" rot="R270"/>
 <rectangle x1="3.546" y1="1.046" x2="4.054" y2="1.554" layer="52" rot="R270"/>
-<wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
-<wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
-<text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="43.99" y="3.96" drill="3.2"/>
-<hole x="43.99" y="23.96" drill="3.2"/>
-<polygon width="0" layer="41">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="42">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="43">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="41">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<polygon width="0" layer="42">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<polygon width="0" layer="43">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<wire x1="0" y1="28" x2="48" y2="28" width="0.127" layer="20"/>
-<wire x1="48" y1="28" x2="48" y2="0" width="0.127" layer="20"/>
-<wire x1="48" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
-<wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="14" x2="48" y2="14" width="0.127" layer="48"/>
 </package>
 <package name="ECOG_GENERAL_ROW">
 <wire x1="3" y1="0.06" x2="3" y2="20.38" width="0.127" layer="21"/>
@@ -401,6 +368,60 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="48" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
 </package>
+<package name="PS2-MODULE">
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.81" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="SW" x="-5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="VRY" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="VRX" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="VCC" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="GND" x="5.08" y="0" drill="1.016" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<wire x1="13" y1="2" x2="13" y2="-33" width="0.127" layer="21"/>
+<wire x1="13" y1="-33" x2="-13" y2="-33" width="0.127" layer="21"/>
+<wire x1="-13" y1="-33" x2="-13" y2="2" width="0.127" layer="21"/>
+<wire x1="-13" y1="2" x2="13" y2="2" width="0.127" layer="21"/>
+<hole x="10" y="-3" drill="3"/>
+<hole x="-10" y="-3" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ECOG_GENERAL_ROW">
@@ -443,6 +464,19 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="PS2-MODULE">
+<wire x1="1.27" y1="2.54" x2="8.89" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="8.89" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="17.78" x2="1.27" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="17.78" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<text x="1.27" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="0" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="5.08" y="15.24" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="VCC" x="5.08" y="12.7" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="VRX" x="5.08" y="10.16" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="VRY" x="5.08" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="SW" x="5.08" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -514,6 +548,26 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="PS2-MODULE" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="PS2" symbol="PS2-MODULE" x="-5.08" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="PS2-MODULE">
+<connects>
+<connect gate="PS2" pin="GND" pad="GND"/>
+<connect gate="PS2" pin="SW" pad="SW"/>
+<connect gate="PS2" pin="VCC" pad="VCC"/>
+<connect gate="PS2" pin="VRX" pad="VRX"/>
+<connect gate="PS2" pin="VRY" pad="VRY"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -530,6 +584,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
 <part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
+<part name="JP1" library="eCogs" deviceset="PS2-MODULE" device=""/>
+<part name="3V3_PWR2" library="eCogs" deviceset="3V3" device=""/>
+<part name="GND2" library="eCogs" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -538,12 +595,16 @@ DIN A3, landscape with location and doc. field</description>
 <text x="99.06" y="7.62" size="1.27" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 <text x="317.5" y="30.48" size="2.1844" layer="91">Copyright 2016 Gadget Factory, LLC</text>
 <text x="317.5" y="25.4" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
+<text x="68.58" y="22.86" size="6.4516" layer="91">An Analog eCog will only work on AH and BH.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="35.56" y="63.5"/>
-<instance part="GND1" gate="A" x="35.56" y="50.8"/>
+<instance part="ECOG" gate="ECOG_GENERAL" x="350.52" y="60.96"/>
+<instance part="3V3_PWR1" gate="A" x="330.2" y="71.12"/>
+<instance part="GND1" gate="A" x="330.2" y="58.42"/>
+<instance part="JP1" gate="PS2" x="294.64" y="73.66" rot="MR0"/>
+<instance part="3V3_PWR2" gate="A" x="299.72" y="99.06"/>
+<instance part="GND2" gate="A" x="307.34" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -552,15 +613,57 @@ DIN A3, landscape with location and doc. field</description>
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="60.96" x2="35.56" y2="60.96" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="68.58" x2="330.2" y2="68.58" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="3V3_PWR2" gate="A" pin="3V3"/>
+<wire x1="299.72" y1="96.52" x2="299.72" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="PS2" pin="VCC"/>
+<wire x1="299.72" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="35.56" y2="55.88" width="0.2032" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="63.5" x2="330.2" y2="63.5" width="0.2032" layer="91"/>
+<wire x1="330.2" y1="63.5" x2="330.2" y2="60.96" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="A" pin="GND"/>
+<wire x1="307.34" y1="71.12" x2="307.34" y2="88.9" width="0.2032" layer="91"/>
+<pinref part="JP1" gate="PS2" pin="GND"/>
+<wire x1="307.34" y1="88.9" x2="289.56" y2="88.9" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
+<label x="335.28" y="88.9" size="1.778" layer="95"/>
+<pinref part="JP1" gate="PS2" pin="VRX"/>
+<wire x1="289.56" y1="83.82" x2="314.96" y2="83.82" width="0.2032" layer="91"/>
+<wire x1="314.96" y1="83.82" x2="314.96" y2="88.9" width="0.2032" layer="91"/>
+<wire x1="314.96" y1="88.9" x2="345.44" y2="88.9" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
+<label x="335.28" y="86.36" size="1.778" layer="95"/>
+<pinref part="JP1" gate="PS2" pin="VRY"/>
+<wire x1="289.56" y1="81.28" x2="320.04" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="320.04" y1="81.28" x2="320.04" y2="86.36" width="0.2032" layer="91"/>
+<wire x1="320.04" y1="86.36" x2="345.44" y2="86.36" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
+<label x="335.28" y="83.82" size="1.778" layer="95"/>
+<pinref part="JP1" gate="PS2" pin="SW"/>
+<wire x1="289.56" y1="78.74" x2="325.12" y2="78.74" width="0.2032" layer="91"/>
+<wire x1="325.12" y1="78.74" x2="325.12" y2="83.82" width="0.2032" layer="91"/>
+<wire x1="325.12" y1="83.82" x2="345.44" y2="83.82" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>

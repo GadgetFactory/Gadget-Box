@@ -55,6 +55,10 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="3" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -63,6 +67,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -76,19 +81,30 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="no" active="yes"/>
 <layer number="133" name="Ports" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="134" name="Port2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="135" name="Port3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -115,9 +131,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="4" fill="9" visible="no" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -401,6 +429,67 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="48" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
 </package>
+<package name="SENSOR-HJX4">
+<wire x1="-4.465" y1="-0.74" x2="-3.195" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="-3.195" y1="-0.74" x2="-2.56" y2="-1.375" width="0.1524" layer="21"/>
+<wire x1="-2.56" y1="-1.375" x2="-2.56" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="-2.56" y1="-2.645" x2="-3.195" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="-2.56" y1="-1.375" x2="-1.925" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="-1.925" y1="-0.74" x2="-0.655" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="-0.655" y1="-0.74" x2="-0.02" y2="-1.375" width="0.1524" layer="21"/>
+<wire x1="-0.02" y1="-1.375" x2="-0.02" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="-0.02" y1="-2.645" x2="-0.655" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="-0.655" y1="-3.28" x2="-1.925" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="-1.925" y1="-3.28" x2="-2.56" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="-5.1" y1="-1.375" x2="-5.1" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="-4.465" y1="-0.74" x2="-5.1" y2="-1.375" width="0.1524" layer="21"/>
+<wire x1="-5.1" y1="-2.645" x2="-4.465" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="-3.195" y1="-3.28" x2="-4.465" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="-0.02" y1="-1.375" x2="0.615" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="0.615" y1="-0.74" x2="1.885" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="1.885" y1="-0.74" x2="2.52" y2="-1.375" width="0.1524" layer="21"/>
+<wire x1="2.52" y1="-1.375" x2="2.52" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="2.52" y1="-2.645" x2="1.885" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="1.885" y1="-3.28" x2="0.615" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="0.615" y1="-3.28" x2="-0.02" y2="-2.645" width="0.1524" layer="21"/>
+<pad name="DO/S" x="-3.83" y="-2.01" drill="1.016" rot="R90"/>
+<pad name="+" x="-1.29" y="-2.01" drill="1.016" rot="R90"/>
+<pad name="GND" x="1.25" y="-2.01" drill="1.016" rot="R90"/>
+<text x="-8.89" y="-29.21" size="1.27" layer="27" rot="R90">HJX</text>
+<rectangle x1="-1.544" y1="-2.264" x2="-1.036" y2="-1.756" layer="51"/>
+<rectangle x1="-4.084" y1="-2.264" x2="-3.576" y2="-1.756" layer="51"/>
+<rectangle x1="0.996" y1="-2.264" x2="1.504" y2="-1.756" layer="51"/>
+<wire x1="2.52" y1="-1.375" x2="3.155" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="3.155" y1="-0.74" x2="4.425" y2="-0.74" width="0.1524" layer="21"/>
+<wire x1="4.425" y1="-0.74" x2="5.06" y2="-1.375" width="0.1524" layer="21"/>
+<wire x1="5.06" y1="-1.375" x2="5.06" y2="-2.645" width="0.1524" layer="21"/>
+<wire x1="5.06" y1="-2.645" x2="4.425" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="4.425" y1="-3.28" x2="3.155" y2="-3.28" width="0.1524" layer="21"/>
+<wire x1="3.155" y1="-3.28" x2="2.52" y2="-2.645" width="0.1524" layer="21"/>
+<pad name="AO" x="3.79" y="-2.01" drill="1.016" rot="R90"/>
+<rectangle x1="3.536" y1="-2.264" x2="4.044" y2="-1.756" layer="51"/>
+<wire x1="-7" y1="0" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="7" y2="-35" width="0.127" layer="21"/>
+<wire x1="7" y1="-35" x2="-7" y2="-35" width="0.127" layer="21"/>
+<wire x1="-7" y1="-35" x2="-7" y2="0" width="0.127" layer="21"/>
+<text x="2.674" y="-4.999" size="1.016" layer="21">AO</text>
+<text x="0.603" y="-6.572" size="1.016" layer="21">G
+ -</text>
+<text x="-1.611" y="-4.999" size="1.016" layer="21">+</text>
+<text x="-4.906" y="-6.623" size="1.016" layer="21">DO
+ S</text>
+<wire x1="1.25" y1="-0.75" x2="5.65" y2="-0.75" width="0.1524" layer="21"/>
+<wire x1="5.65" y1="-0.75" x2="5.65" y2="-18.75" width="0.1524" layer="21"/>
+<wire x1="5.65" y1="-18.75" x2="-8.35" y2="-18.75" width="0.1524" layer="21"/>
+<wire x1="-8.35" y1="-18.75" x2="-8.35" y2="-0.75" width="0.1524" layer="21"/>
+<wire x1="-8.35" y1="-0.75" x2="1.3" y2="-0.75" width="0.1524" layer="21"/>
+<wire x1="1.3" y1="-0.75" x2="1.3" y2="-0.7" width="0.1524" layer="21"/>
+<text x="-8.89" y="-11.43" size="1.27" layer="27" rot="R90">HXJ</text>
+<wire x1="7" y1="-8" x2="-8.3" y2="-8" width="0.1524" layer="20"/>
+<wire x1="-8.3" y1="-8" x2="-8.3" y2="-35" width="0.1524" layer="20"/>
+<wire x1="-8.3" y1="-35" x2="7" y2="-35" width="0.1524" layer="20"/>
+<wire x1="7" y1="-35" x2="7" y2="-8" width="0.1524" layer="20"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ECOG_GENERAL_ROW">
@@ -443,6 +532,18 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="SENSOR">
+<wire x1="1.27" y1="0" x2="8.89" y2="0" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="0" x2="8.89" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="8.89" y1="12.7" x2="1.27" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="12.7" x2="1.27" y2="0" width="0.4064" layer="94"/>
+<text x="1.27" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DO/S" x="5.08" y="10.16" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="+" x="5.08" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="GND" x="5.08" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="AO" x="5.08" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -514,6 +615,24 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SENSOR">
+<gates>
+<gate name="SENSOR" symbol="SENSOR" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SENSOR-HJX4">
+<connects>
+<connect gate="SENSOR" pin="+" pad="+"/>
+<connect gate="SENSOR" pin="AO" pad="AO"/>
+<connect gate="SENSOR" pin="DO/S" pad="DO/S"/>
+<connect gate="SENSOR" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -530,6 +649,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
 <part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
+<part name="U$1" library="eCogs" deviceset="SENSOR" device=""/>
+<part name="3V3_PWR2" library="eCogs" deviceset="3V3" device=""/>
+<part name="GND2" library="eCogs" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -538,12 +660,16 @@ DIN A3, landscape with location and doc. field</description>
 <text x="99.06" y="7.62" size="1.27" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 <text x="317.5" y="30.48" size="2.1844" layer="91">Copyright 2016 Gadget Factory, LLC</text>
 <text x="317.5" y="25.4" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
+<text x="68.58" y="22.86" size="6.4516" layer="91">An Analog eCog will only work on AH and BH.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="35.56" y="63.5"/>
-<instance part="GND1" gate="A" x="35.56" y="50.8"/>
+<instance part="ECOG" gate="ECOG_GENERAL" x="350.52" y="60.96"/>
+<instance part="3V3_PWR1" gate="A" x="330.2" y="71.12"/>
+<instance part="GND1" gate="A" x="330.2" y="58.42"/>
+<instance part="U$1" gate="SENSOR" x="287.02" y="76.2"/>
+<instance part="3V3_PWR2" gate="A" x="281.94" y="91.44"/>
+<instance part="GND2" gate="A" x="281.94" y="71.12"/>
 </instances>
 <busses>
 </busses>
@@ -552,15 +678,54 @@ DIN A3, landscape with location and doc. field</description>
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="60.96" x2="35.56" y2="60.96" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="68.58" x2="330.2" y2="68.58" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="SENSOR" pin="+"/>
+<pinref part="3V3_PWR2" gate="A" pin="3V3"/>
+<wire x1="292.1" y1="83.82" x2="281.94" y2="83.82" width="0.2032" layer="91"/>
+<wire x1="281.94" y1="83.82" x2="281.94" y2="88.9" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="35.56" y2="55.88" width="0.2032" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="63.5" x2="330.2" y2="63.5" width="0.2032" layer="91"/>
+<wire x1="330.2" y1="63.5" x2="330.2" y2="60.96" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="SENSOR" pin="GND"/>
+<pinref part="GND2" gate="A" pin="GND"/>
+<wire x1="292.1" y1="81.28" x2="281.94" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="281.94" y1="81.28" x2="281.94" y2="73.66" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
+<label x="335.28" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$1" gate="SENSOR" pin="DO/S"/>
+<wire x1="292.1" y1="86.36" x2="309.88" y2="86.36" width="0.2032" layer="91"/>
+<wire x1="309.88" y1="86.36" x2="309.88" y2="88.9" width="0.2032" layer="91"/>
+<wire x1="309.88" y1="88.9" x2="345.44" y2="88.9" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
+<label x="335.28" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$1" gate="SENSOR" pin="AO"/>
+<wire x1="292.1" y1="78.74" x2="312.42" y2="78.74" width="0.2032" layer="91"/>
+<wire x1="312.42" y1="78.74" x2="312.42" y2="86.36" width="0.2032" layer="91"/>
+<wire x1="312.42" y1="86.36" x2="345.44" y2="86.36" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
+<wire x1="345.44" y1="83.82" x2="335.28" y2="83.82" width="0.2032" layer="91"/>
+<label x="335.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -568,4 +733,10 @@ DIN A3, landscape with location and doc. field</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

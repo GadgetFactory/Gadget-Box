@@ -538,12 +538,13 @@ DIN A3, landscape with location and doc. field</description>
 <text x="99.06" y="7.62" size="1.27" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 <text x="317.5" y="30.48" size="2.1844" layer="91">Copyright 2016 Gadget Factory, LLC</text>
 <text x="317.5" y="25.4" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
+<text x="68.58" y="22.86" size="6.4516" layer="91">An Analog eCog will only work on AH and BH.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="35.56" y="63.5"/>
-<instance part="GND1" gate="A" x="35.56" y="50.8"/>
+<instance part="ECOG" gate="ECOG_GENERAL" x="350.52" y="60.96"/>
+<instance part="3V3_PWR1" gate="A" x="330.2" y="71.12"/>
+<instance part="GND1" gate="A" x="330.2" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -552,15 +553,36 @@ DIN A3, landscape with location and doc. field</description>
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="60.96" x2="35.56" y2="60.96" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="68.58" x2="330.2" y2="68.58" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="35.56" y2="55.88" width="0.2032" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.2032" layer="91"/>
+<wire x1="345.44" y1="63.5" x2="330.2" y2="63.5" width="0.2032" layer="91"/>
+<wire x1="330.2" y1="63.5" x2="330.2" y2="60.96" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
+<wire x1="345.44" y1="88.9" x2="335.28" y2="88.9" width="0.2032" layer="91"/>
+<label x="335.28" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
+<wire x1="345.44" y1="86.36" x2="335.28" y2="86.36" width="0.2032" layer="91"/>
+<label x="335.28" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
+<wire x1="345.44" y1="83.82" x2="335.28" y2="83.82" width="0.2032" layer="91"/>
+<label x="335.28" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

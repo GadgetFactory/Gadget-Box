@@ -542,25 +542,39 @@ DIN A3, landscape with location and doc. field</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="35.56" y="63.5"/>
-<instance part="GND1" gate="A" x="35.56" y="50.8"/>
+<instance part="3V3_PWR1" gate="A" x="38.1" y="63.5"/>
+<instance part="GND1" gate="A" x="38.1" y="50.8"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="TX" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
+<wire x1="50.8" y1="81.28" x2="38.1" y2="81.28" width="0.2032" layer="91"/>
+<label x="38.1" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RX" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
+<wire x1="50.8" y1="78.74" x2="38.1" y2="78.74" width="0.2032" layer="91"/>
+<label x="38.1" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="3V3" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="60.96" x2="35.56" y2="60.96" width="0.2032" layer="91"/>
+<wire x1="50.8" y1="60.96" x2="38.1" y2="60.96" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="35.56" y2="55.88" width="0.2032" layer="91"/>
-<wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.2032" layer="91"/>
+<wire x1="50.8" y1="55.88" x2="38.1" y2="55.88" width="0.2032" layer="91"/>
+<wire x1="38.1" y1="55.88" x2="38.1" y2="53.34" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
