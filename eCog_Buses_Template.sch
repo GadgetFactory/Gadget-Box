@@ -55,6 +55,10 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="3" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -63,6 +67,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -76,19 +81,30 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="test" color="7" fill="1" visible="no" active="yes"/>
 <layer number="133" name="Ports" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="134" name="Port2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="135" name="Port3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -115,9 +131,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="4" fill="9" visible="no" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -172,39 +200,37 @@ DIN A3, landscape with location and doc. field</description>
 <library name="eCogs">
 <packages>
 <package name="ECOG_BUSES_SMD">
-<wire x1="5.0808" y1="27.9954" x2="5.0808" y2="0.0554" width="0.127" layer="52"/>
-<wire x1="5.0808" y1="27.9954" x2="7.5808" y2="27.9954" width="0.127" layer="52"/>
-<wire x1="5.0808" y1="0.0554" x2="7.5808" y2="0.0554" width="0.127" layer="52"/>
-<wire x1="7.5808" y1="27.9954" x2="7.5808" y2="0.0554" width="0.127" layer="52"/>
-<smd name="SPI-MISO" x="7.9002" y="26.7254" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="SPI-MOSI" x="4.8014" y="24.1854" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="SPI-SCK" x="7.9002" y="21.6454" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="SPI-CS" x="4.8014" y="19.1054" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="5" x="7.9002" y="16.5654" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="I2C-SDA" x="4.8014" y="14.0254" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="I2C-SCL" x="7.9002" y="11.4854" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="5V0" x="4.8014" y="8.9454" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="3V3" x="7.9002" y="6.4054" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="RESET" x="4.8014" y="3.8654" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<smd name="GND" x="7.9002" y="1.3254" dx="1.8414" dy="0.9144" layer="16" roundness="100" rot="R180"/>
-<rectangle x1="6.0968" y1="11.2314" x2="6.6048" y2="11.7394" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="13.7714" x2="6.6048" y2="14.2794" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="16.3114" x2="6.6048" y2="16.8194" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="18.8514" x2="6.6048" y2="19.3594" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="21.3914" x2="6.6048" y2="21.8994" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="23.9314" x2="6.6048" y2="24.4394" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="26.4714" x2="6.6048" y2="26.9794" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="8.6914" x2="6.6048" y2="9.1994" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="6.1514" x2="6.6048" y2="6.6594" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="3.6114" x2="6.6048" y2="4.1194" layer="52" rot="R270"/>
-<rectangle x1="6.0968" y1="1.0714" x2="6.6048" y2="1.5794" layer="52" rot="R270"/>
+<wire x1="7.63" y1="1.24" x2="7.63" y2="26.64" width="0.127" layer="22"/>
+<wire x1="7.63" y1="1.24" x2="5.13" y2="1.24" width="0.127" layer="22"/>
+<wire x1="7.63" y1="26.64" x2="5.13" y2="26.64" width="0.127" layer="22"/>
+<wire x1="5.13" y1="1.24" x2="5.13" y2="26.64" width="0.127" layer="22"/>
+<smd name="3V3" x="7.9094" y="2.51" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="5V0" x="4.8106" y="5.05" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="RESET" x="7.9094" y="7.59" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="I2C-SCL" x="4.8106" y="10.13" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="I2C-SDA" x="7.9094" y="12.67" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-CS" x="4.8106" y="15.21" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-SCK" x="7.9094" y="17.75" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-MOSI" x="4.8106" y="20.29" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-MISO" x="7.9094" y="22.83" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="GND" x="4.8106" y="25.37" dx="3.5" dy="1" layer="16" roundness="100"/>
+<rectangle x1="6.106" y1="16.226" x2="6.614" y2="16.734" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="13.686" x2="6.614" y2="14.194" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="11.146" x2="6.614" y2="11.654" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="8.606" x2="6.614" y2="9.114" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="6.066" x2="6.614" y2="6.574" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="3.526" x2="6.614" y2="4.034" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="18.766" x2="6.614" y2="19.274" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="21.306" x2="6.614" y2="21.814" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="22.576" x2="6.614" y2="23.084" layer="52" rot="R90"/>
+<rectangle x1="6.106" y1="23.846" x2="6.614" y2="24.354" layer="22" rot="R90"/>
 <wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
 <wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
 <wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
 <wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
 <text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="43.99" y="3.96" drill="3.2"/>
-<hole x="43.99" y="23.96" drill="3.2"/>
+<hole x="44" y="4" drill="3.6"/>
+<hole x="44" y="24" drill="3.6"/>
 <polygon width="0" layer="41">
 <vertex x="47.99" y="20.96"/>
 <vertex x="43.99" y="20.96" curve="-90"/>
@@ -253,191 +279,43 @@ DIN A3, landscape with location and doc. field</description>
 <vertex x="47.99" y="3.96" curve="-90"/>
 <vertex x="43.99" y="-0.04"/>
 </polygon>
-<wire x1="0" y1="28" x2="48" y2="28" width="0.127" layer="20"/>
-<wire x1="48" y1="28" x2="48" y2="0" width="0.127" layer="20"/>
-<wire x1="48" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
-<wire x1="0" y1="14" x2="48" y2="14" width="0.127" layer="48"/>
 <wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-</package>
-<package name="ECOG_BUSES_ROW">
-<wire x1="5.5" y1="12.065" x2="5.5" y2="10.795" width="0.127" layer="21"/>
-<wire x1="5.5" y1="17.145" x2="5.5" y2="15.875" width="0.127" layer="21"/>
-<wire x1="5.5" y1="14.605" x2="5.5" y2="13.335" width="0.127" layer="21"/>
-<wire x1="5.5" y1="19.685" x2="5.5" y2="18.415" width="0.127" layer="21"/>
-<wire x1="7.405" y1="5.08" x2="8.04" y2="4.445" width="0.127" layer="21"/>
-<wire x1="8.04" y1="4.445" x2="8.04" y2="3.175" width="0.127" layer="21"/>
-<wire x1="8.04" y1="3.175" x2="7.405" y2="2.54" width="0.127" layer="21"/>
-<wire x1="7.405" y1="7.62" x2="8.04" y2="6.985" width="0.127" layer="21"/>
-<wire x1="8.04" y1="6.985" x2="8.04" y2="5.715" width="0.127" layer="21"/>
-<wire x1="8.04" y1="5.715" x2="7.405" y2="5.08" width="0.127" layer="21"/>
-<wire x1="7.405" y1="7.62" x2="8.04" y2="8.255" width="0.127" layer="21"/>
-<wire x1="8.04" y1="9.525" x2="8.04" y2="8.255" width="0.127" layer="21"/>
-<wire x1="8.04" y1="0.635" x2="7.405" y2="0" width="0.127" layer="21"/>
-<wire x1="8.04" y1="1.905" x2="8.04" y2="0.635" width="0.127" layer="21"/>
-<wire x1="7.405" y1="2.54" x2="8.04" y2="1.905" width="0.127" layer="21"/>
-<wire x1="7.4177" y1="10.1473" x2="8.0273" y2="9.5377" width="0.127" layer="21"/>
-<wire x1="6.8081" y1="7.62" x2="7.3161" y2="7.62" width="0.127" layer="21"/>
-<wire x1="5.5" y1="10.1346" x2="5.5" y2="3.937" width="0.127" layer="21"/>
-<wire x1="5.5" y1="4.445" x2="5.5" y2="0.0254" width="0.127" layer="21"/>
-<pad name="GND@2" x="6.77" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B7" x="6.77" y="3.81" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3V3@2" x="6.77" y="6.35" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="5V@2" x="6.77" y="8.89" drill="1.016" shape="octagon" rot="R90"/>
-<rectangle x1="6.516" y1="8.636" x2="7.024" y2="9.144" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="3.556" x2="7.024" y2="4.064" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="6.096" x2="7.024" y2="6.604" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="1.016" x2="7.024" y2="1.524" layer="51" rot="R180"/>
-<wire x1="7.405" y1="12.7" x2="8.04" y2="12.065" width="0.127" layer="21"/>
-<wire x1="8.04" y1="12.065" x2="8.04" y2="10.795" width="0.127" layer="21"/>
-<wire x1="8.04" y1="10.795" x2="7.405" y2="10.16" width="0.127" layer="21"/>
-<wire x1="7.405" y1="15.24" x2="8.04" y2="14.605" width="0.127" layer="21"/>
-<wire x1="7.405" y1="17.78" x2="8.04" y2="17.145" width="0.127" layer="21"/>
-<wire x1="8.04" y1="17.145" x2="8.04" y2="15.875" width="0.127" layer="21"/>
-<wire x1="8.04" y1="15.875" x2="7.405" y2="15.24" width="0.127" layer="21"/>
-<wire x1="7.405" y1="12.7" x2="8.04" y2="13.335" width="0.127" layer="21"/>
-<wire x1="8.04" y1="14.605" x2="8.04" y2="13.335" width="0.127" layer="21"/>
-<wire x1="8.04" y1="19.685" x2="8.04" y2="18.415" width="0.127" layer="21"/>
-<wire x1="8.04" y1="18.415" x2="7.405" y2="17.78" width="0.127" layer="21"/>
-<wire x1="5.5" y1="0" x2="5.5" y2="20.32" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="17.78" x2="7.4685" y2="17.78" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="15.24" x2="7.4685" y2="15.24" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="12.7" x2="7.4685" y2="12.7" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="10.16" x2="7.4685" y2="10.16" width="0.127" layer="21"/>
-<pad name="B6" x="6.77" y="11.43" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B5" x="6.77" y="13.97" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B4" x="6.77" y="16.51" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B3" x="6.77" y="19.05" drill="1.016" shape="octagon" rot="R90"/>
-<rectangle x1="6.516" y1="16.256" x2="7.024" y2="16.764" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="18.796" x2="7.024" y2="19.304" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="13.716" x2="7.024" y2="14.224" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="11.176" x2="7.024" y2="11.684" layer="51" rot="R180"/>
-<wire x1="5.5" y1="24.765" x2="5.5" y2="23.495" width="0.127" layer="21"/>
-<wire x1="5.5" y1="22.225" x2="5.5" y2="20.955" width="0.127" layer="21"/>
-<wire x1="5.5" y1="27.305" x2="5.5" y2="26.035" width="0.127" layer="21"/>
-<wire x1="7.405" y1="20.32" x2="8.04" y2="19.685" width="0.127" layer="21"/>
-<wire x1="7.405" y1="22.86" x2="8.04" y2="22.225" width="0.127" layer="21"/>
-<wire x1="7.405" y1="25.4" x2="8.04" y2="24.765" width="0.127" layer="21"/>
-<wire x1="8.04" y1="24.765" x2="8.04" y2="23.495" width="0.127" layer="21"/>
-<wire x1="8.04" y1="23.495" x2="7.405" y2="22.86" width="0.127" layer="21"/>
-<wire x1="7.405" y1="20.32" x2="8.04" y2="20.955" width="0.127" layer="21"/>
-<wire x1="8.04" y1="22.225" x2="8.04" y2="20.955" width="0.127" layer="21"/>
-<wire x1="8.04" y1="27.305" x2="8.04" y2="26.035" width="0.127" layer="21"/>
-<wire x1="8.04" y1="26.035" x2="7.405" y2="25.4" width="0.127" layer="21"/>
-<wire x1="7.405" y1="27.94" x2="8.04" y2="27.305" width="0.127" layer="21"/>
-<wire x1="5.5" y1="7.62" x2="5.5" y2="27.94" width="0.127" layer="21"/>
-<wire x1="5.5" y1="27.94" x2="7.405" y2="27.94" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="25.4" x2="7.4685" y2="25.4" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="22.86" x2="7.4685" y2="22.86" width="0.127" layer="21"/>
-<wire x1="5.5" y1="20.32" x2="7.405" y2="20.32" width="0.127" layer="21"/>
-<pad name="B2" x="6.77" y="21.59" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B1" x="6.77" y="24.13" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="B0" x="6.77" y="26.67" drill="1.016" shape="octagon" rot="R90"/>
-<rectangle x1="6.516" y1="23.876" x2="7.024" y2="24.384" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="26.416" x2="7.024" y2="26.924" layer="51" rot="R180"/>
-<rectangle x1="6.516" y1="21.336" x2="7.024" y2="21.844" layer="51" rot="R180"/>
-<wire x1="7.405" y1="20.32" x2="7.4685" y2="20.32" width="0.127" layer="21"/>
-<text x="6.135" y="-0.635" size="1.27" layer="48" rot="R270">Buses Row</text>
-<wire x1="5.5635" y1="7.62" x2="7.3923" y2="7.62" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="5.08" x2="7.3923" y2="5.08" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="2.54" x2="7.3923" y2="2.54" width="0.127" layer="21"/>
-<wire x1="5.5635" y1="0" x2="7.3923" y2="0" width="0.127" layer="21"/>
-<wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
-<wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
-<wire x1="0.99" y1="27.11" x2="43.99" y2="27.11" width="1.7" layer="39"/>
-<wire x1="43.99" y1="0.81" x2="0.99" y2="0.81" width="1.7" layer="39"/>
-<wire x1="47.14" y1="3.96" x2="47.14" y2="23.96" width="1.7" layer="39"/>
-<wire x1="43.99" y1="27.11" x2="47.14" y2="23.96" width="1.7" layer="39" curve="-90"/>
-<wire x1="47.14" y1="3.96" x2="43.99" y2="0.81" width="1.7" layer="39" curve="-90"/>
-<wire x1="5.49" y1="27.96" x2="5.49" y2="-0.04" width="0" layer="49"/>
-<text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="43.99" y="3.96" drill="3.2"/>
-<hole x="43.99" y="23.96" drill="3.2"/>
-<polygon width="0" layer="41">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="42">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="43">
-<vertex x="47.99" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
-</polygon>
-<polygon width="0" layer="41">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<polygon width="0" layer="42">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<polygon width="0" layer="43">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
-</polygon>
-<wire x1="0" y1="28" x2="48" y2="28" width="0.127" layer="20"/>
-<wire x1="48" y1="28" x2="48" y2="0" width="0.127" layer="20"/>
-<wire x1="48" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<wire x1="0" y1="14" x2="48" y2="14" width="0.127" layer="48"/>
 <wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
+<wire x1="0" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
+<wire x1="44" y1="28" x2="48" y2="24" width="0.127" layer="20" curve="-90"/>
+<wire x1="48" y1="24" x2="48" y2="4" width="0.127" layer="20"/>
+<wire x1="48" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
+<wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
 </package>
 </packages>
 <symbols>
 <symbol name="ECOG_BUSES_ROW">
-<wire x1="-1.27" y1="30.48" x2="5.08" y2="30.48" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="30.48" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="30.48" x2="-1.27" y2="0" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="27.94" x2="5.08" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="27.94" x2="-1.27" y2="0" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="0" x2="-1.27" y2="0" width="0.4064" layer="94"/>
 <wire x1="3.81" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="7.62" x2="2.54" y2="7.62" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="10.16" x2="2.54" y2="10.16" width="0.6096" layer="94"/>
 <text x="-4.572" y="-2.286" size="1.778" layer="95">&gt;NAME</text>
-<pin name="5V@2" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3V3@2" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B7" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="GND@2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-SCK@B2" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-MOSI@B1" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-MISO@B0" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="GND@B" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="3.81" y1="12.7" x2="2.54" y2="12.7" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="15.24" x2="2.54" y2="15.24" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="17.78" x2="2.54" y2="17.78" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="20.32" x2="2.54" y2="20.32" width="0.6096" layer="94"/>
-<pin name="B3" x="7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B4" x="7.62" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B5" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B6" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="RESET@B6" x="7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="I2C-SCL@B5" x="7.62" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="I2C-SDA@B4" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-CS@B3" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <wire x1="3.81" y1="22.86" x2="2.54" y2="22.86" width="0.6096" layer="94"/>
 <wire x1="3.81" y1="25.4" x2="2.54" y2="25.4" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="27.94" x2="2.54" y2="27.94" width="0.6096" layer="94"/>
-<pin name="B0" x="7.62" y="27.94" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B1" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="B2" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3V3@B8" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5V0@B7" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
@@ -458,37 +336,18 @@ DIN A3, landscape with location and doc. field</description>
 <gate name="ECOG_BUSES" symbol="ECOG_BUSES_ROW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ECOG_BUSES_ROW">
-<connects>
-<connect gate="ECOG_BUSES" pin="3V3@2" pad="3V3@2"/>
-<connect gate="ECOG_BUSES" pin="5V@2" pad="5V@2"/>
-<connect gate="ECOG_BUSES" pin="B0" pad="B0"/>
-<connect gate="ECOG_BUSES" pin="B1" pad="B1"/>
-<connect gate="ECOG_BUSES" pin="B2" pad="B2"/>
-<connect gate="ECOG_BUSES" pin="B3" pad="B3"/>
-<connect gate="ECOG_BUSES" pin="B4" pad="B4"/>
-<connect gate="ECOG_BUSES" pin="B5" pad="B5"/>
-<connect gate="ECOG_BUSES" pin="B6" pad="B6"/>
-<connect gate="ECOG_BUSES" pin="B7" pad="B7"/>
-<connect gate="ECOG_BUSES" pin="GND@2" pad="GND@2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="ECOG_BUSES_SMD" package="ECOG_BUSES_SMD">
 <connects>
-<connect gate="ECOG_BUSES" pin="3V3@2" pad="3V3"/>
-<connect gate="ECOG_BUSES" pin="5V@2" pad="5V0"/>
-<connect gate="ECOG_BUSES" pin="B0" pad="SPI-MISO"/>
-<connect gate="ECOG_BUSES" pin="B1" pad="SPI-MOSI"/>
-<connect gate="ECOG_BUSES" pin="B2" pad="SPI-SCK"/>
-<connect gate="ECOG_BUSES" pin="B3" pad="SPI-CS"/>
-<connect gate="ECOG_BUSES" pin="B4" pad="5"/>
-<connect gate="ECOG_BUSES" pin="B5" pad="I2C-SDA"/>
-<connect gate="ECOG_BUSES" pin="B6" pad="I2C-SCL"/>
-<connect gate="ECOG_BUSES" pin="B7" pad="RESET"/>
-<connect gate="ECOG_BUSES" pin="GND@2" pad="GND"/>
+<connect gate="ECOG_BUSES" pin="3V3@B8" pad="3V3"/>
+<connect gate="ECOG_BUSES" pin="5V0@B7" pad="5V0"/>
+<connect gate="ECOG_BUSES" pin="GND@B" pad="GND"/>
+<connect gate="ECOG_BUSES" pin="I2C-SCL@B5" pad="I2C-SCL"/>
+<connect gate="ECOG_BUSES" pin="I2C-SDA@B4" pad="I2C-SDA"/>
+<connect gate="ECOG_BUSES" pin="RESET@B6" pad="RESET"/>
+<connect gate="ECOG_BUSES" pin="SPI-CS@B3" pad="SPI-CS"/>
+<connect gate="ECOG_BUSES" pin="SPI-MISO@B0" pad="SPI-MISO"/>
+<connect gate="ECOG_BUSES" pin="SPI-MOSI@B1" pad="SPI-MOSI"/>
+<connect gate="ECOG_BUSES" pin="SPI-SCK@B2" pad="SPI-SCK"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -550,14 +409,14 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="ECOG" gate="ECOG_BUSES" x="55.88" y="53.34"/>
 <instance part="GND1" gate="A" x="78.74" y="50.8"/>
-<instance part="3V3_PWR1" gate="A" x="78.74" y="63.5"/>
+<instance part="3V3_PWR1" gate="A" x="63.5" y="86.36"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="ECOG" gate="ECOG_BUSES" pin="GND@2"/>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="GND@B"/>
 <pinref part="GND1" gate="A" pin="GND"/>
 <wire x1="63.5" y1="55.88" x2="78.74" y2="55.88" width="0.2032" layer="91"/>
 <wire x1="78.74" y1="55.88" x2="78.74" y2="53.34" width="0.2032" layer="91"/>
@@ -565,9 +424,9 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="3V3" class="0">
 <segment>
-<pinref part="ECOG" gate="ECOG_BUSES" pin="3V3@2"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="63.5" y1="60.96" x2="78.74" y2="60.96" width="0.2032" layer="91"/>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="3V3@B8"/>
+<wire x1="63.5" y1="83.82" x2="63.5" y2="78.74" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
