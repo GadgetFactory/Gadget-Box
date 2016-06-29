@@ -147,10 +147,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="48" y2="0" width="0" layer="20"/>
-<wire x1="48" y1="0" x2="48" y2="28" width="0" layer="20"/>
-<wire x1="48" y1="28" x2="0" y2="28" width="0" layer="20"/>
-<wire x1="0" y1="28" x2="0" y2="0" width="0" layer="20"/>
 <text x="40.767" y="23.368" size="0.8128" layer="22" font="vector" rot="MR270">ecog100.GadgetFactory.net</text>
 <text x="41.402" y="1.016" size="1.016" layer="22" font="vector" rot="MR0">ecog100 v1.1</text>
 <text x="41.402" y="2.286" size="1.016" layer="22" font="vector" rot="MR0">ESP8266 WIFI</text>

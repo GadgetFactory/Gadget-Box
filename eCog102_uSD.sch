@@ -1157,7 +1157,6 @@ push-push type</description>
 </part>
 <part name="GND8" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory_all" deviceset="3V3" device=""/>
-<part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="47K">
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND"/>
 <attribute name="PARTNO" value="RMCF0805JT47K0"/>
@@ -1310,17 +1309,6 @@ push-push type</description>
 <label x="170.18" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-</nets>
-</sheet>
-<sheet>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0"/>
-</instances>
-<busses>
-</busses>
-<nets>
 </nets>
 </sheet>
 </sheets>
