@@ -1016,7 +1016,9 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="S1013EC-10-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1141,11 +1143,21 @@ DIN A3, landscape with location and doc. field</description>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND2" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
-<part name="X1" library="adafruit" deviceset="ESP-12" device=""/>
-<part name="R1" library="GadgetFactory" deviceset="R" device="0805" value="10K"/>
-<part name="R2" library="GadgetFactory" deviceset="R" device="0805" value="10K"/>
-<part name="R3" library="GadgetFactory" deviceset="R" device="0805" value="10K"/>
-<part name="R4" library="GadgetFactory" deviceset="R" device="0805" value="10K"/>
+<part name="X1" library="adafruit" deviceset="ESP-12" device="">
+<attribute name="ADAFRUIT" value="2491"/>
+</part>
+<part name="R1" library="GadgetFactory" deviceset="R" device="0805" value="10K">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+</part>
+<part name="R2" library="GadgetFactory" deviceset="R" device="0805" value="10K">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+</part>
+<part name="R3" library="GadgetFactory" deviceset="R" device="0805" value="10K">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+</part>
+<part name="R4" library="GadgetFactory" deviceset="R" device="0805" value="10K">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+</part>
 <part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR1" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory" deviceset="3V3" device=""/>
@@ -1166,11 +1178,21 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="GND2" gate="A" x="236.22" y="127"/>
 <instance part="ECOG" gate="ECOG_GENERAL" x="246.38" y="160.02" rot="MR180"/>
-<instance part="X1" gate="G$1" x="177.8" y="149.86"/>
-<instance part="R1" gate="A" x="200.66" y="167.64" rot="R90"/>
-<instance part="R2" gate="A" x="208.28" y="127" rot="R90"/>
-<instance part="R3" gate="A" x="147.32" y="165.1" rot="R90"/>
-<instance part="R4" gate="A" x="152.4" y="165.1" rot="R90"/>
+<instance part="X1" gate="G$1" x="177.8" y="149.86">
+<attribute name="ADAFRUIT" x="177.8" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R1" gate="A" x="200.66" y="167.64" rot="R90">
+<attribute name="DIGIKEY" x="200.66" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R2" gate="A" x="208.28" y="127" rot="R90">
+<attribute name="DIGIKEY" x="208.28" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R3" gate="A" x="147.32" y="165.1" rot="R90">
+<attribute name="DIGIKEY" x="147.32" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R4" gate="A" x="152.4" y="165.1" rot="R90">
+<attribute name="DIGIKEY" x="152.4" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND1" gate="A" x="208.28" y="119.38"/>
 <instance part="3V3_PWR1" gate="A" x="147.32" y="172.72"/>
 <instance part="3V3_PWR2" gate="A" x="152.4" y="172.72"/>

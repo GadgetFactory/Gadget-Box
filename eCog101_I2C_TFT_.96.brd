@@ -1816,9 +1816,12 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD" x="0" y="0" smashed="yes"/>
-<element name="JP1" library="pinhead" package="1X04" value="" x="24" y="25.4" smashed="yes">
+<element name="ECOG" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD" x="0" y="0" smashed="yes">
+<attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JP1" library="pinhead" package="1X04" value=".96 I2C OLED LCD" x="24" y="25.4" smashed="yes">
 <attribute name="VALUE" x="18.92" y="22.225" size="1.27" layer="27"/>
+<attribute name="DEALEXTREME" value="419232" x="24" y="25.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$1" library="GadgetFactory" package="GADGETBOX_TEXT" value="" x="24.13" y="13.97"/>
 </elements>

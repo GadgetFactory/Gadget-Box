@@ -423,7 +423,9 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="S1013EC-10-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>

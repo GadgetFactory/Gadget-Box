@@ -350,7 +350,9 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="S1013EC-10-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -489,7 +491,9 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
 <part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
-<part name="U1" library="adafruit" deviceset="JOYSTICK" device="PTH"/>
+<part name="U1" library="adafruit" deviceset="JOYSTICK" device="PTH">
+<attribute name="SPARKFUN" value="COM-09032"/>
+</part>
 <part name="GND2" library="eCogs" deviceset="GND" device=""/>
 <part name="3V3_PWR2" library="eCogs" deviceset="3V3" device=""/>
 </parts>
@@ -507,7 +511,9 @@ Joystick commonly found in PS2 controllers. Two pots and a select switch. Adapte
 <instance part="ECOG" gate="ECOG_GENERAL" x="350.52" y="60.96"/>
 <instance part="3V3_PWR1" gate="A" x="345.44" y="96.52"/>
 <instance part="GND1" gate="A" x="330.2" y="58.42"/>
-<instance part="U1" gate="G$1" x="292.1" y="83.82" rot="MR0"/>
+<instance part="U1" gate="G$1" x="292.1" y="83.82" rot="MR0">
+<attribute name="SPARKFUN" x="292.1" y="83.82" size="1.778" layer="96" rot="MR0" display="off"/>
+</instance>
 <instance part="GND2" gate="A" x="304.8" y="58.42"/>
 <instance part="3V3_PWR2" gate="A" x="307.34" y="104.14"/>
 </instances>

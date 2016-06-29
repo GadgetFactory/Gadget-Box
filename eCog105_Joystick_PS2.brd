@@ -510,8 +510,12 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes"/>
-<element name="U1" library="adafruit" package="JOYSTICK" value="JOYSTICKPTH" x="24" y="14"/>
+<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes">
+<attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U1" library="adafruit" package="JOYSTICK" value="JOYSTICKPTH" x="24" y="14">
+<attribute name="SPARKFUN" value="COM-09032" x="24" y="14" size="1.778" layer="27" display="off"/>
+</element>
 <element name="U$1" library="eCogs" package="LEGEND_ANALOG" value="" x="1.27" y="20.32"/>
 <element name="U$2" library="eCogs" package="LEGEND_ANALOG" value="" x="1.27" y="17.78"/>
 <element name="U$3" library="eCogs" package="LEGEND_DIO" value="" x="1.27" y="22.86"/>

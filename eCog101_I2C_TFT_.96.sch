@@ -383,7 +383,9 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="ECOG_BUSES" pin="SPI-SCK@B2" pad="SPI-SCK"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="S1013EC-10-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -531,7 +533,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND2" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="ECOG" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD"/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device="" value=".96 I2C OLED LCD">
+<attribute name="DEALEXTREME" value="419232"/>
+</part>
 <part name="3V3_PWR1" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory" deviceset="3V3" device=""/>
@@ -548,7 +552,9 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="GND2" gate="A" x="63.5" y="48.26"/>
 <instance part="ECOG" gate="ECOG_BUSES" x="55.88" y="53.34"/>
-<instance part="JP1" gate="A" x="106.68" y="73.66"/>
+<instance part="JP1" gate="A" x="106.68" y="73.66">
+<attribute name="DEALEXTREME" x="106.68" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="3V3_PWR1" gate="A" x="63.5" y="86.36"/>
 <instance part="GND1" gate="A" x="93.98" y="60.96"/>
 <instance part="3V3_PWR2" gate="A" x="93.98" y="86.36"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2471,12 +2471,24 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes"/>
-<element name="X1" library="adafruit" package="ESP-12" value="" x="25.4" y="13.97" rot="MR90"/>
-<element name="R1" library="GadgetFactory" package="0805" value="10K" x="20.955" y="24.003" rot="MR180"/>
-<element name="R2" library="GadgetFactory" package="0805" value="10K" x="16.002" y="24.003" rot="MR180"/>
-<element name="R3" library="GadgetFactory" package="0805" value="10K" x="28.829" y="3.556" rot="MR0"/>
-<element name="R4" library="GadgetFactory" package="0805" value="10K" x="23.495" y="3.556" rot="MR0"/>
+<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes">
+<attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="X1" library="adafruit" package="ESP-12" value="" x="25.4" y="13.97" rot="MR90">
+<attribute name="ADAFRUIT" value="2491" x="25.4" y="13.97" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
+<element name="R1" library="GadgetFactory" package="0805" value="10K" x="20.955" y="24.003" rot="MR180">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="20.955" y="24.003" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="R2" library="GadgetFactory" package="0805" value="10K" x="16.002" y="24.003" rot="MR180">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="16.002" y="24.003" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="R3" library="GadgetFactory" package="0805" value="10K" x="28.829" y="3.556" rot="MR0">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="28.829" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="R4" library="GadgetFactory" package="0805" value="10K" x="23.495" y="3.556" rot="MR0">
+<attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="23.495" y="3.556" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="U$1" library="GadgetFactory" package="GADGETBOX_TEXT" value="" x="22.86" y="19.05"/>
 <element name="U$2" library="eCogs" package="LEGEND_DIO" value="" x="1.27" y="22.86"/>
 <element name="U$3" library="eCogs" package="LEGEND_DIO" value="" x="1.27" y="20.32"/>
