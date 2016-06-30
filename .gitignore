@@ -4,6 +4,7 @@ gerbers
 *.rar
 *.zip
 text
+boms
 
 
 # Windows image file caches
@@ -53,3 +54,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Gadget-Box-Case Dimensions.brd
