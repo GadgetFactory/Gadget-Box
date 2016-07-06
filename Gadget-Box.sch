@@ -5346,18 +5346,6 @@ type V526-0, grid 2.5 mm</description>
 <text x="-2.413" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.413" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="CRYSTAL-3.2-2.5">
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
-<smd name="1" x="-1.15" y="-0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="2" x="1.15" y="-0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="3" x="1.15" y="0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="4" x="-1.15" y="0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<text x="-1.65" y="1.6" size="1.27" layer="25">&gt;name</text>
-<text x="-1.6" y="-2.25" size="1.27" layer="27">&gt;value</text>
-</package>
 <package name="QFN44ML8X8">
 <description>&lt;b&gt;44-Lead Plastic Quad Flat No Lead Package (ML)&lt;/b&gt; 8x8 mm Body (QFN)&lt;p&gt;
 Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
@@ -5639,31 +5627,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="CRYSTAL-KX7">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="1.905" x2="-1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="2.54" x2="1.778" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.905" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-1.905" width="0.1524" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<text x="1.143" y="2.794" size="0.8636" layer="93" rot="R90">3</text>
-<pin name="C1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="C2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="GND@1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="GND@2" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="ATMEGA32U4">
 <wire x1="-20.32" y1="25.4" x2="30.48" y2="25.4" width="0.254" layer="94"/>
@@ -7079,24 +7042,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CRYSTAL-3.2-2.5" prefix="X">
-<gates>
-<gate name="G$1" symbol="CRYSTAL-KX7" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL-3.2-2.5">
-<connects>
-<connect gate="G$1" pin="C1" pad="1"/>
-<connect gate="G$1" pin="C2" pad="3"/>
-<connect gate="G$1" pin="GND@1" pad="2"/>
-<connect gate="G$1" pin="GND@2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10405,6 +10350,73 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="OPL Eagle Library">
+<packages>
+<package name="2P-SMD-5.0X3.2">
+<description>3.2mm*5mm dimension &lt;br&gt;
+8MHz available</description>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.2" x2="2.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="1.016" x2="-0.254" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="0.254" y1="-1.016" x2="0.254" y2="1.016" width="0.127" layer="21"/>
+<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.143" y2="0" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.143" y2="0" width="0.127" layer="21"/>
+<smd name="1" x="-2.159" y="0" dx="1.778" dy="2.032" layer="1"/>
+<smd name="2" x="2.159" y="0" dx="1.778" dy="2.032" layer="1"/>
+<text x="-1.905" y="1.905" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.54" y1="-1.016" x2="-1.27" y2="1.016" layer="51"/>
+<rectangle x1="1.27" y1="-1.016" x2="2.54" y2="1.016" layer="51"/>
+<rectangle x1="-2.54" y1="-1.651" x2="2.54" y2="1.651" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL">
+<wire x1="1.016" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="1.016" y1="0" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="-3.81" y="0" size="1.27" layer="95" ratio="10">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CRYSTAL*" prefix="X">
+<gates>
+<gate name="X" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0500290P1" package="2P-SMD-5.0X3.2">
+<connects>
+<connect gate="X" pin="1" pad="1"/>
+<connect gate="X" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10425,38 +10437,75 @@ DIN A4, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="FRAME1" library="GadgetFactory" deviceset="FRAME-A4L-LOC" device=""/>
-<part name="C10" library="SmartPrj" deviceset="C-EU" device="C0603" value=".1uF"/>
-<part name="R8" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="C10" library="SmartPrj" deviceset="C-EU" device="C0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D,MURATA ELECTRONICS (VA),DK,490-1575-1-ND,CAP CER .1UF 25V Y5V 0603, REF2"/>
+</part>
+<part name="R8" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M">
+<attribute name="PARTNO" value="RMCF0603JT1M00,STACKPOLE ELECTRONICS INC (VA),dk,RMCF0603JT1M00CT-ND,RES SMD 1M OHM 5% 1/10W 0603, REF57"/>
+</part>
 <part name="SUPPLY2" library="supply2" deviceset="GND1" device="" value="UGND"/>
 <part name="U$30" library="MyPOW" deviceset="COM" device=""/>
-<part name="C11" library="SmartPrj" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="R100" library="SmartPrj" deviceset="R-EU_" device="R0402" value="NM"/>
-<part name="R101" library="SmartPrj" deviceset="R-EU_" device="R0402" value="NM"/>
-<part name="L1" library="wuerth-elektronik" deviceset="WE-CBF" device="_0805" value="MH2029-300Y"/>
-<part name="C12" library="SmartPrj" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="C8" library="SmartPrj" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C11" library="SmartPrj" deviceset="C-EU" device="C0603" value="1uF">
+<attribute name="PARTNO" value="GRM188F51E105ZA12D,Murata Electronics North America,DK,490-3895-1-ND ,CAP CER 1UF 25V Y5V 0603 , REF41"/>
+</part>
+<part name="R100" library="SmartPrj" deviceset="R-EU_" device="R0402" value="NM">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="R101" library="SmartPrj" deviceset="R-EU_" device="R0402" value="NM">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="L1" library="wuerth-elektronik" deviceset="WE-CBF" device="_0805" value="MH2029-300Y">
+<attribute name="PARTNO" value="MH2029-300Y,BOURNS INC (VA),dk,MH2029-300YCT-ND,FERRITE BEAD 30 OHM 0805 1LN, REF60"/>
+</part>
+<part name="C12" library="SmartPrj" deviceset="C-EU" device="C0603" value="1uF">
+<attribute name="PARTNO" value="GRM188F51E105ZA12D,Murata Electronics North America,DK,490-3895-1-ND ,CAP CER 1UF 25V Y5V 0603 , REF41"/>
+</part>
+<part name="C8" library="SmartPrj" deviceset="C-EU" device="C0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D,MURATA ELECTRONICS (VA),DK,490-1575-1-ND,CAP CER .1UF 25V Y5V 0603, REF2"/>
+</part>
 <part name="U$40" library="MyPOW" deviceset="COM" device=""/>
-<part name="C1" library="SmartPrj" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C1" library="SmartPrj" deviceset="C-EU" device="C0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D,MURATA ELECTRONICS (VA),DK,490-1575-1-ND,CAP CER .1UF 25V Y5V 0603, REF2"/>
+</part>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="U3" library="SmartPrj" deviceset="ATMEGA32U4-XU" device="MU"/>
+<part name="U3" library="SmartPrj" deviceset="ATMEGA32U4-XU" device="MU">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="U4" library="SmartPrj" deviceset="ATMEGA32U4-XU" device="AU"/>
-<part name="C7" library="SmartPrj" deviceset="C-EU" device="C0603" value="22p"/>
-<part name="C9" library="SmartPrj" deviceset="C-EU" device="C0603" value="22p"/>
+<part name="C7" library="SmartPrj" deviceset="C-EU" device="C0603" value="22p">
+<attribute name="PARTNO" value="C1608C0G1H220J080AA,TDK CORPORATION (VA),dk,445-1273-1-ND,CAP CER 22PF 50V C0G 0603, REF58"/>
+</part>
+<part name="C9" library="SmartPrj" deviceset="C-EU" device="C0603" value="22p">
+<attribute name="PARTNO" value="C1608C0G1H220J080AA,TDK CORPORATION (VA),dk,445-1273-1-ND,CAP CER 22PF 50V C0G 0603, REF58"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="Y1" library="SmartPrj" deviceset="CRYSTAL-3.2-2.5" device="" value="16MHz KX-7"/>
-<part name="D1" library="diode" deviceset="DIODE-" device="MINIMELF" value="CD1206-S01575"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="MINIMELF" value="CD1206-S01575">
+<attribute name="PARTNO" value="CD1206-S01575,BOURNS INC (VA),dk,CD1206-S01575CT-ND,DIODE GEN PURP 100V 150MA 1206, REF46"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R"/>
-<part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R"/>
-<part name="R9" library="GadgetFactory_6.0" deviceset="R" device="0805" value="10K"/>
-<part name="R3" library="GadgetFactory_6.0" deviceset="R" device="0805" value="10K"/>
-<part name="R7" library="SmartPrj" deviceset="R-EU_" device="R0805" value="10K"/>
-<part name="R6" library="SmartPrj" deviceset="R-EU_" device="R0805" value="10K"/>
+<part name="R4" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R">
+<attribute name="PARTNO" value="RMCF0805JT22R0,STACKPOLE ELECTRONICS INC (VA),dk,RMCF0805JT22R0CT-ND,RES SMD 22 OHM 5% 1/8W 0805, REF62"/>
+</part>
+<part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R">
+<attribute name="PARTNO" value="RMCF0805JT22R0,STACKPOLE ELECTRONICS INC (VA),dk,RMCF0805JT22R0CT-ND,RES SMD 22 OHM 5% 1/8W 0805, REF62"/>
+</part>
+<part name="R9" library="GadgetFactory_6.0" deviceset="R" device="0805" value="10K">
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
+</part>
+<part name="R3" library="GadgetFactory_6.0" deviceset="R" device="0805" value="10K">
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
+</part>
+<part name="R7" library="SmartPrj" deviceset="R-EU_" device="R0805" value="10K">
+<attribute name="PARTNO" value="RMCF0805JT10K0,STACKPOLE ELECTRONICS INC (VA),DK,RMCF0805JT10K0CT-ND,RES 10K OHM 1/8W 5% 0805 SMD, REF7"/>
+</part>
+<part name="R6" library="SmartPrj" deviceset="R-EU_" device="R0805" value="10K">
+<attribute name="PARTNO" value="RMCF0805JT10K0,STACKPOLE ELECTRONICS INC (VA),DK,RMCF0805JT10K0CT-ND,RES 10K OHM 1/8W 5% 0805 SMD, REF7"/>
+</part>
 <part name="3V3_PWR1" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="3V3_PWR3" library="GadgetFactory" deviceset="3V3" device=""/>
@@ -10472,10 +10521,18 @@ DIN A4, landscape with location and doc. field</description>
 <part name="5V0_PWR10" library="GadgetFactory" deviceset="5V0" device=""/>
 <part name="3V3_PWR18" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="5V0_PWR12" library="GadgetFactory" deviceset="5V0" device=""/>
-<part name="BH" library="eCogs" deviceset="ECOG" device="ECOG_SLOT"/>
-<part name="AL" library="eCogs" deviceset="ECOG" device="ECOG_SLOT"/>
-<part name="AH" library="eCogs" deviceset="ECOG" device="ECOG_SLOT"/>
-<part name="BL" library="eCogs" deviceset="ECOG" device="ECOG_SLOT"/>
+<part name="BH" library="eCogs" deviceset="ECOG" device="ECOG_SLOT">
+<attribute name="PARTNO" value="PPPC102LFBN-RC,SULLINS CONNECTOR SOLUTIONS,dk,S6106-ND,&quot;CONN HEADER FEM 20POS.1&quot;&quot; DL GOLD&quot;, REF67"/>
+</part>
+<part name="AL" library="eCogs" deviceset="ECOG" device="ECOG_SLOT">
+<attribute name="PARTNO" value="PPPC102LFBN-RC,SULLINS CONNECTOR SOLUTIONS,dk,S6106-ND,&quot;CONN HEADER FEM 20POS.1&quot;&quot; DL GOLD&quot;, REF67"/>
+</part>
+<part name="AH" library="eCogs" deviceset="ECOG" device="ECOG_SLOT">
+<attribute name="PARTNO" value="PPPC102LFBN-RC,SULLINS CONNECTOR SOLUTIONS,dk,S6106-ND,&quot;CONN HEADER FEM 20POS.1&quot;&quot; DL GOLD&quot;, REF67"/>
+</part>
+<part name="BL" library="eCogs" deviceset="ECOG" device="ECOG_SLOT">
+<attribute name="PARTNO" value="PPPC102LFBN-RC,SULLINS CONNECTOR SOLUTIONS,dk,S6106-ND,&quot;CONN HEADER FEM 20POS.1&quot;&quot; DL GOLD&quot;, REF67"/>
+</part>
 <part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="GND5" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="GND6" library="GadgetFactory" deviceset="GND" device=""/>
@@ -10489,11 +10546,17 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND9" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR9" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="FRAME2" library="microbuilder" deviceset="FRAME_A4" device=""/>
-<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
-<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
+<part name="C6" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF">
+<attribute name="PARTNO" value="CL21F106ZPFNNNE,Samsung,DK,1276-3012-1-ND,CAP CER 10UF 10V Y5V 0805, REF1"/>
+</part>
+<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF">
+<attribute name="PARTNO" value="GRM188F51E105ZA12D,Murata Electronics North America,DK,490-3895-1-ND ,CAP CER 1UF 25V Y5V 0603 , REF41"/>
+</part>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
-<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
+<part name="C3" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF">
+<attribute name="PARTNO" value="CL21F106ZPFNNNE,Samsung,DK,1276-3012-1-ND,CAP CER 10UF 10V Y5V 0805, REF1"/>
+</part>
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -10505,17 +10568,24 @@ DIN A4, landscape with location and doc. field</description>
 <part name="U$16" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="microbuilder" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
-<part name="CHG" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="ORANGE"/>
+<part name="CHG" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="ORANGE">
+<attribute name="PARTNO" value="LTST-C171EKT,LITE-ON INC (VA),DK,160-1422-1-ND,LED RED ORAN CLEAR THIN 0805 SMD, REF6"/>
+</part>
 <part name="R2" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="1K"/>
-<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF">
+<attribute name="PARTNO" value="CL21F106ZPFNNNE,Samsung,DK,1276-3012-1-ND,CAP CER 10UF 10V Y5V 0805, REF1"/>
+</part>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
-<part name="R5" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="10K\"/>
+<part name="R5" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="10K">
+<attribute name="PARTNO" value="RMCF0603JT10K0,STACKPOLE ELECTRONICS INC (VA),dk,RMCF0603JT10K0CT-ND,RES SMD 10K OHM 5% 1/10W 0603, REF56"/>
+</part>
 <part name="U$36" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$38" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$39" library="microbuilder" deviceset="VBAT" device=""/>
-<part name="SW1" library="adafruit" deviceset="OS102011MA1Q" device=""/>
+<part name="PSW1" library="adafruit" deviceset="OS102011MA1Q" device=""/>
 <part name="U$4" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
+<part name="X2" library="OPL Eagle Library" deviceset="CRYSTAL*" device="-0500290P1"/>
 </parts>
 <sheets>
 <sheet>
@@ -10533,15 +10603,19 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="5V0_PWR12" gate="A" x="172.72" y="48.26" rot="R180"/>
 <instance part="BH" gate="ECOG$1" x="111.76" y="91.44" smashed="yes">
 <attribute name="NAME" x="110.744" y="119.888" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="111.76" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="AL" gate="ECOG$1" x="160.02" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="160.782" y="121.666" size="1.778" layer="95" rot="R180"/>
+<attribute name="PARTNO" x="160.02" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="AH" gate="ECOG$1" x="160.02" y="76.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="160.528" y="78.74" size="1.778" layer="95" rot="R180"/>
+<attribute name="PARTNO" x="160.02" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="BL" gate="ECOG$1" x="111.76" y="48.26" smashed="yes">
 <attribute name="NAME" x="110.744" y="77.216" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="111.76" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND1" gate="A" x="119.38" y="91.44"/>
 <instance part="GND5" gate="A" x="152.4" y="121.92" rot="R180"/>
@@ -11019,47 +11093,79 @@ DIN A4, landscape with location and doc. field</description>
 <text x="335.28" y="132.08" size="2.54" layer="94">ALT3</text>
 </plain>
 <instances>
-<instance part="C10" gate="G$1" x="-66.04" y="88.9" rot="R180"/>
+<instance part="C10" gate="G$1" x="-66.04" y="88.9" rot="R180">
+<attribute name="PARTNO" x="-66.04" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R8" gate="G$1" x="-71.12" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="-73.66" y="113.4364" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-73.025" y="111.252" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-71.12" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY2" gate="G$1" x="-63.5" y="38.1"/>
 <instance part="U$30" gate="G$1" x="-30.48" y="66.04"/>
-<instance part="C11" gate="G$1" x="-53.34" y="81.28"/>
-<instance part="R100" gate="G$1" x="-86.36" y="55.88"/>
-<instance part="R101" gate="G$1" x="-71.12" y="55.88"/>
-<instance part="L1" gate="G$1" x="-50.8" y="101.6"/>
-<instance part="C12" gate="G$1" x="-81.28" y="93.98"/>
-<instance part="C8" gate="G$1" x="-40.64" y="137.16"/>
+<instance part="C11" gate="G$1" x="-53.34" y="81.28">
+<attribute name="PARTNO" x="-53.34" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R100" gate="G$1" x="-86.36" y="55.88">
+<attribute name="BOM" x="-86.36" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R101" gate="G$1" x="-71.12" y="55.88">
+<attribute name="BOM" x="-71.12" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L1" gate="G$1" x="-50.8" y="101.6">
+<attribute name="PARTNO" x="-50.8" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="-81.28" y="93.98">
+<attribute name="PARTNO" x="-81.28" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="-40.64" y="137.16">
+<attribute name="PARTNO" x="-40.64" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$40" gate="G$1" x="-40.64" y="127"/>
-<instance part="C1" gate="G$1" x="-50.8" y="137.16"/>
+<instance part="C1" gate="G$1" x="-50.8" y="137.16">
+<attribute name="PARTNO" x="-50.8" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND3" gate="1" x="129.54" y="48.26"/>
-<instance part="U3" gate="G$1" x="17.78" y="104.14"/>
+<instance part="U3" gate="G$1" x="17.78" y="104.14">
+<attribute name="BOM" x="17.78" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U4" gate="G$1" x="175.26" y="104.14"/>
-<instance part="C7" gate="G$1" x="-96.52" y="116.84" rot="R90"/>
-<instance part="C9" gate="G$1" x="-93.98" y="106.68" rot="R270"/>
+<instance part="C7" gate="G$1" x="-96.52" y="116.84" rot="R90">
+<attribute name="PARTNO" x="-96.52" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="-93.98" y="106.68" rot="R270">
+<attribute name="PARTNO" x="-93.98" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="-38.1" y="43.18"/>
 <instance part="GND15" gate="1" x="-106.68" y="116.84" rot="R270"/>
 <instance part="GND16" gate="1" x="-106.68" y="106.68" rot="R270"/>
 <instance part="GND18" gate="1" x="-78.74" y="38.1"/>
 <instance part="GND20" gate="1" x="-81.28" y="81.28"/>
 <instance part="GND23" gate="1" x="281.94" y="91.44" rot="R90"/>
-<instance part="Y1" gate="G$1" x="-86.36" y="111.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="-83.82" y="112.776" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-83.82" y="106.68" size="1.778" layer="96"/>
-</instance>
 <instance part="D1" gate="G$1" x="-73.66" y="129.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="-78.2574" y="132.08" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-68.8086" y="119.38" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="-73.66" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="-129.54" y="-55.88"/>
-<instance part="R4" gate="A" x="-60.96" y="0"/>
-<instance part="R1" gate="A" x="-60.96" y="-7.62"/>
-<instance part="R9" gate="A" x="-66.04" y="129.54" rot="R90"/>
-<instance part="R3" gate="A" x="269.24" y="91.44" rot="R180"/>
-<instance part="R7" gate="G$1" x="91.44" y="76.2" rot="R90"/>
-<instance part="R6" gate="G$1" x="101.6" y="73.66" rot="R90"/>
+<instance part="R4" gate="A" x="-60.96" y="0">
+<attribute name="PARTNO" x="-60.96" y="0" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R1" gate="A" x="-60.96" y="-7.62">
+<attribute name="PARTNO" x="-60.96" y="-7.62" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R9" gate="A" x="-66.04" y="129.54" rot="R90">
+<attribute name="PARTNO" x="-66.04" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="A" x="269.24" y="91.44" rot="R180">
+<attribute name="PARTNO" x="269.24" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="G$1" x="91.44" y="76.2" rot="R90">
+<attribute name="PARTNO" x="91.44" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R6" gate="G$1" x="101.6" y="73.66" rot="R90">
+<attribute name="PARTNO" x="101.6" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="3V3_PWR1" gate="A" x="91.44" y="83.82"/>
 <instance part="3V3_PWR2" gate="A" x="101.6" y="81.28"/>
 <instance part="3V3_PWR3" gate="A" x="-30.48" y="132.08"/>
@@ -11067,6 +11173,7 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="USB" gate="USB" x="-116.84" y="-2.54"/>
 <instance part="U$1" gate="G$1" x="-81.28" y="0"/>
 <instance part="U$5" gate="G$1" x="-38.1" y="63.5"/>
+<instance part="X2" gate="X" x="-86.36" y="111.76" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11142,18 +11249,9 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-104.14" y1="106.68" x2="-101.6" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="106.68" x2="-99.06" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-91.44" y1="111.76" x2="-101.6" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="111.76" x2="-101.6" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="111.76" x2="-81.28" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="101.6" x2="-101.6" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="101.6" x2="-101.6" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-101.6" y="106.68"/>
 <pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="-104.14" y1="106.68" x2="-99.06" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="Y1" gate="G$1" pin="GND@2"/>
-<pinref part="Y1" gate="G$1" pin="GND@1"/>
 </segment>
 <segment>
 <wire x1="274.32" y1="91.44" x2="279.4" y2="91.44" width="0.1524" layer="91"/>
@@ -11269,14 +11367,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-63.5" y1="116.84" x2="-71.12" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="116.84" x2="-86.36" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="116.84" x2="-71.12" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="114.3" x2="-86.36" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="114.3" x2="-86.36" y2="115.57" width="0.1524" layer="91"/>
 <junction x="-71.12" y="116.84"/>
 <junction x="-86.36" y="116.84"/>
 <label x="-50.8" y="114.3" size="1.778" layer="95"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="U3" gate="G$1" pin="XTAL2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="Y1" gate="G$1" pin="C2"/>
+<pinref part="X2" gate="X" pin="2"/>
+<wire x1="-86.36" y1="115.57" x2="-86.36" y2="116.84" width="0.1524" layer="91"/>
+<junction x="-86.36" y="115.57"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
@@ -11291,14 +11391,16 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-63.5" y1="106.68" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="106.68" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="106.68" x2="-71.12" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="109.22" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="109.22" x2="-86.36" y2="107.95" width="0.1524" layer="91"/>
 <junction x="-71.12" y="106.68"/>
 <junction x="-86.36" y="106.68"/>
 <label x="-50.8" y="109.22" size="1.778" layer="95"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="XTAL1"/>
 <pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="Y1" gate="G$1" pin="C1"/>
+<pinref part="X2" gate="X" pin="1"/>
+<wire x1="-86.36" y1="107.95" x2="-86.36" y2="106.68" width="0.1524" layer="91"/>
+<junction x="-86.36" y="107.95"/>
 </segment>
 <segment>
 <wire x1="149.86" y1="109.22" x2="129.54" y2="109.22" width="0.1524" layer="91"/>
@@ -11843,11 +11945,17 @@ DIN A4, landscape with location and doc. field</description>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$3" x="134.62" y="2.54"/>
-<instance part="C6" gate="G$1" x="33.02" y="137.16"/>
-<instance part="C2" gate="G$1" x="76.2" y="137.16"/>
+<instance part="C6" gate="G$1" x="33.02" y="137.16">
+<attribute name="PARTNO" x="33.02" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="76.2" y="137.16">
+<attribute name="PARTNO" x="76.2" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$27" gate="G$1" x="33.02" y="129.54"/>
 <instance part="U$28" gate="G$1" x="76.2" y="129.54"/>
-<instance part="C3" gate="G$1" x="68.58" y="137.16"/>
+<instance part="C3" gate="G$1" x="68.58" y="137.16">
+<attribute name="PARTNO" x="68.58" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$29" gate="G$1" x="68.58" y="129.54"/>
 <instance part="U$2" gate="G$1" x="45.72" y="129.54"/>
 <instance part="+3V4" gate="G$1" x="76.2" y="154.94" rot="MR0"/>
@@ -11860,15 +11968,21 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="U$22" gate="G$1" x="91.44" y="129.54"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="U1" gate="G$1" x="68.58" y="96.52"/>
-<instance part="CHG" gate="G$1" x="35.56" y="93.98"/>
+<instance part="CHG" gate="G$1" x="35.56" y="93.98">
+<attribute name="PARTNO" x="35.56" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R2" gate="G$1" x="45.72" y="93.98"/>
-<instance part="C4" gate="G$1" x="101.6" y="91.44"/>
+<instance part="C4" gate="G$1" x="101.6" y="91.44">
+<attribute name="PARTNO" x="101.6" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$33" gate="G$1" x="101.6" y="86.36"/>
-<instance part="R5" gate="G$1" x="91.44" y="96.52"/>
+<instance part="R5" gate="G$1" x="91.44" y="96.52">
+<attribute name="PARTNO" x="91.44" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$36" gate="G$1" x="96.52" y="86.36"/>
 <instance part="U$38" gate="G$1" x="20.32" y="109.22"/>
 <instance part="U$39" gate="G$1" x="109.22" y="111.76"/>
-<instance part="SW1" gate="G$1" x="20.32" y="147.32" smashed="yes" rot="MR270">
+<instance part="PSW1" gate="G$1" x="20.32" y="147.32" smashed="yes" rot="MR270">
 <attribute name="NAME" x="29.083" y="144.145" size="1.778" layer="95" rot="MR0"/>
 </instance>
 <instance part="U$4" gate="G$1" x="15.24" y="154.94"/>
@@ -11919,7 +12033,7 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="96.52" y="91.44"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="S"/>
+<pinref part="PSW1" gate="G$1" pin="S"/>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <wire x1="15.24" y1="142.24" x2="15.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
@@ -11964,7 +12078,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U$38" gate="G$1" pin="VBUS"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="O"/>
+<pinref part="PSW1" gate="G$1" pin="O"/>
 <pinref part="U$4" gate="G$1" pin="VBUS"/>
 <wire x1="15.24" y1="152.4" x2="15.24" y2="149.86" width="0.1524" layer="91"/>
 </segment>
@@ -12017,7 +12131,7 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="U2" gate="G$1" pin="EN"/>
 <wire x1="43.18" y1="147.32" x2="45.72" y2="147.32" width="0.1524" layer="91"/>
 <label x="43.18" y="147.32" size="1.778" layer="95" rot="R270"/>
-<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="PSW1" gate="G$1" pin="P"/>
 <wire x1="25.4" y1="147.32" x2="43.18" y2="147.32" width="0.2032" layer="91"/>
 </segment>
 </net>
