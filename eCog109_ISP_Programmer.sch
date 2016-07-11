@@ -199,38 +199,38 @@ DIN A3, landscape with location and doc. field</description>
 </library>
 <library name="eCogs">
 <packages>
-<package name="ECOG_GENERAL_SMD">
-<wire x1="5.09" y1="1.24" x2="5.09" y2="26.64" width="0.127" layer="22"/>
-<wire x1="5.09" y1="1.24" x2="2.59" y2="1.24" width="0.127" layer="22"/>
-<wire x1="5.09" y1="26.64" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<wire x1="2.59" y1="1.24" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<smd name="3V3" x="5.3694" y="2.51" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G7" x="2.2706" y="5.05" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G6" x="5.3694" y="7.59" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G5" x="2.2706" y="10.13" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G4" x="5.3694" y="12.67" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G3" x="2.2706" y="15.21" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G2" x="5.3694" y="17.75" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G1" x="2.2706" y="20.29" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G0" x="5.3694" y="22.83" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="GND" x="2.2706" y="25.37" dx="3.5" dy="1" layer="16" roundness="100"/>
-<rectangle x1="3.566" y1="16.226" x2="4.074" y2="16.734" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="13.686" x2="4.074" y2="14.194" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="11.146" x2="4.074" y2="11.654" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="8.606" x2="4.074" y2="9.114" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="6.066" x2="4.074" y2="6.574" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="3.526" x2="4.074" y2="4.034" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="18.766" x2="4.074" y2="19.274" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="21.306" x2="4.074" y2="21.814" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="22.576" x2="4.074" y2="23.084" layer="52" rot="R90"/>
-<rectangle x1="3.566" y1="23.846" x2="4.074" y2="24.354" layer="22" rot="R90"/>
+<package name="ECOG_BUSES_SMD">
+<wire x1="7.63" y1="1.24" x2="7.63" y2="26.64" width="0.127" layer="22"/>
+<wire x1="7.63" y1="1.24" x2="5.13" y2="1.24" width="0.127" layer="22"/>
+<wire x1="7.63" y1="26.64" x2="5.13" y2="26.64" width="0.127" layer="22"/>
+<wire x1="5.13" y1="1.24" x2="5.13" y2="26.64" width="0.127" layer="22"/>
+<smd name="3V3" x="7.9094" y="2.51" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="5V0" x="4.8106" y="5.05" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="RESET" x="7.9094" y="7.59" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="I2C-SCL" x="4.8106" y="10.13" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="I2C-SDA" x="7.9094" y="12.67" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-CS" x="4.8106" y="15.21" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-SCK" x="7.9094" y="17.75" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-MOSI" x="4.8106" y="20.29" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="SPI-MISO" x="7.9094" y="22.83" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="GND" x="4.8106" y="25.37" dx="3.5" dy="1" layer="16" roundness="100"/>
+<rectangle x1="6.106" y1="16.226" x2="6.614" y2="16.734" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="13.686" x2="6.614" y2="14.194" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="11.146" x2="6.614" y2="11.654" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="8.606" x2="6.614" y2="9.114" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="6.066" x2="6.614" y2="6.574" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="3.526" x2="6.614" y2="4.034" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="18.766" x2="6.614" y2="19.274" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="21.306" x2="6.614" y2="21.814" layer="22" rot="R90"/>
+<rectangle x1="6.106" y1="22.576" x2="6.614" y2="23.084" layer="52" rot="R90"/>
+<rectangle x1="6.106" y1="23.846" x2="6.614" y2="24.354" layer="22" rot="R90"/>
 <wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
 <wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
 <wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
 <wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
 <text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="44" y="4" drill="3.8"/>
-<hole x="44" y="24" drill="3.8"/>
+<hole x="44" y="4" drill="3.6"/>
+<hole x="44" y="24" drill="3.6"/>
 <polygon width="0" layer="41">
 <vertex x="47.5" y="20.96"/>
 <vertex x="43.99" y="20.96" curve="-90"/>
@@ -279,9 +279,9 @@ DIN A3, landscape with location and doc. field</description>
 <vertex x="47.5" y="3.96" curve="-90"/>
 <vertex x="43.99" y="-0.04"/>
 </polygon>
-<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
 <wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
+<wire x1="0" y1="14" x2="48" y2="14" width="0.127" layer="48"/>
+<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
 <wire x1="0" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
 <wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
 <wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
@@ -290,32 +290,37 @@ DIN A3, landscape with location and doc. field</description>
 </package>
 </packages>
 <symbols>
-<symbol name="ECOG_GENERAL_ROW">
+<symbol name="ECOG_BUSES_ROW">
 <wire x1="-1.27" y1="27.94" x2="5.08" y2="27.94" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="20.32" x2="0" y2="20.32" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="15.24" x2="0" y2="15.24" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="17.78" x2="0" y2="17.78" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="10.16" x2="0" y2="10.16" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="12.7" x2="0" y2="12.7" width="0.6096" layer="94"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="27.94" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="27.94" x2="-1.27" y2="0" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="0" x2="-1.27" y2="0" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="2.54" y2="7.62" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="10.16" x2="2.54" y2="10.16" width="0.6096" layer="94"/>
 <text x="-4.572" y="-2.286" size="1.778" layer="95">&gt;NAME</text>
-<pin name="G6" x="-5.08" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G5" x="-5.08" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G4" x="-5.08" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G3" x="-5.08" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G2" x="-5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G1" x="-5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="G0" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="GND" x="-5.08" y="2.54" visible="pad" length="middle" direction="pwr" swaplevel="1"/>
-<wire x1="1.27" y1="22.86" x2="0" y2="22.86" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="25.4" x2="0" y2="25.4" width="0.6096" layer="94"/>
-<pin name="3V3" x="-5.08" y="25.4" visible="pad" length="middle" direction="pwr" swaplevel="1"/>
-<pin name="G7" x="-5.08" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="SPI-SCK@B2" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-MOSI@B1" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-MISO@B0" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="GND@B" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="12.7" x2="2.54" y2="12.7" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="15.24" x2="2.54" y2="15.24" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="17.78" x2="2.54" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="20.32" x2="2.54" y2="20.32" width="0.6096" layer="94"/>
+<pin name="RESET@B6" x="7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="I2C-SCL@B5" x="7.62" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="I2C-SDA@B4" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SPI-CS@B3" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="3.81" y1="22.86" x2="2.54" y2="22.86" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="25.4" x2="2.54" y2="25.4" width="0.6096" layer="94"/>
+<pin name="3V3@B8" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5V0@B7" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 <symbol name="3V3">
 <wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
@@ -324,35 +329,42 @@ DIN A3, landscape with location and doc. field</description>
 <text x="-1.778" y="3.175" size="1.397" layer="96">&gt;VALUE</text>
 <pin name="3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ECOG_GENERAL_ROW">
+<deviceset name="ECOG_BUSES_ROW">
 <gates>
-<gate name="ECOG_GENERAL" symbol="ECOG_GENERAL_ROW" x="0" y="0"/>
+<gate name="ECOG_BUSES" symbol="ECOG_BUSES_ROW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="ECOG_GENERAL_SMD" package="ECOG_GENERAL_SMD">
+<device name="ECOG_BUSES_SMD" package="ECOG_BUSES_SMD">
 <connects>
-<connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
-<connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
-<connect gate="ECOG_GENERAL" pin="G1" pad="G1"/>
-<connect gate="ECOG_GENERAL" pin="G2" pad="G2"/>
-<connect gate="ECOG_GENERAL" pin="G3" pad="G3"/>
-<connect gate="ECOG_GENERAL" pin="G4" pad="G4"/>
-<connect gate="ECOG_GENERAL" pin="G5" pad="G5"/>
-<connect gate="ECOG_GENERAL" pin="G6" pad="G6"/>
-<connect gate="ECOG_GENERAL" pin="G7" pad="G7"/>
-<connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
+<connect gate="ECOG_BUSES" pin="3V3@B8" pad="3V3"/>
+<connect gate="ECOG_BUSES" pin="5V0@B7" pad="5V0"/>
+<connect gate="ECOG_BUSES" pin="GND@B" pad="GND"/>
+<connect gate="ECOG_BUSES" pin="I2C-SCL@B5" pad="I2C-SCL"/>
+<connect gate="ECOG_BUSES" pin="I2C-SDA@B4" pad="I2C-SDA"/>
+<connect gate="ECOG_BUSES" pin="RESET@B6" pad="RESET"/>
+<connect gate="ECOG_BUSES" pin="SPI-CS@B3" pad="SPI-CS"/>
+<connect gate="ECOG_BUSES" pin="SPI-MISO@B0" pad="SPI-MISO"/>
+<connect gate="ECOG_BUSES" pin="SPI-MOSI@B1" pad="SPI-MOSI"/>
+<connect gate="ECOG_BUSES" pin="SPI-SCK@B2" pad="SPI-SCK"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY" value="S1013EC-10-ND"/>
+<attribute name="DIGIKEY" value="S1013EC-10-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<gates>
+<gate name="A" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -370,12 +382,74 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND">
+</devicesets>
+</library>
+<library name="adafruit">
+<packages>
+<package name="AVRISP">
+<wire x1="-2.54" y1="3.048" x2="-1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="3.81" x2="1.778" y2="3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="3.81" x2="2.54" y2="3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="3.048" x2="2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.778" x2="2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="1.27" x2="2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.762" x2="2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.778" x2="2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="1.778" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-3.81" x2="-2.54" y2="-3.048" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.54" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.032" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0.762" x2="-2.032" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.54" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.048" width="0.127" layer="21"/>
+<pad name="3" x="-1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="4" x="1.27" y="0" drill="0.9" diameter="1.6256"/>
+<pad name="2" x="1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="1" x="-1.27" y="2.54" drill="0.9" diameter="1.6256"/>
+<pad name="5" x="-1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<pad name="6" x="1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
+<text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="AVRISP">
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MISO" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="SCK" x="-12.7" y="0" length="middle" direction="out"/>
+<pin name="RST" x="-12.7" y="-2.54" length="middle" direction="out"/>
+<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="MOSI" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AVRISP" prefix="ISP">
+<description>&lt;b&gt;AVR ISP HEADER&lt;/b&gt;
+&lt;br&gt;
+Standard 6 pin header for AVR programming</description>
 <gates>
-<gate name="A" symbol="GND" x="0" y="0"/>
+<gate name="G$1" symbol="AVRISP" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="-6" package="AVRISP">
+<connects>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -395,9 +469,12 @@ DIN A3, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
-<part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
+<part name="ECOG" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD"/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
+<part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
+<part name="ISP1" library="adafruit" deviceset="AVRISP" device="-6"/>
+<part name="GND2" library="eCogs" deviceset="GND" device=""/>
+<part name="3V3_PWR2" library="eCogs" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -409,25 +486,73 @@ DIN A3, landscape with location and doc. field</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="50.8" y="86.36"/>
-<instance part="GND1" gate="A" x="50.8" y="48.26"/>
+<instance part="ECOG" gate="ECOG_BUSES" x="124.46" y="129.54"/>
+<instance part="GND1" gate="A" x="147.32" y="127"/>
+<instance part="3V3_PWR1" gate="A" x="132.08" y="162.56"/>
+<instance part="ISP1" gate="G$1" x="185.42" y="147.32"/>
+<instance part="GND2" gate="A" x="200.66" y="142.24"/>
+<instance part="3V3_PWR2" gate="A" x="200.66" y="152.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="3V3" class="0">
-<segment>
-<pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
-<pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="83.82" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
-<pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="GND@B"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="50.8" width="0.2032" layer="91"/>
+<wire x1="132.08" y1="132.08" x2="147.32" y2="132.08" width="0.2032" layer="91"/>
+<wire x1="147.32" y1="132.08" x2="147.32" y2="129.54" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="A" pin="GND"/>
+</segment>
+</net>
+<net name="3V3" class="0">
+<segment>
+<pinref part="3V3_PWR1" gate="A" pin="3V3"/>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="3V3@B8"/>
+<wire x1="132.08" y1="160.02" x2="132.08" y2="154.94" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="ISP1" gate="G$1" pin="VCC"/>
+<pinref part="3V3_PWR2" gate="A" pin="3V3"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="SPI-MISO@B0"/>
+<wire x1="132.08" y1="134.62" x2="165.1" y2="134.62" width="0.2032" layer="91"/>
+<wire x1="165.1" y1="134.62" x2="165.1" y2="149.86" width="0.2032" layer="91"/>
+<pinref part="ISP1" gate="G$1" pin="MISO"/>
+<wire x1="165.1" y1="149.86" x2="172.72" y2="149.86" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="SPI-SCK@B2"/>
+<wire x1="132.08" y1="139.7" x2="162.56" y2="139.7" width="0.2032" layer="91"/>
+<wire x1="162.56" y1="139.7" x2="162.56" y2="147.32" width="0.2032" layer="91"/>
+<pinref part="ISP1" gate="G$1" pin="SCK"/>
+<wire x1="162.56" y1="147.32" x2="172.72" y2="147.32" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="RESET@B6"/>
+<wire x1="132.08" y1="149.86" x2="160.02" y2="149.86" width="0.2032" layer="91"/>
+<wire x1="160.02" y1="149.86" x2="160.02" y2="144.78" width="0.2032" layer="91"/>
+<pinref part="ISP1" gate="G$1" pin="RST"/>
+<wire x1="160.02" y1="144.78" x2="172.72" y2="144.78" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="ECOG" gate="ECOG_BUSES" pin="SPI-MOSI@B1"/>
+<wire x1="132.08" y1="137.16" x2="208.28" y2="137.16" width="0.2032" layer="91"/>
+<wire x1="208.28" y1="137.16" x2="208.28" y2="147.32" width="0.2032" layer="91"/>
+<pinref part="ISP1" gate="G$1" pin="MOSI"/>
+<wire x1="208.28" y1="147.32" x2="200.66" y2="147.32" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>

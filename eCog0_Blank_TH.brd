@@ -157,21 +157,11 @@
 <libraries>
 <library name="eCogs">
 <packages>
-<package name="ECOG_GENERAL_SMD">
+<package name="ECOG_GENERAL_TH">
 <wire x1="5.09" y1="1.24" x2="5.09" y2="26.64" width="0.127" layer="22"/>
 <wire x1="5.09" y1="1.24" x2="2.59" y2="1.24" width="0.127" layer="22"/>
 <wire x1="5.09" y1="26.64" x2="2.59" y2="26.64" width="0.127" layer="22"/>
 <wire x1="2.59" y1="1.24" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<smd name="3V3" x="5.3694" y="2.51" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G7" x="2.2706" y="5.05" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G6" x="5.3694" y="7.59" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G5" x="2.2706" y="10.13" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G4" x="5.3694" y="12.67" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G3" x="2.2706" y="15.21" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G2" x="5.3694" y="17.75" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G1" x="2.2706" y="20.29" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G0" x="5.3694" y="22.83" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="GND" x="2.2706" y="25.37" dx="3.5" dy="1" layer="16" roundness="100"/>
 <rectangle x1="3.566" y1="16.226" x2="4.074" y2="16.734" layer="22" rot="R90"/>
 <rectangle x1="3.566" y1="13.686" x2="4.074" y2="14.194" layer="22" rot="R90"/>
 <rectangle x1="3.566" y1="11.146" x2="4.074" y2="11.654" layer="22" rot="R90"/>
@@ -245,6 +235,16 @@
 <wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
 <wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
 <wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="GND" x="3.81" y="25.4" drill="0.8" shape="square"/>
+<pad name="G0" x="3.81" y="22.86" drill="0.8"/>
+<pad name="G1" x="3.81" y="20.32" drill="0.8"/>
+<pad name="G2" x="3.81" y="17.78" drill="0.8"/>
+<pad name="G3" x="3.81" y="15.24" drill="0.8"/>
+<pad name="G4" x="3.81" y="12.7" drill="0.8"/>
+<pad name="G5" x="3.81" y="10.16" drill="0.8"/>
+<pad name="G6" x="3.81" y="7.62" drill="0.8"/>
+<pad name="G7" x="3.81" y="5.08" drill="0.8"/>
+<pad name="3V3" x="3.81" y="2.54" drill="0.8"/>
 </package>
 </packages>
 </library>
@@ -4307,9 +4307,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes">
-<attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-</element>
+<element name="ECOG" library="eCogs" package="ECOG_GENERAL_TH" value="ECOG_GENERAL_ROWECOG_GENERAL_TH" x="0" y="0" smashed="yes"/>
 <element name="U$2" library="GadgetFactory" package="GADGETBOX_TEXT" value="" x="22.86" y="17.78"/>
 <element name="U$1" library="ohw-logo" package="OSHW_FILLX350_NOTEXT" value="" x="13.97" y="2.54"/>
 </elements>
@@ -4322,7 +4320,7 @@ design rules under a new name.</description>
 <vertex x="49" y="-1"/>
 <vertex x="-1" y="-1"/>
 </polygon>
-<wire x1="2.2706" y1="25.37" x2="6.37" y2="25.37" width="0.254" layer="16"/>
+<wire x1="3.81" y1="25.4" x2="6.37" y2="25.37" width="0.254" layer="16"/>
 <wire x1="6.37" y1="25.37" x2="7" y2="26" width="0.254" layer="16"/>
 <via x="7" y="26" extent="1-16" drill="0.381"/>
 <wire x1="7" y1="26" x2="8" y2="26" width="0.254" layer="1"/>

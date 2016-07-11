@@ -230,6 +230,84 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
 <text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
 <hole x="44" y="4" drill="3.8"/>
+<polygon width="0" layer="41">
+<vertex x="47.5" y="20.96"/>
+<vertex x="43.99" y="20.96" curve="-90"/>
+<vertex x="40.99" y="23.96"/>
+<vertex x="40.99" y="27.96"/>
+<vertex x="43.99" y="27.96" curve="-90"/>
+<vertex x="47.5" y="23.96"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="47.5" y="20.96"/>
+<vertex x="43.99" y="20.96" curve="-90"/>
+<vertex x="40.99" y="23.96"/>
+<vertex x="40.99" y="27.96"/>
+<vertex x="43.99" y="27.96" curve="-90"/>
+<vertex x="47.5" y="23.96"/>
+</polygon>
+<polygon width="0" layer="43">
+<vertex x="47.5" y="20.96"/>
+<vertex x="43.99" y="20.96" curve="-90"/>
+<vertex x="40.99" y="23.96"/>
+<vertex x="40.99" y="27.96"/>
+<vertex x="43.99" y="27.96" curve="-90"/>
+<vertex x="47.5" y="23.96"/>
+</polygon>
+<polygon width="0" layer="41">
+<vertex x="40.99" y="-0.04"/>
+<vertex x="40.99" y="3.96" curve="-90"/>
+<vertex x="43.99" y="6.96"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
+<vertex x="43.99" y="-0.04"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="40.99" y="-0.04"/>
+<vertex x="40.99" y="3.96" curve="-90"/>
+<vertex x="43.99" y="6.96"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
+<vertex x="43.99" y="-0.04"/>
+</polygon>
+<polygon width="0" layer="43">
+<vertex x="40.99" y="-0.04"/>
+<vertex x="40.99" y="3.96" curve="-90"/>
+<vertex x="43.99" y="6.96"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
+<vertex x="43.99" y="-0.04"/>
+</polygon>
+<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
+<wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
+<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
+<wire x1="0" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
+<wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
+<wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
+<wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
+<wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+</package>
+<package name="ECOG_GENERAL_TH">
+<wire x1="5.09" y1="1.24" x2="5.09" y2="26.64" width="0.127" layer="22"/>
+<wire x1="5.09" y1="1.24" x2="2.59" y2="1.24" width="0.127" layer="22"/>
+<wire x1="5.09" y1="26.64" x2="2.59" y2="26.64" width="0.127" layer="22"/>
+<wire x1="2.59" y1="1.24" x2="2.59" y2="26.64" width="0.127" layer="22"/>
+<rectangle x1="3.566" y1="16.226" x2="4.074" y2="16.734" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="13.686" x2="4.074" y2="14.194" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="11.146" x2="4.074" y2="11.654" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="8.606" x2="4.074" y2="9.114" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="6.066" x2="4.074" y2="6.574" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="3.526" x2="4.074" y2="4.034" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="18.766" x2="4.074" y2="19.274" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="21.306" x2="4.074" y2="21.814" layer="22" rot="R90"/>
+<rectangle x1="3.566" y1="22.576" x2="4.074" y2="23.084" layer="52" rot="R90"/>
+<rectangle x1="3.566" y1="23.846" x2="4.074" y2="24.354" layer="22" rot="R90"/>
+<wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
+<wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
+<wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
+<wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
+<text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
+<hole x="44" y="4" drill="3.8"/>
 <hole x="44" y="24" drill="3.8"/>
 <polygon width="0" layer="41">
 <vertex x="47.5" y="20.96"/>
@@ -287,6 +365,16 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
 <wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
 <wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="GND" x="3.81" y="25.4" drill="0.8" shape="square"/>
+<pad name="G0" x="3.81" y="22.86" drill="0.8"/>
+<pad name="G1" x="3.81" y="20.32" drill="0.8"/>
+<pad name="G2" x="3.81" y="17.78" drill="0.8"/>
+<pad name="G3" x="3.81" y="15.24" drill="0.8"/>
+<pad name="G4" x="3.81" y="12.7" drill="0.8"/>
+<pad name="G5" x="3.81" y="10.16" drill="0.8"/>
+<pad name="G6" x="3.81" y="7.62" drill="0.8"/>
+<pad name="G7" x="3.81" y="5.08" drill="0.8"/>
+<pad name="3V3" x="3.81" y="2.54" drill="0.8"/>
 </package>
 </packages>
 <symbols>
@@ -355,6 +443,23 @@ DIN A3, landscape with location and doc. field</description>
 </technology>
 </technologies>
 </device>
+<device name="ECOG_GENERAL_TH" package="ECOG_GENERAL_TH">
+<connects>
+<connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
+<connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
+<connect gate="ECOG_GENERAL" pin="G1" pad="G1"/>
+<connect gate="ECOG_GENERAL" pin="G2" pad="G2"/>
+<connect gate="ECOG_GENERAL" pin="G3" pad="G3"/>
+<connect gate="ECOG_GENERAL" pin="G4" pad="G4"/>
+<connect gate="ECOG_GENERAL" pin="G5" pad="G5"/>
+<connect gate="ECOG_GENERAL" pin="G6" pad="G6"/>
+<connect gate="ECOG_GENERAL" pin="G7" pad="G7"/>
+<connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3V3" prefix="3V3_PWR">
@@ -384,6 +489,139 @@ DIN A3, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X07">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<pad name="1" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+</package>
+<package name="1X07/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-8.89" y1="-1.905" x2="-6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-1.905" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="0.635" x2="-8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-8.89" y1="0.635" x2="-8.89" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="6.985" x2="-7.62" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-6.35" y1="-1.905" x2="-3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="0.635" x2="-6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="6.985" x2="-5.08" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="6.985" x2="-2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="1.27" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="6.985" x2="0" y2="1.27" width="0.762" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="6.985" x2="2.54" y2="1.27" width="0.762" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="-1.905" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="3.81" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="6.985" x2="5.08" y2="1.27" width="0.762" layer="21"/>
+<wire x1="6.35" y1="-1.905" x2="8.89" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="-1.905" x2="8.89" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="6.35" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="6.985" x2="7.62" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-7.62" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-5.08" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="-2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="0" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="5" x="2.54" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="7" x="7.62" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-9.525" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="10.795" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-8.001" y1="0.635" x2="-7.239" y2="1.143" layer="21"/>
+<rectangle x1="-5.461" y1="0.635" x2="-4.699" y2="1.143" layer="21"/>
+<rectangle x1="-2.921" y1="0.635" x2="-2.159" y2="1.143" layer="21"/>
+<rectangle x1="-0.381" y1="0.635" x2="0.381" y2="1.143" layer="21"/>
+<rectangle x1="2.159" y1="0.635" x2="2.921" y2="1.143" layer="21"/>
+<rectangle x1="4.699" y1="0.635" x2="5.461" y2="1.143" layer="21"/>
+<rectangle x1="7.239" y1="0.635" x2="8.001" y2="1.143" layer="21"/>
+<rectangle x1="-8.001" y1="-2.921" x2="-7.239" y2="-1.905" layer="21"/>
+<rectangle x1="-5.461" y1="-2.921" x2="-4.699" y2="-1.905" layer="21"/>
+<rectangle x1="-2.921" y1="-2.921" x2="-2.159" y2="-1.905" layer="21"/>
+<rectangle x1="-0.381" y1="-2.921" x2="0.381" y2="-1.905" layer="21"/>
+<rectangle x1="2.159" y1="-2.921" x2="2.921" y2="-1.905" layer="21"/>
+<rectangle x1="4.699" y1="-2.921" x2="5.461" y2="-1.905" layer="21"/>
+<rectangle x1="7.239" y1="-2.921" x2="8.001" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD7">
+<wire x1="-6.35" y1="-10.16" x2="1.27" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-10.16" x2="1.27" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="10.16" x2="-6.35" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="10.16" x2="-6.35" y2="-10.16" width="0.4064" layer="94"/>
+<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="6" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="7" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X7" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="PINHD7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X07">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X07/90">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -398,6 +636,9 @@ DIN A3, landscape with location and doc. field</description>
 <part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
 <part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X7" device=""/>
+<part name="GND2" library="eCogs" deviceset="GND" device=""/>
+<part name="3V3_PWR2" library="eCogs" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -406,12 +647,16 @@ DIN A3, landscape with location and doc. field</description>
 <text x="99.06" y="7.62" size="1.27" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 <text x="317.5" y="30.48" size="2.1844" layer="91">Copyright 2016 Gadget Factory, LLC</text>
 <text x="317.5" y="25.4" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
+<text x="144.78" y="106.68" size="1.778" layer="91">While it says 5V for VCC, in testing it seems to work fine at 3.3V.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="ECOG" gate="ECOG_GENERAL" x="55.88" y="53.34"/>
-<instance part="3V3_PWR1" gate="A" x="50.8" y="86.36"/>
-<instance part="GND1" gate="A" x="50.8" y="48.26"/>
+<instance part="ECOG" gate="ECOG_GENERAL" x="165.1" y="124.46" rot="MR0"/>
+<instance part="3V3_PWR1" gate="A" x="170.18" y="157.48" rot="MR0"/>
+<instance part="GND1" gate="A" x="170.18" y="116.84" rot="MR0"/>
+<instance part="JP1" gate="A" x="208.28" y="134.62" rot="MR180"/>
+<instance part="GND2" gate="A" x="213.36" y="121.92"/>
+<instance part="3V3_PWR2" gate="A" x="198.12" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -420,14 +665,58 @@ DIN A3, landscape with location and doc. field</description>
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="3V3"/>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
-<wire x1="50.8" y1="83.82" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="149.86" x2="170.18" y2="154.94" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="3V3_PWR2" gate="A" pin="3V3"/>
+<wire x1="198.12" y1="149.86" x2="198.12" y2="139.7" width="0.2032" layer="91"/>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="198.12" y1="139.7" x2="205.74" y2="139.7" width="0.2032" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="GND"/>
 <pinref part="GND1" gate="A" pin="GND"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="50.8" width="0.2032" layer="91"/>
+<wire x1="170.18" y1="127" x2="170.18" y2="119.38" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="7"/>
+<wire x1="205.74" y1="142.24" x2="213.36" y2="142.24" width="0.2032" layer="91"/>
+<pinref part="GND2" gate="A" pin="GND"/>
+<wire x1="213.36" y1="142.24" x2="213.36" y2="124.46" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="D3" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
+<wire x1="205.74" y1="129.54" x2="170.18" y2="129.54" width="0.2032" layer="91"/>
+<label x="177.8" y="129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
+<wire x1="205.74" y1="132.08" x2="170.18" y2="132.08" width="0.2032" layer="91"/>
+<label x="177.8" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D1" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
+<wire x1="205.74" y1="134.62" x2="170.18" y2="134.62" width="0.2032" layer="91"/>
+<label x="177.8" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D0" class="0">
+<segment>
+<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G3"/>
+<wire x1="205.74" y1="137.16" x2="170.18" y2="137.16" width="0.2032" layer="91"/>
+<label x="177.8" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
