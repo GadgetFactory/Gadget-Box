@@ -4738,19 +4738,19 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="101.6" x2="144.78" y2="101.6" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="152.4" x2="104.14" y2="152.4" width="0.2032" layer="91"/>
-<label x="104.14" y="152.4" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="TX0"/>
-</segment>
-<segment>
 <label x="170.18" y="93.98" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="SPI-CS@B3"/>
 <wire x1="182.88" y1="93.98" x2="157.48" y2="93.98" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="TX0-1"/>
-<wire x1="137.16" y1="167.64" x2="137.16" y2="172.72" width="0.2032" layer="91"/>
-<label x="137.16" y="167.64" size="1.778" layer="95" rot="R90"/>
+<wire x1="114.3" y1="149.86" x2="104.14" y2="149.86" width="0.2032" layer="91"/>
+<label x="104.14" y="149.86" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="RX1"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RX1-1"/>
+<wire x1="134.62" y1="167.64" x2="134.62" y2="172.72" width="0.2032" layer="91"/>
+<label x="134.62" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D1/TX" class="0">
@@ -4763,14 +4763,14 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="99.06" x2="144.78" y2="99.06" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="149.86" x2="104.14" y2="149.86" width="0.2032" layer="91"/>
-<label x="104.14" y="149.86" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="RX1"/>
+<wire x1="114.3" y1="152.4" x2="104.14" y2="152.4" width="0.2032" layer="91"/>
+<label x="104.14" y="152.4" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="TX0"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="RX1-1"/>
-<wire x1="134.62" y1="167.64" x2="134.62" y2="172.72" width="0.2032" layer="91"/>
-<label x="134.62" y="167.64" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$1" gate="G$1" pin="TX0-1"/>
+<wire x1="137.16" y1="167.64" x2="137.16" y2="172.72" width="0.2032" layer="91"/>
+<label x="137.16" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="D2" class="0">
