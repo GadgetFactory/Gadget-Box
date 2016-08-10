@@ -3718,10 +3718,10 @@ http://www.xganon.com</description>
 <pad name="GND" x="10.16" y="3.81" drill="1.016" diameter="1.778" rot="R180"/>
 <pad name="RST" x="10.16" y="1.27" drill="1.016" diameter="1.778" rot="R180"/>
 <pad name="VCC" x="10.16" y="-1.27" drill="1.016" diameter="1.778" rot="R180"/>
-<pad name="A0" x="10.16" y="-3.81" drill="1.016" diameter="1.778" rot="R180"/>
-<pad name="A1" x="10.16" y="-6.35" drill="1.016" diameter="1.778" rot="R180"/>
-<pad name="A2" x="10.16" y="-8.89" drill="1.016" diameter="1.778" rot="R180"/>
-<pad name="A3" x="10.16" y="-11.43" drill="1.016" diameter="1.778" rot="R180"/>
+<pad name="A3" x="10.16" y="-3.81" drill="1.016" diameter="1.778" rot="R180"/>
+<pad name="A2" x="10.16" y="-6.35" drill="1.016" diameter="1.778" rot="R180"/>
+<pad name="A1" x="10.16" y="-8.89" drill="1.016" diameter="1.778" rot="R180"/>
+<pad name="A0" x="10.16" y="-11.43" drill="1.016" diameter="1.778" rot="R180"/>
 <pad name="D13" x="10.16" y="-13.97" drill="1.016" diameter="1.778" rot="R180"/>
 <pad name="D12" x="10.16" y="-16.51" drill="1.016" diameter="1.778" rot="R180"/>
 <pad name="D11" x="10.16" y="-19.05" drill="1.016" diameter="1.778" rot="R180"/>
@@ -4541,8 +4541,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND3" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR3" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="JP1" library="SparkFun" deviceset="M02" device="-JST-2-PTH-NO_SILK"/>
-<part name="JP2" library="SparkFun" deviceset="M02" device="POGO_PIN_HOLES_ONLY"/>
-<part name="JP3" library="SparkFun" deviceset="M02" device="POGO_PIN_HOLES_ONLY"/>
+<part name="JP2" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
+<part name="JP3" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -4600,8 +4600,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND2" gate="A" x="127" y="170.18" rot="R180"/>
 <instance part="GND3" gate="A" x="129.54" y="170.18" rot="R180"/>
 <instance part="3V3_PWR3" gate="A" x="132.08" y="170.18"/>
-<instance part="JP2" gate="G$1" x="12.7" y="12.7"/>
-<instance part="JP3" gate="G$1" x="25.4" y="12.7"/>
+<instance part="JP2" gate="G$1" x="20.32" y="12.7"/>
+<instance part="JP3" gate="G$1" x="35.56" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -4695,15 +4695,15 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="AH" gate="ECOG$1" pin="G0"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="142.24" x2="162.56" y2="142.24" width="0.2032" layer="91"/>
-<label x="154.94" y="142.24" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A3"/>
-</segment>
-<segment>
 <wire x1="170.18" y1="50.8" x2="182.88" y2="50.8" width="0.2032" layer="91"/>
 <label x="170.18" y="50.8" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="SPI-CS@B3"/>
 <wire x1="170.18" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="134.62" x2="162.56" y2="134.62" width="0.2032" layer="91"/>
+<label x="154.94" y="134.62" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A0"/>
 </segment>
 </net>
 <net name="D15" class="0">
@@ -4879,14 +4879,14 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="142.24" y1="83.82" x2="144.78" y2="83.82" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="139.7" x2="162.56" y2="139.7" width="0.2032" layer="91"/>
-<label x="154.94" y="139.7" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A2"/>
-</segment>
-<segment>
 <label x="73.66" y="91.44" size="1.778" layer="95"/>
 <pinref part="BH" gate="ECOG$1" pin="SPI-CS@B3"/>
 <wire x1="73.66" y1="91.44" x2="99.06" y2="91.44" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<wire x1="152.4" y1="137.16" x2="162.56" y2="137.16" width="0.2032" layer="91"/>
+<label x="154.94" y="137.16" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="D6/A4" class="0">
@@ -4899,9 +4899,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="139.7" y1="86.36" x2="144.78" y2="86.36" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="137.16" x2="162.56" y2="137.16" width="0.2032" layer="91"/>
-<label x="154.94" y="137.16" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="152.4" y1="139.7" x2="162.56" y2="139.7" width="0.2032" layer="91"/>
+<label x="154.94" y="139.7" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="D5/A5" class="0">
@@ -4914,9 +4914,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="137.16" y1="88.9" x2="144.78" y2="88.9" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="134.62" x2="162.56" y2="134.62" width="0.2032" layer="91"/>
-<label x="154.94" y="134.62" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A0"/>
+<wire x1="152.4" y1="142.24" x2="162.56" y2="142.24" width="0.2032" layer="91"/>
+<label x="154.94" y="142.24" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A3"/>
 </segment>
 </net>
 <net name="D4*" class="0">
