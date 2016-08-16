@@ -200,20 +200,98 @@ DIN A3, landscape with location and doc. field</description>
 <library name="eCogs">
 <packages>
 <package name="ECOG_GENERAL_SMD">
+<wire x1="10.159" y1="26.699" x2="10.159" y2="1.299" width="0.127" layer="22"/>
+<wire x1="10.159" y1="26.699" x2="12.70264375" y2="26.7010625" width="0.127" layer="22"/>
+<wire x1="10.159" y1="1.299" x2="12.699" y2="1.299" width="0.127" layer="22"/>
+<wire x1="12.70264375" y1="26.7010625" x2="12.699" y2="1.299" width="0.127" layer="22"/>
+<smd name="3V3" x="9.92324375" y="25.429" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G7" x="13.02204375" y="22.889" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G6" x="9.92324375" y="20.349" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G5" x="13.02204375" y="17.809" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G4" x="9.92324375" y="15.269" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G3" x="13.02204375" y="12.729" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G2" x="9.92324375" y="10.189" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G1" x="13.02204375" y="7.649" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="G0" x="9.92324375" y="5.1110625" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<smd name="GND" x="13.02204375" y="2.5710625" dx="3.5" dy="1" layer="16" roundness="100" rot="R180"/>
+<wire x1="4.01" y1="24.04" x2="-1.82" y2="24.04" width="0.127" layer="47"/>
+<wire x1="-1.82" y1="24.04" x2="-2.455" y2="24.04" width="0.127" layer="47"/>
+<wire x1="-1.82" y1="24.04" x2="-1.82" y2="28.04" width="0.127" layer="47"/>
+<wire x1="1.355" y1="28.04" x2="-2.455" y2="28.04" width="0.127" layer="47"/>
+<text x="-5.63" y="29.075" size="2.54" layer="47" rot="R270">4.0mm</text>
+<hole x="4" y="24" drill="3.8"/>
+<hole x="4" y="4" drill="3.8"/>
+<polygon width="0" layer="41">
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
+</polygon>
+<polygon width="0" layer="43">
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
+</polygon>
+<polygon width="0" layer="41">
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
+</polygon>
+<polygon width="0" layer="43">
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
+</polygon>
+<wire x1="48" y1="28" x2="48" y2="0" width="0.127" layer="20"/>
+<wire x1="24" y1="0" x2="24" y2="28" width="0.127" layer="48"/>
+<wire x1="48" y1="14" x2="0.5" y2="14" width="0.127" layer="48"/>
+<wire x1="48" y1="0" x2="4" y2="0" width="0.127" layer="20"/>
+<wire x1="4" y1="0" x2="0.5" y2="4" width="0.127" layer="20" curve="-90"/>
+<wire x1="0.5" y1="4" x2="0.5" y2="24" width="0.127" layer="20"/>
+<wire x1="0.5" y1="24" x2="4" y2="28" width="0.127" layer="20" curve="-90"/>
+<wire x1="4" y1="28" x2="48" y2="28" width="0.127" layer="20"/>
+<rectangle x1="11.175" y1="23.905" x2="11.683" y2="24.413" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="21.365" x2="11.683" y2="21.873" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="18.825" x2="11.683" y2="19.333" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="16.285" x2="11.683" y2="16.793" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="13.745" x2="11.683" y2="14.253" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="11.205" x2="11.683" y2="11.713" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="8.665" x2="11.683" y2="9.173" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="6.125" x2="11.683" y2="6.633" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="3.585" x2="11.683" y2="4.093" layer="22" rot="R180"/>
+</package>
+<package name="ECOG_GENERAL_TH">
 <wire x1="5.09" y1="1.24" x2="5.09" y2="26.64" width="0.127" layer="22"/>
 <wire x1="5.09" y1="1.24" x2="2.59" y2="1.24" width="0.127" layer="22"/>
 <wire x1="5.09" y1="26.64" x2="2.59" y2="26.64" width="0.127" layer="22"/>
 <wire x1="2.59" y1="1.24" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<smd name="3V3" x="5.3694" y="2.51" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G7" x="2.2706" y="5.05" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G6" x="5.3694" y="7.59" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G5" x="2.2706" y="10.13" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G4" x="5.3694" y="12.67" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G3" x="2.2706" y="15.21" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G2" x="5.3694" y="17.75" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G1" x="2.2706" y="20.29" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G0" x="5.3694" y="22.83" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="GND" x="2.2706" y="25.37" dx="3.5" dy="1" layer="16" roundness="100"/>
 <rectangle x1="3.566" y1="16.226" x2="4.074" y2="16.734" layer="22" rot="R90"/>
 <rectangle x1="3.566" y1="13.686" x2="4.074" y2="14.194" layer="22" rot="R90"/>
 <rectangle x1="3.566" y1="11.146" x2="4.074" y2="11.654" layer="22" rot="R90"/>
@@ -229,64 +307,123 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
 <wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
 <text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="44" y="4" drill="3.6"/>
-<hole x="44" y="24" drill="3.6"/>
+<hole x="44" y="4" drill="3.8"/>
+<hole x="44" y="24" drill="3.8"/>
 <polygon width="0" layer="41">
-<vertex x="47.99" y="20.96"/>
+<vertex x="47.5" y="20.96"/>
 <vertex x="43.99" y="20.96" curve="-90"/>
 <vertex x="40.99" y="23.96"/>
 <vertex x="40.99" y="27.96"/>
 <vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
+<vertex x="47.5" y="23.96"/>
 </polygon>
 <polygon width="0" layer="42">
-<vertex x="47.99" y="20.96"/>
+<vertex x="47.5" y="20.96"/>
 <vertex x="43.99" y="20.96" curve="-90"/>
 <vertex x="40.99" y="23.96"/>
 <vertex x="40.99" y="27.96"/>
 <vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
+<vertex x="47.5" y="23.96"/>
 </polygon>
 <polygon width="0" layer="43">
-<vertex x="47.99" y="20.96"/>
+<vertex x="47.5" y="20.96"/>
 <vertex x="43.99" y="20.96" curve="-90"/>
 <vertex x="40.99" y="23.96"/>
 <vertex x="40.99" y="27.96"/>
 <vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.99" y="23.96"/>
+<vertex x="47.5" y="23.96"/>
 </polygon>
 <polygon width="0" layer="41">
 <vertex x="40.99" y="-0.04"/>
 <vertex x="40.99" y="3.96" curve="-90"/>
 <vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
 <vertex x="43.99" y="-0.04"/>
 </polygon>
 <polygon width="0" layer="42">
 <vertex x="40.99" y="-0.04"/>
 <vertex x="40.99" y="3.96" curve="-90"/>
 <vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
 <vertex x="43.99" y="-0.04"/>
 </polygon>
 <polygon width="0" layer="43">
 <vertex x="40.99" y="-0.04"/>
 <vertex x="40.99" y="3.96" curve="-90"/>
 <vertex x="43.99" y="6.96"/>
-<vertex x="47.99" y="6.96"/>
-<vertex x="47.99" y="3.96" curve="-90"/>
+<vertex x="47.5" y="6.96"/>
+<vertex x="47.5" y="3.96" curve="-90"/>
 <vertex x="43.99" y="-0.04"/>
 </polygon>
 <wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
 <wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="14" x2="48" y2="14" width="0.127" layer="48"/>
+<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
 <wire x1="0" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
-<wire x1="44" y1="28" x2="48" y2="24" width="0.127" layer="20" curve="-90"/>
-<wire x1="48" y1="24" x2="48" y2="4" width="0.127" layer="20"/>
-<wire x1="48" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
+<wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
+<wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
+<wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
 <wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
+<pad name="GND" x="3.81" y="25.4" drill="0.8" shape="square"/>
+<pad name="G0" x="3.81" y="22.86" drill="0.8"/>
+<pad name="G1" x="3.81" y="20.32" drill="0.8"/>
+<pad name="G2" x="3.81" y="17.78" drill="0.8"/>
+<pad name="G3" x="3.81" y="15.24" drill="0.8"/>
+<pad name="G4" x="3.81" y="12.7" drill="0.8"/>
+<pad name="G5" x="3.81" y="10.16" drill="0.8"/>
+<pad name="G6" x="3.81" y="7.62" drill="0.8"/>
+<pad name="G7" x="3.81" y="5.08" drill="0.8"/>
+<pad name="3V3" x="3.81" y="2.54" drill="0.8"/>
+</package>
+<package name="ECOG_GENERAL_SMD_ALT">
+<wire x1="37.808203125" y1="1.2709875" x2="37.808203125" y2="26.6709875" width="0.127" layer="22"/>
+<wire x1="37.808203125" y1="1.2709875" x2="35.308203125" y2="1.2709875" width="0.127" layer="22"/>
+<wire x1="37.808203125" y1="26.6709875" x2="35.308203125" y2="26.6709875" width="0.127" layer="22"/>
+<wire x1="35.308203125" y1="1.2709875" x2="35.308203125" y2="26.6709875" width="0.127" layer="22"/>
+<smd name="3V3" x="38.087603125" y="2.5409875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G7" x="34.988803125" y="5.0809875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G6" x="38.087603125" y="7.6209875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G5" x="34.988803125" y="10.1609875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G4" x="38.087603125" y="12.7009875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G3" x="34.988803125" y="15.2409875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G2" x="38.087603125" y="17.7809875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G1" x="34.988803125" y="20.3209875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="G0" x="38.087603125" y="22.8609875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<smd name="GND" x="34.988803125" y="25.4009875" dx="3.5" dy="1" layer="16" roundness="100"/>
+<rectangle x1="36.284203125" y1="16.2569875" x2="36.792203125" y2="16.7649875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="13.7169875" x2="36.792203125" y2="14.2249875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="11.1769875" x2="36.792203125" y2="11.6849875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="8.6369875" x2="36.792203125" y2="9.1449875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="6.0969875" x2="36.792203125" y2="6.6049875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="3.5569875" x2="36.792203125" y2="4.0649875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="18.7969875" x2="36.792203125" y2="19.3049875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="21.3369875" x2="36.792203125" y2="21.8449875" layer="22" rot="R90"/>
+<rectangle x1="36.284203125" y1="23.8769875" x2="36.792203125" y2="24.3849875" layer="22" rot="R90"/>
+<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
+<wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
+<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
+<wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
+<wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
+<wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
+<wire x1="47.4989875" y1="12.737796875" x2="47.4989875" y2="15.237796875" width="0.127" layer="22"/>
+<wire x1="0" y1="28" x2="38" y2="28" width="0.127" layer="20"/>
+<wire x1="38" y1="28" x2="38" y2="27" width="0.127" layer="20"/>
+<wire x1="38" y1="27" x2="43" y2="27" width="0.127" layer="20"/>
+<wire x1="43" y1="27" x2="43" y2="28" width="0.127" layer="20"/>
+<wire x1="43" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
+<wire x1="0" y1="0" x2="38" y2="0" width="0.127" layer="20"/>
+<wire x1="38" y1="0" x2="38" y2="1" width="0.127" layer="20"/>
+<wire x1="38" y1="1" x2="43" y2="1" width="0.127" layer="20"/>
+<wire x1="43" y1="1" x2="43" y2="0" width="0.127" layer="20"/>
+<wire x1="43" y1="0" x2="44" y2="0" width="0.127" layer="20"/>
+<wire x1="1.0469875" y1="2.531796875" x2="6.0309875" y2="2.531796875" width="0.127" layer="22"/>
+<wire x1="6.0309875" y1="2.531796875" x2="6.0309875" y2="5.031796875" width="0.127" layer="22"/>
+<wire x1="1.0469875" y1="5.031796875" x2="6.0309875" y2="5.031796875" width="0.127" layer="22"/>
+<smd name="5V0@1" x="2.2209875" y="2.252396875" dx="3.5" dy="1" layer="16" roundness="100" rot="R270"/>
+<smd name="STABILIZER@2" x="4.7609875" y="5.351196875" dx="3.5" dy="1" layer="16" roundness="100" rot="R270"/>
+<rectangle x1="3.2369875" y1="3.547796875" x2="3.7449875" y2="4.055796875" layer="22"/>
+<wire x1="1.0469875" y1="2.531796875" x2="1.0469875" y2="5.031796875" width="0.127" layer="22"/>
 </package>
 </packages>
 <symbols>
@@ -337,6 +474,42 @@ DIN A3, landscape with location and doc. field</description>
 </gates>
 <devices>
 <device name="ECOG_GENERAL_SMD" package="ECOG_GENERAL_SMD">
+<connects>
+<connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
+<connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
+<connect gate="ECOG_GENERAL" pin="G1" pad="G1"/>
+<connect gate="ECOG_GENERAL" pin="G2" pad="G2"/>
+<connect gate="ECOG_GENERAL" pin="G3" pad="G3"/>
+<connect gate="ECOG_GENERAL" pin="G4" pad="G4"/>
+<connect gate="ECOG_GENERAL" pin="G5" pad="G5"/>
+<connect gate="ECOG_GENERAL" pin="G6" pad="G6"/>
+<connect gate="ECOG_GENERAL" pin="G7" pad="G7"/>
+<connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="S1013EC-10-ND"/>
+</technology>
+</technologies>
+</device>
+<device name="ECOG_GENERAL_TH" package="ECOG_GENERAL_TH">
+<connects>
+<connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
+<connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
+<connect gate="ECOG_GENERAL" pin="G1" pad="G1"/>
+<connect gate="ECOG_GENERAL" pin="G2" pad="G2"/>
+<connect gate="ECOG_GENERAL" pin="G3" pad="G3"/>
+<connect gate="ECOG_GENERAL" pin="G4" pad="G4"/>
+<connect gate="ECOG_GENERAL" pin="G5" pad="G5"/>
+<connect gate="ECOG_GENERAL" pin="G6" pad="G6"/>
+<connect gate="ECOG_GENERAL" pin="G7" pad="G7"/>
+<connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECOG_GENERAL_SMD_ALT1" package="ECOG_GENERAL_SMD_ALT">
 <connects>
 <connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
 <connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
@@ -429,14 +602,14 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="35.56" y1="55.88" x2="35.56" y2="53.34" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="TX" class="0">
+<net name="TX/MISO" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
 <wire x1="50.8" y1="58.42" x2="35.56" y2="58.42" width="0.2032" layer="91"/>
 <label x="35.56" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RX" class="0">
+<net name="RX/MOSI" class="0">
 <segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
 <wire x1="50.8" y1="60.96" x2="35.56" y2="60.96" width="0.2032" layer="91"/>

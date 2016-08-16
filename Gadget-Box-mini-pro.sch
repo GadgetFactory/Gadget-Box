@@ -4606,7 +4606,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <busses>
 </busses>
 <nets>
-<net name="D0/RX" class="0">
+<net name="D0/RX/MISO" class="0">
 <segment>
 <wire x1="119.38" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
 <label x="124.46" y="101.6" size="1.778" layer="95"/>
@@ -4617,7 +4617,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="114.3" y1="149.86" x2="104.14" y2="149.86" width="0.2032" layer="91"/>
-<label x="104.14" y="149.86" size="1.778" layer="95"/>
+<label x="103.632" y="150.114" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="RX1"/>
 </segment>
 <segment>
@@ -4626,7 +4626,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="134.62" y="167.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="D1/TX" class="0">
+<net name="D1/TX/MOSI" class="0">
 <segment>
 <wire x1="121.92" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <label x="124.46" y="99.06" size="1.778" layer="95"/>
@@ -4637,7 +4637,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <wire x1="114.3" y1="152.4" x2="104.14" y2="152.4" width="0.2032" layer="91"/>
-<label x="104.14" y="152.4" size="1.778" layer="95"/>
+<label x="103.632" y="152.4" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="TX0"/>
 </segment>
 <segment>

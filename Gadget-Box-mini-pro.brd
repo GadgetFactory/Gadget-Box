@@ -17455,7 +17455,7 @@ design rules under a new name.</description>
 <wire x1="5.461" y1="24.13" x2="5.461" y2="21.209" width="0.254" layer="1"/>
 <wire x1="5.461" y1="21.209" x2="8.89" y2="17.78" width="0.254" layer="1"/>
 </signal>
-<signal name="D1/TX">
+<signal name="D1/TX/MOSI">
 <contactref element="BH" pad="G6"/>
 <contactref element="AL" pad="G1"/>
 <wire x1="11.21" y1="48.26" x2="11.43" y2="48.26" width="0.254" layer="16"/>
@@ -17707,7 +17707,7 @@ design rules under a new name.</description>
 <wire x1="25.4" y1="24.13" x2="39.367" y2="24.13" width="0.254" layer="1"/>
 <wire x1="39.367" y1="24.13" x2="39.37" y2="24.133" width="0.254" layer="1"/>
 </signal>
-<signal name="D0/RX">
+<signal name="D0/RX/MISO">
 <contactref element="BH" pad="G7"/>
 <contactref element="AL" pad="G0"/>
 <wire x1="11.21" y1="50.8" x2="11.43" y2="50.8" width="0.254" layer="16"/>
