@@ -147,7 +147,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N" xrefpart="/%S.%C%R">
 <libraries>
 <library name="frames">
 <packages>
@@ -2551,60 +2551,76 @@ push-push type</description>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND2" library="GadgetFactory" deviceset="GND" device=""/>
-<part name="ECOG" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD"/>
+<part name="ECOG" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD">
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78"/>
+</part>
 <part name="SD1" library="adafruit" deviceset="MICROSD" device="">
 <attribute name="DIGIKEY" value="101-00660-68-6-1-ND"/>
-<attribute name="PARTNO" value="101-00660-68-6"/>
+<attribute name="PARTNO" value="101-00660-68-6,Amphenol,dk,101-00660-68-6-1-ND,Secure Digital  microSD Surface Mount Right Angle Gold, REF92"/>
 </part>
 <part name="GND8" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory_all" deviceset="3V3" device=""/>
 <part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="47K">
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND"/>
-<attribute name="PARTNO" value="RMCF0805JT47K0"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15"/>
 </part>
 <part name="R2" library="GadgetFactory_6.0" deviceset="R" device="0805" value="47K">
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND"/>
-<attribute name="PARTNO" value="RMCF0805JT47K0"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15"/>
 </part>
 <part name="R3" library="GadgetFactory_6.0" deviceset="R" device="0805" value="47K">
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND"/>
-<attribute name="PARTNO" value="RMCF0805JT47K0"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15"/>
 </part>
 <part name="3V3_PWR1" library="GadgetFactory_all" deviceset="3V3" device=""/>
 <part name="3V3_PWR3" library="GadgetFactory_all" deviceset="3V3" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND1" library="GadgetFactory" deviceset="GND" device=""/>
-<part name="ECOG1" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD"/>
+<part name="ECOG1" library="eCogs" deviceset="ECOG_BUSES_ROW" device="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD">
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78"/>
+</part>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device="" value=".96 I2C OLED LCD">
 <attribute name="DEALEXTREME" value="419232"/>
+<attribute name="PARTNO" value="346540,unknown,seeed,346540,&quot;0.96&quot;&quot; 128*64 I2C Interface White Color OLED Display - http://www.dx.com/p/0-96-128x64-i2c-interface-white-color-oled-display-module-for-arduino-avr-arm-pic-346540&quot;, REF93"/>
 </part>
 <part name="3V3_PWR4" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="GND3" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR5" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="FRAME3" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="ECOG2" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
+<part name="ECOG2" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD">
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78"/>
+</part>
 <part name="3V3_PWR6" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND4" library="eCogs" deviceset="GND" device=""/>
-<part name="U$5" library="eCogs" deviceset="SENSOR" device=""/>
+<part name="U$5" library="eCogs" deviceset="SENSOR" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="3V3_PWR7" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND5" library="eCogs" deviceset="GND" device=""/>
 <part name="FRAME4" library="frames" deviceset="A3L-LOC" device=""/>
 <part name="GND6" library="GadgetFactory" deviceset="GND" device=""/>
-<part name="ECOG3" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
+<part name="ECOG3" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD">
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78"/>
+</part>
 <part name="X1" library="adafruit" deviceset="ESP-12" device="">
 <attribute name="ADAFRUIT" value="2491"/>
+<attribute name="PARTNO" value="385646,AI-Thinker,dx.com,385646,ESP8266 Serial Wi-Fi Wireless Transceiver Module - http://www.dx.com/p/esp-12e-esp8266-serial-wi-fi-wireless-transceiver-module-for-arduino-rpi-built-in-antenna-385646, REF94"/>
 </part>
 <part name="R4" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R5" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R6" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R7" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="GND7" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR8" library="GadgetFactory" deviceset="3V3" device=""/>
@@ -2630,7 +2646,9 @@ push-push type</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="GND2" gate="A" x="109.22" y="99.06"/>
-<instance part="ECOG" gate="ECOG_BUSES" x="101.6" y="104.14"/>
+<instance part="ECOG" gate="ECOG_BUSES" x="101.6" y="104.14">
+<attribute name="PARTNO" x="101.6" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SD1" gate="G$1" x="200.66" y="124.46">
 <attribute name="PARTNO" x="200.66" y="124.46" size="1.778" layer="96" display="off"/>
 <attribute name="DIGIKEY" x="200.66" y="124.46" size="1.778" layer="96" display="off"/>
@@ -2763,9 +2781,12 @@ push-push type</description>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="GND1" gate="A" x="63.5" y="48.26"/>
-<instance part="ECOG1" gate="ECOG_BUSES" x="55.88" y="53.34"/>
+<instance part="ECOG1" gate="ECOG_BUSES" x="55.88" y="53.34">
+<attribute name="PARTNO" x="55.88" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="JP1" gate="A" x="106.68" y="73.66">
 <attribute name="DEALEXTREME" x="106.68" y="73.66" size="1.778" layer="96" display="off"/>
+<attribute name="PARTNO" x="106.68" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="3V3_PWR4" gate="A" x="63.5" y="86.36"/>
 <instance part="GND3" gate="A" x="93.98" y="60.96"/>
@@ -2830,10 +2851,14 @@ push-push type</description>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
-<instance part="ECOG2" gate="ECOG_GENERAL" x="350.52" y="60.96"/>
+<instance part="ECOG2" gate="ECOG_GENERAL" x="350.52" y="60.96">
+<attribute name="PARTNO" x="350.52" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="3V3_PWR6" gate="A" x="345.44" y="93.98"/>
 <instance part="GND4" gate="A" x="345.44" y="50.8"/>
-<instance part="U$5" gate="SENSOR" x="287.02" y="76.2"/>
+<instance part="U$5" gate="SENSOR" x="287.02" y="76.2">
+<attribute name="BOM" x="287.02" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="3V3_PWR7" gate="A" x="281.94" y="91.44"/>
 <instance part="GND5" gate="A" x="281.94" y="71.12"/>
 </instances>
@@ -2898,21 +2923,28 @@ push-push type</description>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
 <instance part="GND6" gate="A" x="236.22" y="127"/>
-<instance part="ECOG3" gate="ECOG_GENERAL" x="246.38" y="160.02" rot="MR180"/>
+<instance part="ECOG3" gate="ECOG_GENERAL" x="246.38" y="160.02" rot="MR180">
+<attribute name="PARTNO" x="246.38" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X1" gate="G$1" x="177.8" y="149.86">
 <attribute name="ADAFRUIT" x="177.8" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="PARTNO" x="177.8" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R4" gate="A" x="200.66" y="167.64" rot="R90">
 <attribute name="DIGIKEY" x="200.66" y="167.64" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="200.66" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R5" gate="A" x="208.28" y="127" rot="R90">
 <attribute name="DIGIKEY" x="208.28" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="208.28" y="127" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R6" gate="A" x="147.32" y="165.1" rot="R90">
 <attribute name="DIGIKEY" x="147.32" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="147.32" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="A" x="152.4" y="165.1" rot="R90">
 <attribute name="DIGIKEY" x="152.4" y="165.1" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="152.4" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND7" gate="A" x="208.28" y="119.38"/>
 <instance part="3V3_PWR8" gate="A" x="147.32" y="172.72"/>

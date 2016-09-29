@@ -5,6 +5,8 @@ gerbers
 *.zip
 text
 boms
+*bom*
+*gerbers*
 
 
 # Windows image file caches

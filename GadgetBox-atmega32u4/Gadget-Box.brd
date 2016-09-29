@@ -104,7 +104,7 @@
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
@@ -15437,7 +15437,7 @@ design rules under a new name.</description>
 <wire x1="71.12" y1="31.712" x2="68.618" y2="31.712" width="0.254" layer="1"/>
 <wire x1="68.618" y1="31.712" x2="68.58" y2="31.75" width="0.254" layer="1"/>
 </signal>
-<signal name="D1/TX">
+<signal name="D1/TX/MISO">
 <contactref element="U4" pad="21"/>
 <contactref element="U3" pad="21"/>
 <wire x1="22.384" y1="33.247" x2="22.384" y2="33.7754" width="0.254" layer="1"/>
@@ -15656,7 +15656,7 @@ design rules under a new name.</description>
 <wire x1="35.56" y1="5.08" x2="39.37" y2="8.89" width="0.254" layer="1"/>
 <wire x1="39.37" y1="8.89" x2="39.37" y2="10.16" width="0.254" layer="1"/>
 </signal>
-<signal name="D0/RX">
+<signal name="D0/RX/MISO">
 <contactref element="U4" pad="20"/>
 <contactref element="U3" pad="20"/>
 <wire x1="22.884" y1="33.247" x2="22.884" y2="34.0374" width="0.254" layer="1"/>

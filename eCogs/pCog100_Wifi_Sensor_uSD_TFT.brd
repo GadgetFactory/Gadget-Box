@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -758,7 +758,6 @@
 <wire x1="7.466" y1="11.303" x2="36.476" y2="11.303" width="0.254" layer="21"/>
 <wire x1="7.7578" y1="11.557" x2="36.1842" y2="11.557" width="0.254" layer="21"/>
 <wire x1="8.171" y1="11.811" x2="35.771" y2="11.811" width="0.254" layer="21"/>
-<circle x="46.99" y="5.08" radius="0.647575" width="0.254" layer="21"/>
 <wire x1="46.99" y1="26.162" x2="46.99" y2="24.638" width="0.254" layer="21"/>
 <wire x1="46.228" y1="25.4" x2="47.752" y2="25.4" width="0.254" layer="21"/>
 <wire x1="46.228" y1="2.54" x2="47.752" y2="2.54" width="0.254" layer="21"/>
@@ -1892,8 +1891,8 @@
 <wire x1="46.48961875" y1="53.399309375" x2="47.50561875" y2="53.399309375" width="0.254" layer="21"/>
 <wire x1="46.99761875" y1="53.907309375" x2="46.99761875" y2="52.891309375" width="0.254" layer="21"/>
 <wire x1="46.48961875" y1="30.539309375" x2="47.50561875" y2="30.539309375" width="0.254" layer="21"/>
-<text x="7.53261875" y="32.571309375" size="1.016" layer="22" font="vector" rot="MR0">0</text>
-<text x="4.99261875" y="35.111309375" size="1.016" layer="22" font="vector" rot="MR0">1</text>
+<text x="18.96261875" y="32.571309375" size="1.016" layer="22" font="vector" rot="MR0">XC0</text>
+<text x="4.99261875" y="35.111309375" size="1.016" layer="22" font="vector" rot="MR0">XC1</text>
 <text x="51.427378125" y="32.63544375" size="0.8128" layer="22" font="vector" rot="MR90">ecog100.GadgetFactory.net</text>
 <text x="49.649378125" y="54.60644375" size="1.016" layer="22" font="vector" rot="MR180">ecog100 v2.0</text>
 <text x="49.649378125" y="53.33644375" size="1.016" layer="22" font="vector" rot="MR180">ESP8266 WIFI</text>
@@ -2523,19 +2522,13 @@ Bootload</text>
 <wire x1="53.051378125" y1="38.09644375" x2="82.061378125" y2="38.09644375" width="0.254" layer="21"/>
 <wire x1="53.343178125" y1="38.35044375" x2="81.769578125" y2="38.35044375" width="0.254" layer="21"/>
 <wire x1="53.756378125" y1="38.60444375" x2="81.356378125" y2="38.60444375" width="0.254" layer="21"/>
-<wire x1="51.554378125" y1="49.65344375" x2="50.284378125" y2="50.92344375" width="0.254" layer="21"/>
-<wire x1="50.284378125" y1="50.92344375" x2="51.554378125" y2="52.19344375" width="0.254" layer="21"/>
-<wire x1="51.554378125" y1="50.92344375" x2="50.284378125" y2="50.92344375" width="0.254" layer="21"/>
-<wire x1="50.284378125" y1="47.11344375" x2="51.554378125" y2="48.38344375" width="0.254" layer="21"/>
-<wire x1="51.554378125" y1="48.38344375" x2="50.284378125" y2="49.65344375" width="0.254" layer="21"/>
-<wire x1="51.554378125" y1="48.38344375" x2="50.284378125" y2="48.38344375" width="0.254" layer="21"/>
 <wire x1="49.014378125" y1="29.84144375" x2="49.014378125" y2="31.36544375" width="0.254" layer="21"/>
 <wire x1="49.776378125" y1="30.60344375" x2="48.379378125" y2="30.60344375" width="0.254" layer="21"/>
 <wire x1="49.776378125" y1="53.46344375" x2="48.379378125" y2="53.46344375" width="0.254" layer="21"/>
-<text x="88.352378125" y="51.30444375" size="1.016" layer="22" font="vector" rot="MR180">0</text>
-<text x="79.462378125" y="48.76444375" size="1.016" layer="22" font="vector" rot="MR180">1</text>
-<text x="82.002378125" y="46.22444375" size="1.016" layer="22" font="vector" rot="MR180">2</text>
-<text x="79.462378125" y="43.68444375" size="1.016" layer="22" font="vector" rot="MR180">3</text>
+<text x="87.590378125" y="50.54244375" size="1.016" layer="22" font="vector" rot="MR180">XC0</text>
+<text x="78.192378125" y="48.76444375" size="1.016" layer="22" font="vector" rot="MR180">XC1</text>
+<text x="80.097378125" y="46.22444375" size="1.016" layer="22" font="vector" rot="MR180">XC2</text>
+<text x="78.065378125" y="43.68444375" size="1.016" layer="22" font="vector" rot="MR180">XC3</text>
 </plain>
 <libraries>
 <library name="eCogs">
@@ -10919,14 +10912,15 @@ design rules under a new name.</description>
 <elements>
 <element name="ECOG" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD" x="0" y="0" smashed="yes">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SD1" library="adafruit" package="MICROSD" value="MICROSD" x="31.369" y="20.828" smashed="yes" rot="MR270">
 <attribute name="NAME" x="36.579" y="13.318" size="1.27" layer="26" rot="MR270"/>
-<attribute name="PARTNO" value="101-00660-68-6" x="31.369" y="20.828" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="PARTNO" value="101-00660-68-6,Amphenol,dk,101-00660-68-6-1-ND,Secure Digital  microSD Surface Mount Right Angle Gold, REF92" x="31.369" y="20.828" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DIGIKEY" value="101-00660-68-6-1-ND" x="31.369" y="20.828" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R1" library="GadgetFactory_6.0" package="0805" value="47K" x="27.94" y="16.51" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="RMCF0805JT47K0" x="27.94" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15" x="27.94" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND" x="27.94" y="16.51" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="28.47" y="17.71" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="29.64" y="17.26" size="0.05" layer="28" font="vector" ratio="0" rot="MR0"/>
@@ -10935,7 +10929,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="26.24" y="15.76" size="0.05" layer="28" font="vector" ratio="0" rot="MR180"/>
 </element>
 <element name="R2" library="GadgetFactory_6.0" package="0805" value="47K" x="27.94" y="10.16" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="RMCF0805JT47K0" x="27.94" y="10.16" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15" x="27.94" y="10.16" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND" x="27.94" y="10.16" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="28.597" y="11.36" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="29.64" y="10.91" size="0.05" layer="28" font="vector" ratio="0" rot="MR0"/>
@@ -10944,7 +10938,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="26.24" y="9.41" size="0.05" layer="28" font="vector" ratio="0" rot="MR180"/>
 </element>
 <element name="R3" library="GadgetFactory_6.0" package="0805" value="47K" x="27.94" y="7.62" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="RMCF0805JT47K0" x="27.94" y="7.62" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNO" value="RMCF0805JT47K0,Stackpole Electronics Inc,DK,RMCF0805JT47K0CT-ND,RES 47K OHM 1/8W 5% 0805 SMD, REF15" x="27.94" y="7.62" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DIGIKEY" value="RMCF0805JT47K0CT-ND" x="27.94" y="7.62" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="28.597" y="5.645" size="0.8128" layer="26" font="vector" ratio="16" rot="MR0"/>
 <attribute name="VALUE" x="29.64" y="8.37" size="0.05" layer="28" font="vector" ratio="0" rot="MR0"/>
@@ -10956,17 +10950,22 @@ design rules under a new name.</description>
 <element name="U$2" library="ohw-logo" package="OSHW_FILLX200_NOTEXT" value="" x="38.354" y="7.112"/>
 <element name="ECOG1" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD" x="96.0087" y="28.001340625" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="96.0087" y="28.001340625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78" x="96.0087" y="28.001340625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP1" library="pinhead" package="1X04" value=".96 I2C OLED LCD" x="70.7387" y="2.601340625" smashed="yes" rot="R180">
 <attribute name="VALUE" x="75.8187" y="5.776340625" size="1.27" layer="27" rot="R180"/>
 <attribute name="DEALEXTREME" value="419232" x="70.7387" y="2.601340625" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="346540,unknown,seeed,346540,&quot;0.96&quot;&quot; 128*64 I2C Interface White Color OLED Display - http://www.dx.com/p/0-96-128x64-i2c-interface-white-color-oled-display-module-for-arduino-avr-arm-pic-346540&quot;, REF93" x="70.7387" y="2.601340625" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$3" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="88.5607" y="14.352340625" rot="R270"/>
 <element name="U$4" library="ohw-logo" package="OSHW_FILLX150_NOTEXT" value="" x="90.7087" y="15.001340625" rot="R270"/>
 <element name="ECOG2" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0.00761875" y="27.999309375" smashed="yes">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="0.00761875" y="27.999309375" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78" x="0.00761875" y="27.999309375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$5" library="eCogs" package="SENSOR-HJX4" value="SENSOR" x="46.20461875" y="41.304309375" smashed="yes" rot="R270"/>
+<element name="U$5" library="eCogs" package="SENSOR-HJX4" value="SENSOR" x="46.20461875" y="41.304309375" smashed="yes" rot="R270">
+<attribute name="BOM" value="EXCLUDE" x="46.20461875" y="41.304309375" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="U$6" library="eCogs" package="LEGEND_ANALOG" value="" x="46.99761875" y="35.619309375"/>
 <element name="U$7" library="eCogs" package="LEGEND_ANALOG" value="" x="46.99761875" y="33.079309375"/>
 <element name="U$8" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="27.31261875" y="52.256309375"/>
@@ -10974,23 +10973,29 @@ design rules under a new name.</description>
 <element name="U$10" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="28.58261875" y="31.428309375" rot="R180"/>
 <element name="ECOG3" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="96.004378125" y="56.00344375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="96.004378125" y="56.00344375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PARTNO" value="NREC010SABC-M30RC,SULLINS CONNECTOR SOLUTIONS,dk,S1013EC-10-ND,10 Positions Header Unshrouded Connector 0.100 (2.54mm) Surface Mount Tin eCog, REF78" x="96.004378125" y="56.00344375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="X1" library="adafruit" package="ESP-12" value="" x="66.794378125" y="42.03344375" smashed="yes" rot="MR270">
 <attribute name="ADAFRUIT" value="2491" x="66.794378125" y="42.03344375" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="59.744378125" y="48.30344375" size="1.4224" layer="26" font="vector" ratio="12" rot="MR270" align="center"/>
 <attribute name="VALUE" x="78.794378125" y="37.53344375" size="1.4224" layer="28" font="vector" ratio="12" rot="MR270" align="center"/>
+<attribute name="PARTNO" value="385646,AI-Thinker,dx.com,385646,ESP8266 Serial Wi-Fi Wireless Transceiver Module - http://www.dx.com/p/esp-12e-esp8266-serial-wi-fi-wireless-transceiver-module-for-arduino-rpi-built-in-antenna-385646, REF94" x="66.794378125" y="42.03344375" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R4" library="GadgetFactory" package="0805" value="10K" x="71.239378125" y="32.00044375" rot="MR0">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="71.239378125" y="32.00044375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63" x="71.239378125" y="32.00044375" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R5" library="GadgetFactory" package="0805" value="10K" x="76.192378125" y="32.00044375" rot="MR0">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="76.192378125" y="32.00044375" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63" x="76.192378125" y="32.00044375" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R6" library="GadgetFactory" package="0805" value="10K" x="63.365378125" y="52.44744375" rot="MR180">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="63.365378125" y="52.44744375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63" x="63.365378125" y="52.44744375" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R7" library="GadgetFactory" package="0805" value="10K" x="68.699378125" y="52.44744375" rot="MR180">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND" x="68.699378125" y="52.44744375" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63" x="68.699378125" y="52.44744375" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="U$11" library="GadgetFactory" package="GADGETBOX_TEXT" value="" x="72.382378125" y="44.44644375"/>
 <element name="U$12" library="eCogs" package="LEGEND_DIO" value="" x="49.014378125" y="43.30344375" rot="R180"/>

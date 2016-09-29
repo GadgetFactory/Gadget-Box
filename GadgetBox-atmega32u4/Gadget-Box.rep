@@ -1,0 +1,436 @@
+Data Exported from: D:/Dropbox/GadgetFactory_Engineering/Gadget-Box/Gadget-Box.brd
+with: D:/Dropbox/GadgetFactory_Engineering/Libraries/Specs/statistic-brd.ulp Version 1.3.8
+at: 8/2/2016 7:50:14 PM
+EAGLE Version 6.6.0 Copyright (c) 1988-2014 CadSoft
+
+all Values in mm
+max. Board length (Layer 20)
+X = 93.50
+Y = 53.50
+Outline contour = 289.28
+
+used layers 2
+
+ 1 Top
+16 Bottom
+_________________________
+
+969   	 Wire(s) incl. Arc(s)
+2     	 Polygon(s)
+_________________________
+165   	 SMD(s) top
+8     	 SMD(s) bottom
+===================
+173   	 SMD(s) total
+
+85    	 PAD(s)
+_________________________
+109   	 Via
+8     	 Hole
+===================
+202   	 Drills total
+_________________________
+167	 tCream
+8	 bCream
+_________________________
+Routing Info: 
+47    	 Signal(s) 
+258   	 PAD/SMD total
+===================
+249   	 PAD/SMD on Signal
+_________________________
+Packages used area:
+~ 6656.16 mm² (0.666 dm²)
+_________________________
+
+
+============================
+
+============================
+44 Elements: 0 locked / 44 unlocked
+0 Testpoints (TP)
+
+----------------------------
+LAYER
+Nb.	Name	Used
+  1	Top	1
+  2	Route2	0
+  3	Route3	0
+ 14	Route14	0
+ 15	Route15	0
+ 16	Bottom	1
+ 17	Pads	1
+ 18	Vias	1
+ 19	Unrouted	0
+ 20	Dimension	1
+ 21	tPlace	1
+ 22	bPlace	1
+ 23	tOrigins	1
+ 24	bOrigins	1
+ 25	tNames	1
+ 26	bNames	1
+ 27	tValues	1
+ 28	bValues	1
+ 29	tStop	1
+ 30	bStop	1
+ 31	tCream	1
+ 32	bCream	1
+ 33	tFinish	0
+ 34	bFinish	0
+ 35	tGlue	1
+ 36	bGlue	1
+ 37	tTest	0
+ 38	bTest	0
+ 39	tKeepout	1
+ 40	bKeepout	1
+ 41	tRestrict	1
+ 42	bRestrict	1
+ 43	vRestrict	1
+ 44	Drills	1
+ 45	Holes	1
+ 46	Milling	0
+ 47	Measures	1
+ 48	Document	1
+ 49	Reference	1
+ 50	dxf	1
+ 51	tDocu	1
+ 52	bDocu	1
+ 53	tGND_GNDA	0
+ 54	bGND_GNDA	0
+ 56	wert	0
+ 57	tCAD	0
+ 59	tCarbon	0
+ 60	bCarbon	0
+ 90	Modules	0
+100	Muster	0
+101	Patch_Top	0
+102	Vscore	0
+103	tMap	0
+104	Name	0
+105	tPlate	0
+106	bPlate	0
+107	Crop	0
+108	fp8	0
+109	fp9	0
+110	fp0	0
+111	tGTest	0
+112	bGTest	0
+113	ReferenceLS	0
+116	Patch_BOT	0
+118	Rect_Pads	0
+121	_tsilk	0
+122	_bsilk	0
+123	tTestmark	0
+124	bTestmark	0
+125	_tNames	0
+126	_bNames	0
+127	_tValues	0
+128	_bValues	0
+129	Mask	0
+131	prix	0
+132	test	0
+133	Ports	0
+134	Port2	0
+135	Port3	0
+144	Drill_legend	0
+150	Notes	0
+151	HeatSink	0
+152	_bDocu	0
+153	FabDoc1	0
+154	FabDoc2	0
+155	FabDoc3	0
+199	Contour	0
+200	200bmp	1
+201	201bmp	0
+202	202bmp	0
+203	203bmp	0
+204	204bmp	0
+205	205bmp	0
+206	206bmp	0
+207	207bmp	0
+208	208bmp	0
+209	209bmp	0
+210	210bmp	0
+211	211bmp	0
+212	212bmp	0
+213	213bmp	0
+214	214bmp	0
+215	215bmp	0
+216	216bmp	0
+217	217bmp	0
+218	218bmp	0
+219	219bmp	0
+220	220bmp	0
+221	221bmp	0
+222	222bmp	0
+223	223bmp	0
+224	224bmp	0
+225	225bmp	0
+226	226bmp	0
+227	227bmp	0
+228	228bmp	0
+229	229bmp	0
+230	230bmp	0
+231	Eagle3D_PG1	0
+232	Eagle3D_PG2	0
+233	Eagle3D_PG3	0
+248	Housing	0
+249	Edge	0
+250	Descript	0
+251	SMDround	0
+254	cooling	0
+255	routoute	0
+
+----------------------------
+CLASS
+# 	Name	min. Width	Clearance	min. Drill	Used
+0	default	0.0000 	0.0000 	0.0000 	44  
+2	gnd	0.2540 	0.2540 	0.3810 	2   
+3	usbvcc	0.2540 	0.2540 	0.3810 	0   
+4	aref	0.2540 	0.2540 	0.3810 	1   
+
+----------------------------
+WIDTH
+WIRE	Q.
+0.2540 	735 
+0.4064 	75  
+0.6096 	94  
+0.2032 	14  
+0.3048 	42  
+0.2794 	9   
+
+ARC	Q.
+ * Wire width are saved in 0.2 micron resolution.
+
+POLY. width	Q.
+0.2540 	2   
+
+POLY. Isol.	Q.
+0.0000 	2   
+
+Polygon
+Type	Name	Layer	Rank	Width
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Package	ECOG93P53P5.PAC 	41	0	0.0000
+Package	ECOG93P53P5.PAC 	42	0	0.0000
+Package	ECOG93P53P5.PAC 	43	0	0.0000
+Signal	3V3	1	1	0.254
+Signal	GND	16	1	0.254
+! *** Do not use WIRE WIDTH 0 for Polygon if generate Gerber-Data *** !
+ * Wire width are saved in 0.2 micron resolution.
+
+----------------------------
+CIRCLE (width)	Q.
+
+CIRCLE diam.	Q.
+
+----------------------------
+TEXT (w)	Q.
+
+TEXT (s)	Q.
+
+----------------------------
+SMD x	SMD y	Roundn.	Q.
+1.2400 	1.5000 	0%	6   
+1.0000 	1.0000 	20%	22  
+1.1000 	0.8984 	80%	10  
+1.2000 	1.2000 	0%	2   
+1.4000 	1.4000 	0%	2   
+1.4000 	1.8000 	0%	2   
+1.2000 	1.0000 	0%	2   
+1.1000 	1.0000 	0%	2   
+1.2000 	1.4000 	20%	4   
+0.8984 	1.1000 	80%	2   
+0.7000 	0.9000 	90%	4   
+0.5500 	1.2000 	0%	10  
+1.4000 	0.4500 	80%	22  
+0.4500 	1.4000 	80%	22  
+1.0000 	1.0000 	100%	1   
+0.7500 	0.2750 	80%	44  
+4.8260 	4.8260 	10%	1   
+2.0000 	2.5000 	0%	4   
+0.5000 	2.3000 	0%	5   
+1.7780 	2.0320 	0%	2   
+1.0000 	4.6000 	0%	2   
+3.4000 	1.6000 	0%	2   
+
+PAD tDiam	Q.
+1.5240 	80  
+1.4224 	3   
+2.2500 	2   
+
+PAD bDiam	Q.
+1.5240 	80  
+1.4224 	3   
+2.2500 	2   
+
+PAD tRestring	Q.
+0.2540 	80  
+0.3112 	3   
+0.3750 	2   
+
+PAD bRestring	Q.
+0.2540 	80  
+0.3112 	3   
+0.3750 	2   
+
+PAD iDiam	Q.
+1.5240 	80  
+1.3080 	3   
+2.2500 	2   
+
+PAD iRestring	Q.
+0.2540 	83  
+0.3750 	2   
+
+VIA Outer-Diam	Q.
+0.6858 	103 
+0.8048 	4   
+0.9144 	2   
+
+VIA Outer-Restring 	Q.
+0.1524 	109 
+
+VIA Inner-Diam.	Q.
+0.6858 	103 
+0.8048 	4   
+0.9144 	2   
+
+VIA Inner-Restring	Q.
+0.1524 	109 
+
+VIA drill	Q.
+0.3810 	103 
+0.5000 	4   
+0.6096 	2   
+
+VIA Stack	Q.
+01-16	109 
+01-16-PAD	85  
+
+PAD drill	Q.
+1.0160 	80  
+0.8000 	3   
+1.5000 	2   
+
+----------------------------
+HOLE drill	Q.
+3.2000 	6   
+0.9000 	2   
+
+RACK
+T01   0.4
+T02   0.5
+T03   0.6
+T04   0.8
+T05   0.9
+T06   1.0
+T07   1.5
+T08   3.2
+
+----------------------------
+LIBRARY	Q.
+eCogs	5   
+microbuilder	9   
+GadgetFactory	11  
+SmartPrj	10  
+diode	1   
+wuerth-elektronik	1   
+adafruit	1   
+GadgetFactory_6.0	4   
+dp_devices	1   
+OPL Eagle Library	1   
+
+PACKAGE	Q.
+ECOG93P53P5	1   
+ECOG	4   
+0805-NO	3   
+0603	11  
+C0603-ROUND	5   
+CHIPLED_0805_NOOUTLINE	1   
+SOD-123	1   
+MINIMELF	1   
+0805	3   
+OS102011MA1Q	1   
+0603-NO	1   
+R0603-ROUND	1   
+R0402	2   
+GADGETBOX_TEXT	2   
+SOT23-5	2   
+TQFP44-PAD	1   
+QFN44ML7X7	1   
+CONN_USB_MINI-B	1   
+2P-SMD-5.0X3.2	1   
+JSTPH2	1   
+
+VALUE	PAC	Q.	Top	Bot
+~/-empty-/~$$U$1	ECOG93P53P5	1	1	0
+ECOGECOG_SLOT	ECOG	4	4	0
+10µF	0805-NO	3	3	0
+1uF	0603	3	3	0
+.1uF	C0603-ROUND	3	3	0
+22p	C0603-ROUND	2	2	0
+ORANGE	CHIPLED_0805_NOOUTLINE	1	1	0
+MBR120	SOD-123	1	1	0
+CD1206-S01575	MINIMELF	1	1	0
+MH2029-300Y	0805	1	1	0
+OS102011MA1Q	OS102011MA1Q	1	1	0
+1K	0603-NO	1	1	0
+100k	0603	2	2	0
+DNP	0603	1	1	0
+22R	0805	2	2	0
+10K	0603	5	5	0
+1M	R0603-ROUND	1	1	0
+NM	R0402	2	0	2
+~/-empty-/~U$100	GADGETBOX_TEXT	1	0	1
+~/-empty-/~U$101	GADGETBOX_TEXT	1	0	1
+MCP73831T-2ACI/OT	SOT23-5	1	1	0
+AP2112-3.3	SOT23-5	1	1	0
+ATMEGA32U4-XUAU	TQFP44-PAD	1	1	0
+ATMEGA32U4-XUMU	QFN44ML7X7	1	1	0
+CONN_USB	CONN_USB_MINI-B	1	1	0
+CRYSTAL-0500290P1	2P-SMD-5.0X3.2	1	1	0
+JSTPH	JSTPH2	1	0	1
+
+----------------------------
+RECT x	RECT y	Q.
+0 RECT (copper)
+
+----------------------------
+RECT Layer	Q.
+
+----------------------------
+TEXT (s)	Q.
+0 TEXT size (copper)
+
+TEXT (w)	Q.
+0 TEXT wire width (copper)
+
+TEXT 	Q.
+1.0160 	18  
+1.7780 	1   
+1.2700 	2   
+0.8128 	1   
+0.0500 	4   
+5 TEXT size (place)
+0.1016 	1   
+5 TEXT wire width (place)
+
+CIRCLE diam.	Q.
+0 CIRCLE (copper)
+
+End report
