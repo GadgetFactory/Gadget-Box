@@ -57,3 +57,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 Gadget-Box-Case Dimensions.brd
+*.csv
+*.lck
+*.png
+*.7z
