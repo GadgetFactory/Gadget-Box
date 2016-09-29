@@ -4399,9 +4399,9 @@ by exp-project-lbr.ulp</description>
 <pinref part="AH" gate="ECOG$1" pin="G1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO19"/>
-<wire x1="170.18" y1="114.3" x2="167.64" y2="114.3" width="0.2032" layer="91"/>
-<label x="167.64" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO27/GEN2"/>
+<wire x1="170.18" y1="142.24" x2="167.64" y2="142.24" width="0.2032" layer="91"/>
+<label x="167.64" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -4412,9 +4412,9 @@ by exp-project-lbr.ulp</description>
 <pinref part="AH" gate="ECOG$1" pin="G0"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO13"/>
-<wire x1="170.18" y1="116.84" x2="167.64" y2="116.84" width="0.2032" layer="91"/>
-<label x="167.64" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO17/GEN0"/>
+<wire x1="170.18" y1="144.78" x2="167.64" y2="144.78" width="0.2032" layer="91"/>
+<label x="167.64" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D15" class="0">
@@ -4615,7 +4615,7 @@ by exp-project-lbr.ulp</description>
 <label x="167.64" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D4" class="0">
+<net name="D4*" class="0">
 <segment>
 <wire x1="73.66" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 <label x="68.58" y="73.66" size="1.778" layer="95"/>
@@ -4625,12 +4625,12 @@ by exp-project-lbr.ulp</description>
 <wire x1="83.82" y1="73.66" x2="88.9" y2="73.66" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO27/GEN2"/>
-<wire x1="170.18" y1="142.24" x2="167.64" y2="142.24" width="0.2032" layer="91"/>
-<label x="167.64" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO19"/>
+<wire x1="170.18" y1="114.3" x2="167.64" y2="114.3" width="0.2032" layer="91"/>
+<label x="167.64" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D11" class="0">
+<net name="D11*" class="0">
 <segment>
 <label x="68.58" y="33.02" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="G4"/>
@@ -4650,9 +4650,9 @@ by exp-project-lbr.ulp</description>
 <wire x1="127" y1="76.2" x2="101.6" y2="76.2" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO12"/>
-<wire x1="218.44" y1="119.38" x2="220.98" y2="119.38" width="0.2032" layer="91"/>
-<label x="220.98" y="119.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GEN4/GPIO23"/>
+<wire x1="218.44" y1="139.7" x2="220.98" y2="139.7" width="0.2032" layer="91"/>
+<label x="220.98" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D14" class="0">
@@ -4668,7 +4668,7 @@ by exp-project-lbr.ulp</description>
 <label x="220.98" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="D3" class="0">
+<net name="D3*" class="0">
 <segment>
 <wire x1="71.12" y1="76.2" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <label x="68.58" y="76.2" size="1.778" layer="95"/>
@@ -4678,12 +4678,12 @@ by exp-project-lbr.ulp</description>
 <wire x1="83.82" y1="76.2" x2="88.9" y2="76.2" width="0.2032" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GPIO17/GEN0"/>
-<wire x1="170.18" y1="144.78" x2="167.64" y2="144.78" width="0.2032" layer="91"/>
-<label x="167.64" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO13"/>
+<wire x1="170.18" y1="116.84" x2="167.64" y2="116.84" width="0.2032" layer="91"/>
+<label x="167.64" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D12" class="0">
+<net name="D12*" class="0">
 <segment>
 <wire x1="55.88" y1="30.48" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <label x="68.58" y="30.48" size="1.778" layer="95"/>
@@ -4691,9 +4691,9 @@ by exp-project-lbr.ulp</description>
 <pinref part="AH" gate="ECOG$1" pin="G4"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="GEN4/GPIO23"/>
-<wire x1="218.44" y1="139.7" x2="220.98" y2="139.7" width="0.2032" layer="91"/>
-<label x="220.98" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="GPIO12"/>
+<wire x1="218.44" y1="119.38" x2="220.98" y2="119.38" width="0.2032" layer="91"/>
+<label x="220.98" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D13" class="0">
