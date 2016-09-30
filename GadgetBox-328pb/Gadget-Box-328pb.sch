@@ -6194,6 +6194,10 @@ Source: 008-0260-0_E.pdf</description>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="SM49">
 <attribute name="PARTNO" value="ABLS-8.000MHZ-B4-T,Abracon Corporation,dk,535-10212-1-ND ,8MHz ±30ppm Crystal 18pF 80 Ohm -20°C ~ 70°C Surface Mount HC49/US , REF102"/>
 </part>
+<part name="R8" library="GadgetFactory" deviceset="R" device="0603" value="0">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="3V3_PWR3" library="GadgetFactory" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7000,6 +7004,10 @@ Designed by Andreas Watterott (Watterott electronic)</text>
 <instance part="Q1" gate="G$1" x="33.02" y="144.78" rot="R90">
 <attribute name="PARTNO" x="33.02" y="144.78" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="R8" gate="A" x="162.56" y="149.86" rot="R180">
+<attribute name="BOM" x="162.56" y="149.86" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="3V3_PWR3" gate="A" x="157.48" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -7054,9 +7062,8 @@ Designed by Andreas Watterott (Watterott electronic)</text>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="FTDI" gate="A" pin="4"/>
-<wire x1="195.58" y1="149.86" x2="184.15" y2="149.86" width="0.2032" layer="91"/>
-<label x="184.15" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R8" gate="A" pin="2"/>
+<pinref part="3V3_PWR3" gate="A" pin="3V3"/>
 </segment>
 </net>
 <net name="D10/A5" class="0">
@@ -7369,6 +7376,13 @@ Designed by Andreas Watterott (Watterott electronic)</text>
 <label x="115.57" y="152.4" size="1.27" layer="95" xref="yes"/>
 <pinref part="IC1B" gate="IC" pin="(OC1B/SS0)PB2"/>
 <junction x="110.49" y="152.4"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R8" gate="A" pin="1"/>
+<pinref part="FTDI" gate="A" pin="4"/>
+<wire x1="167.64" y1="149.86" x2="195.58" y2="149.86" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
