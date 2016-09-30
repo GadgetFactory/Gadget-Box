@@ -111,8 +111,8 @@
 <wire x1="-16.51" y1="6.35" x2="-17.78" y2="6.35" width="0.254" layer="41"/>
 <wire x1="-17.78" y1="6.35" x2="-16.51" y2="7.62" width="0.254" layer="41"/>
 <wire x1="-17.78" y1="6.35" x2="-16.51" y2="5.08" width="0.254" layer="41"/>
-<text x="-25.527" y="2.921" size="1.27" layer="41" font="vector" ratio="15">SerialA
-(Soft)</text>
+<text x="-25.781" y="2.921" size="1.27" layer="41" font="vector" ratio="15">SerialA
+  (Soft)</text>
 </plain>
 <libraries>
 </libraries>
