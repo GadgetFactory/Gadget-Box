@@ -4563,8 +4563,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="CL21F106ZPFNNNE,Samsung,DK,1276-3012-1-ND,CAP CER 10UF 10V Y5V 0805, REF1"/>
 </part>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
-<part name="R6" library="GadgetFactory" deviceset="R" device="0603" value="10K">
-<attribute name="PARTNO" value="RC0603JR-0710KL,YAGEO (VA),dk,311-10KGRCT-ND,RES SMD 10K OHM 5% 1/10W 0603 , REF36"/>
+<part name="R6" library="GadgetFactory" deviceset="R" device="0805" value="10K">
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="U$36" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$38" library="microbuilder" deviceset="VBUS" device=""/>
@@ -4604,7 +4604,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="GRM21BR71E104KA01L,MURATA ELECTRONICS (VA),DK,490-1673-1-ND,CAP CER .1UF 25V 10% X7R 0805, REF3"/>
 </part>
 <part name="R10" library="GadgetFactory" deviceset="R" device="0805" value="10K">
-<attribute name="PARTNO" value="RC0603JR-0710KL,YAGEO (VA),dk,311-10KGRCT-ND,RES SMD 10K OHM 5% 1/10W 0603 , REF36"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="FTDI" library="GadgetFactory" deviceset="PINHD-1X6" device="">
@@ -4612,18 +4612,23 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="X2" library="adafruit" deviceset="ESP-12" device="">
 <attribute name="ADAFRUIT" value="2491"/>
+<attribute name="PARTNO" value="385646,AI-Thinker,dx.com,385646,ESP8266 Serial Wi-Fi Wireless Transceiver Module - http://www.dx.com/p/esp-12e-esp8266-serial-wi-fi-wireless-transceiver-module-for-arduino-rpi-built-in-antenna-385646, REF94"/>
 </part>
 <part name="R8" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R9" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R11" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="R12" library="GadgetFactory" deviceset="R" device="0805" value="10K">
 <attribute name="DIGIKEY" value="RMCF0805JT10K0CT-ND"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="GND3" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR3" library="GadgetFactory" deviceset="3V3" device=""/>
@@ -4635,7 +4640,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="MBR120VLSFT3G,on semiconductor,dk,MBR120VLSFT3GOSCT-ND ,DIODE SCHOTTKY 20V 1A SOD123FL , REF71"/>
 </part>
 <part name="R4" library="GadgetFactory" deviceset="R" device="0805" value="10K">
-<attribute name="PARTNO" value="RC0603JR-0710KL,YAGEO (VA),dk,311-10KGRCT-ND,RES SMD 10K OHM 5% 1/10W 0603 , REF36"/>
+<attribute name="PARTNO" value="RC0805JR-0710KL,YAGEO (VA),dk,311-10KARCT-ND,RES SMD 10K OHM 5% 1/8W 0805, REF63"/>
 </part>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="R13" library="GadgetFactory" deviceset="R" device="0805" value="0">
@@ -4687,18 +4692,23 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="5V0_PWR5" gate="A" x="53.848" y="54.864"/>
 <instance part="X2" gate="G$1" x="175.26" y="139.7">
 <attribute name="ADAFRUIT" x="175.26" y="139.7" size="1.778" layer="96" display="off"/>
+<attribute name="PARTNO" x="175.26" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R8" gate="A" x="218.44" y="154.94" rot="R90">
 <attribute name="DIGIKEY" x="218.44" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="218.44" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R9" gate="A" x="205.74" y="116.84" rot="R90">
 <attribute name="DIGIKEY" x="205.74" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="205.74" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R11" gate="A" x="144.78" y="154.94" rot="R90">
 <attribute name="DIGIKEY" x="144.78" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="144.78" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R12" gate="A" x="149.86" y="154.94" rot="R90">
 <attribute name="DIGIKEY" x="149.86" y="154.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PARTNO" x="149.86" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND3" gate="A" x="205.74" y="109.22"/>
 <instance part="3V3_PWR3" gate="A" x="144.78" y="162.56"/>
@@ -5254,6 +5264,7 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="48.26" y="116.84" size="1.778" layer="94">BATTERY CHARGE &amp; MONITOR</text>
 <wire x1="5.08" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
 <text x="142.24" y="119.38" size="1.778" layer="94">Measure Battery (Populate R10 with 0 ohm jumper)</text>
+<text x="93.98" y="170.18" size="1.778" layer="91">Attribution: The Battery Charging and Power portions of this schemtic are from the Adafruit Huzzah Design.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$3" x="134.62" y="2.54"/>
