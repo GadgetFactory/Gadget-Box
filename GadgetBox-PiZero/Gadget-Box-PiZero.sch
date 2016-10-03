@@ -1595,7 +1595,9 @@ by exp-project-lbr.ulp</description>
 </part>
 <part name="3V3_PWR1" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="3V3_PWR2" library="GadgetFactory" deviceset="3V3" device=""/>
-<part name="U$1" library="RPI-Zero" deviceset="RPI-ZERO" device=""/>
+<part name="U$1" library="RPI-Zero" deviceset="RPI-ZERO" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1648,7 +1650,9 @@ by exp-project-lbr.ulp</description>
 </instance>
 <instance part="3V3_PWR1" gate="A" x="137.16" y="86.36"/>
 <instance part="3V3_PWR2" gate="A" x="144.78" y="83.82"/>
-<instance part="U$1" gate="G$1" x="193.04" y="127"/>
+<instance part="U$1" gate="G$1" x="193.04" y="127">
+<attribute name="BOM" x="193.04" y="127" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
