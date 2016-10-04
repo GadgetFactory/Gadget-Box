@@ -177,7 +177,6 @@ Version 1.1</text>
 <text x="64.77" y="15.748" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">To get started visit:
 GadgetBox.GadgetFactory.net</text>
 <text x="40.005" y="-3.81" size="1.27" layer="49" font="vector" ratio="10" align="top-left">TOP Silkscreen is on layer 200</text>
-<text x="17.78" y="43.18" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">BAT</text>
 <wire x1="8.255" y1="1.651" x2="7.4393" y2="1.7541" width="0.254" layer="200"/>
 <wire x1="7.4393" y1="1.7541" x2="6.6419" y2="1.9548" width="0.254" layer="200"/>
 <wire x1="6.6419" y1="1.9548" x2="5.8745" y2="2.2502" width="0.254" layer="200"/>
