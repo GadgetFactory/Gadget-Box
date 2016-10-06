@@ -624,13 +624,6 @@
 <text x="-2.286" y="-2.032" size="1.397" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="5V0">
-<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-1.778" y="3.175" size="1.397" layer="96">&gt;VALUE</text>
-<pin name="5V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="R-EU">
 <wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
@@ -746,19 +739,6 @@ DIN A4, landscape with location and doc. field</description>
 <deviceset name="GND" prefix="GND">
 <gates>
 <gate name="A" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="5V0" prefix="5V0_PWR">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="5V0" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1095,7 +1075,7 @@ DIN A4, landscape with location and doc. field</description>
 <pad name="G3" x="8.89" y="1.27" drill="1.016" shape="octagon" rot="R180"/>
 <pad name="GND@B" x="-1.27" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
 <pad name="3V3@B8" x="21.59" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
-<pad name="RSV@B7" x="19.05" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
+<pad name="5V@B7" x="19.05" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
 <rectangle x1="11.176" y1="1.016" x2="11.684" y2="1.524" layer="51" rot="R270"/>
 <rectangle x1="8.636" y1="1.016" x2="9.144" y2="1.524" layer="51" rot="R270"/>
 <rectangle x1="13.716" y1="1.016" x2="14.224" y2="1.524" layer="51" rot="R270"/>
@@ -1119,7 +1099,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="9.525" y1="5.08" x2="10.16" y2="4.445" width="0.127" layer="21"/>
 <wire x1="17.78" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
 <wire x1="17.78" y1="2.6035" x2="17.78" y2="4.5085" width="0.127" layer="21"/>
-<pad name="RSV@B6" x="16.51" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
+<pad name="RESET@B6" x="16.51" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
 <pad name="I2C-SCL@B5" x="13.97" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
 <pad name="I2C-SDA@B4" x="11.43" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
 <pad name="SPI-CS@B3" x="8.89" y="3.81" drill="1.016" shape="octagon" rot="R180"/>
@@ -1170,19 +1150,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
 <wire x1="22.86" y1="0.0635" x2="22.86" y2="4.3561" width="0.127" layer="21"/>
-<wire x1="9.525" y1="11.43" x2="8.255" y2="11.43" width="0.127" layer="21"/>
-<wire x1="10.16" y1="11.3665" x2="10.16" y2="8.9535" width="0.127" layer="21"/>
-<wire x1="7.62" y1="11.43" x2="7.62" y2="8.9535" width="0.127" layer="21"/>
-<wire x1="7.62" y1="11.43" x2="10.16" y2="11.43" width="0.127" layer="21"/>
-<pad name="RESET@2" x="8.89" y="10.16" drill="1.016" shape="octagon"/>
-<rectangle x1="8.636" y1="9.906" x2="9.144" y2="10.414" layer="51" rot="R90"/>
-<wire x1="12.065" y1="11.43" x2="10.795" y2="11.43" width="0.127" layer="21"/>
-<wire x1="12.7" y1="11.3665" x2="12.7" y2="8.9535" width="0.127" layer="21"/>
-<wire x1="10.16" y1="11.43" x2="10.16" y2="11.3665" width="0.127" layer="21"/>
-<wire x1="10.16" y1="11.43" x2="12.7" y2="11.43" width="0.127" layer="21"/>
-<pad name="5V@2" x="11.43" y="10.16" drill="1.016" shape="octagon"/>
-<rectangle x1="11.176" y1="9.906" x2="11.684" y2="10.414" layer="51" rot="R90"/>
-<wire x1="7.62" y1="8.89" x2="12.7" y2="8.89" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1209,7 +1176,7 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="G7" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="3V3@G8" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="GND@G" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="RSV@B7" x="-5.08" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="5V@B7" x="-5.08" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="3V3@B8" x="-5.08" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="GND@B" x="-5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
@@ -1225,15 +1192,13 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="SPI-CS@B3" x="-5.08" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="I2C-SDA@B4" x="-5.08" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="I2C-SCL@B5" x="-5.08" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="RSV@B6" x="-5.08" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="RESET@B6" x="-5.08" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <wire x1="-1.27" y1="10.16" x2="0" y2="10.16" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
 <pin name="SPI-MISO@B0" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="SPI-MOSI@B1" x="-5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="SPI-SCK@B2" x="-5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="5V@0" x="0.508" y="32.004" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="RESET@1" x="3.048" y="32.004" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1246,6 +1211,7 @@ DIN A4, landscape with location and doc. field</description>
 <connects>
 <connect gate="ECOG$1" pin="3V3@B8" pad="3V3@B8"/>
 <connect gate="ECOG$1" pin="3V3@G8" pad="3V3@G8"/>
+<connect gate="ECOG$1" pin="5V@B7" pad="5V@B7"/>
 <connect gate="ECOG$1" pin="G0" pad="G0"/>
 <connect gate="ECOG$1" pin="G1" pad="G1"/>
 <connect gate="ECOG$1" pin="G2" pad="G2"/>
@@ -1258,8 +1224,7 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="ECOG$1" pin="GND@G" pad="GND@G"/>
 <connect gate="ECOG$1" pin="I2C-SCL@B5" pad="I2C-SCL@B5"/>
 <connect gate="ECOG$1" pin="I2C-SDA@B4" pad="I2C-SDA@B4"/>
-<connect gate="ECOG$1" pin="RSV@B6" pad="RESET@B6"/>
-<connect gate="ECOG$1" pin="RSV@B7" pad="5V@B7"/>
+<connect gate="ECOG$1" pin="RESET@B6" pad="RESET@B6"/>
 <connect gate="ECOG$1" pin="SPI-CS@B3" pad="SPI-CS@B3"/>
 <connect gate="ECOG$1" pin="SPI-MISO@B0" pad="SPI-MISO@B0"/>
 <connect gate="ECOG$1" pin="SPI-MOSI@B1" pad="SPI-MOSI@B1"/>
@@ -1273,7 +1238,7 @@ DIN A4, landscape with location and doc. field</description>
 <connects>
 <connect gate="ECOG$1" pin="3V3@B8" pad="3V3@B8"/>
 <connect gate="ECOG$1" pin="3V3@G8" pad="3V3@G8"/>
-<connect gate="ECOG$1" pin="5V@0" pad="5V@2"/>
+<connect gate="ECOG$1" pin="5V@B7" pad="5V@B7"/>
 <connect gate="ECOG$1" pin="G0" pad="G0"/>
 <connect gate="ECOG$1" pin="G1" pad="G1"/>
 <connect gate="ECOG$1" pin="G2" pad="G2"/>
@@ -1286,9 +1251,7 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="ECOG$1" pin="GND@G" pad="GND@G"/>
 <connect gate="ECOG$1" pin="I2C-SCL@B5" pad="I2C-SCL@B5"/>
 <connect gate="ECOG$1" pin="I2C-SDA@B4" pad="I2C-SDA@B4"/>
-<connect gate="ECOG$1" pin="RESET@1" pad="RESET@2"/>
-<connect gate="ECOG$1" pin="RSV@B6" pad="RSV@B6"/>
-<connect gate="ECOG$1" pin="RSV@B7" pad="RSV@B7"/>
+<connect gate="ECOG$1" pin="RESET@B6" pad="RESET@B6"/>
 <connect gate="ECOG$1" pin="SPI-CS@B3" pad="SPI-CS@B3"/>
 <connect gate="ECOG$1" pin="SPI-MISO@B0" pad="SPI-MISO@B0"/>
 <connect gate="ECOG$1" pin="SPI-MOSI@B1" pad="SPI-MOSI@B1"/>
@@ -2416,10 +2379,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="U$9" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
-<part name="5V0_PWR2" library="GadgetFactory" deviceset="5V0" device=""/>
-<part name="5V0_PWR3" library="GadgetFactory" deviceset="5V0" device=""/>
-<part name="5V0_PWR4" library="GadgetFactory" deviceset="5V0" device=""/>
-<part name="5V0_PWR5" library="GadgetFactory" deviceset="5V0" device=""/>
 <part name="R4" library="GadgetFactory" deviceset="R" device="0603" value="10K">
 <attribute name="PARTNO" value="RC0603JR-0710KL,YAGEO (VA),dk,311-10KGRCT-ND,RES SMD 10K OHM 5% 1/10W 0603 , REF36"/>
 </part>
@@ -2479,17 +2438,13 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND8" gate="A" x="93.98" y="53.34" rot="R180"/>
 <instance part="GND9" gate="A" x="106.68" y="53.34" rot="R180"/>
 <instance part="3V3_PWR9" gate="A" x="60.96" y="96.52"/>
-<instance part="5V0_PWR2" gate="A" x="53.848" y="100.584"/>
-<instance part="5V0_PWR3" gate="A" x="101.092" y="59.436" rot="R180"/>
-<instance part="5V0_PWR4" gate="A" x="101.092" y="16.256" rot="R180"/>
-<instance part="5V0_PWR5" gate="A" x="53.848" y="57.404"/>
-<instance part="R4" gate="A" x="142.24" y="83.82" rot="R90">
-<attribute name="PARTNO" x="142.24" y="83.82" size="1.778" layer="96" display="off"/>
+<instance part="R4" gate="A" x="134.62" y="83.82" rot="R90">
+<attribute name="PARTNO" x="134.62" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R7" gate="A" x="149.86" y="81.28" rot="R90">
 <attribute name="PARTNO" x="149.86" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="3V3_PWR1" gate="A" x="142.24" y="91.44"/>
+<instance part="3V3_PWR1" gate="A" x="134.62" y="91.44"/>
 <instance part="3V3_PWR2" gate="A" x="149.86" y="88.9"/>
 <instance part="U3" gate="G$1" x="203.2" y="127">
 <attribute name="BOM" x="203.2" y="127" size="1.27" layer="96" display="off"/>
@@ -2577,10 +2532,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="AH" gate="ECOG$1" pin="G0"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="38.1" x2="132.08" y2="38.1" width="0.2032" layer="91"/>
-<label x="119.38" y="38.1" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="SPI-CS@B3"/>
 <wire x1="119.38" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="91"/>
+<label x="119.38" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="111.76" x2="172.72" y2="111.76" width="0.2032" layer="91"/>
@@ -2603,20 +2557,19 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SPI-MISO" class="0">
 <segment>
-<label x="119.38" y="88.9" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="SPI-MISO@B0"/>
-<wire x1="132.08" y1="88.9" x2="106.68" y2="88.9" width="0.2032" layer="91"/>
+<wire x1="119.38" y1="88.9" x2="106.68" y2="88.9" width="0.2032" layer="91"/>
+<label x="119.38" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="45.72" x2="132.08" y2="45.72" width="0.2032" layer="91"/>
-<label x="119.38" y="45.72" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="SPI-MISO@B0"/>
 <wire x1="119.38" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
+<label x="119.38" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="22.86" y="27.94" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="SPI-MISO@B0"/>
-<wire x1="22.86" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<label x="35.56" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="35.56" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2631,20 +2584,19 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SPI-SCK" class="0">
 <segment>
-<label x="119.38" y="83.82" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="SPI-SCK@B2"/>
-<wire x1="132.08" y1="83.82" x2="106.68" y2="83.82" width="0.2032" layer="91"/>
+<wire x1="119.38" y1="83.82" x2="106.68" y2="83.82" width="0.2032" layer="91"/>
+<label x="119.38" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="40.64" x2="132.08" y2="40.64" width="0.2032" layer="91"/>
-<label x="119.38" y="40.64" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="SPI-SCK@B2"/>
 <wire x1="119.38" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<label x="119.38" y="40.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="22.86" y="33.02" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="SPI-SCK@B2"/>
-<wire x1="22.86" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<label x="35.56" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="35.56" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2659,20 +2611,20 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="I2C-SCL" class="0">
 <segment>
-<label x="119.38" y="76.2" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="I2C-SCL@B5"/>
 <wire x1="149.86" y1="76.2" x2="106.68" y2="76.2" width="0.2032" layer="91"/>
 <pinref part="R7" gate="A" pin="1"/>
+<label x="149.86" y="76.2" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="119.38" y="33.02" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="I2C-SCL@B5"/>
-<wire x1="132.08" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="33.02" x2="106.68" y2="33.02" width="0.1524" layer="91"/>
+<label x="119.38" y="33.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="22.86" y="40.64" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="I2C-SCL@B5"/>
-<wire x1="22.86" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
+<label x="35.56" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="35.56" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2687,20 +2639,20 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="I2C-SDA" class="0">
 <segment>
-<label x="119.38" y="78.74" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="I2C-SDA@B4"/>
-<wire x1="142.24" y1="78.74" x2="106.68" y2="78.74" width="0.2032" layer="91"/>
+<wire x1="134.62" y1="78.74" x2="106.68" y2="78.74" width="0.2032" layer="91"/>
 <pinref part="R4" gate="A" pin="1"/>
+<label x="134.62" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="119.38" y="35.56" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="I2C-SDA@B4"/>
-<wire x1="132.08" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
+<label x="119.38" y="35.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="22.86" y="38.1" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="I2C-SDA@B4"/>
-<wire x1="22.86" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<label x="35.56" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="35.56" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2715,20 +2667,19 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SPI-MOSI" class="0">
 <segment>
-<label x="119.38" y="86.36" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="SPI-MOSI@B1"/>
-<wire x1="132.08" y1="86.36" x2="106.68" y2="86.36" width="0.2032" layer="91"/>
+<wire x1="119.38" y1="86.36" x2="106.68" y2="86.36" width="0.2032" layer="91"/>
+<label x="119.38" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="119.38" y1="43.18" x2="132.08" y2="43.18" width="0.2032" layer="91"/>
-<label x="119.38" y="43.18" size="1.778" layer="95"/>
 <pinref part="AH" gate="ECOG$1" pin="SPI-MOSI@B1"/>
 <wire x1="119.38" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
+<label x="119.38" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="22.86" y="30.48" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="SPI-MOSI@B1"/>
-<wire x1="22.86" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="30.48" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
+<label x="35.56" y="30.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="35.56" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -2816,9 +2767,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SPI-CSB" class="0">
 <segment>
-<label x="119.38" y="81.28" size="1.778" layer="95"/>
 <pinref part="AL" gate="ECOG$1" pin="SPI-CS@B3"/>
-<wire x1="132.08" y1="81.28" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
+<wire x1="119.38" y1="81.28" x2="106.68" y2="81.28" width="0.2032" layer="91"/>
+<label x="119.38" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="137.16" x2="172.72" y2="137.16" width="0.2032" layer="91"/>
@@ -2878,34 +2829,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="180.34" y1="96.52" x2="172.72" y2="96.52" width="0.2032" layer="91"/>
 <label x="172.72" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="23/A9/T/PWM"/>
-</segment>
-</net>
-<net name="RESET" class="0">
-<segment>
-<wire x1="55.88" y1="106.68" x2="56.388" y2="106.68" width="0.2032" layer="91"/>
-<label x="60.96" y="106.807" size="1.27" layer="95" xref="yes"/>
-<pinref part="BH" gate="ECOG$1" pin="RESET@1"/>
-<wire x1="56.388" y1="106.68" x2="60.96" y2="106.68" width="0.2032" layer="91"/>
-<wire x1="56.388" y1="98.044" x2="56.388" y2="106.68" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<pinref part="AL" gate="ECOG$1" pin="RESET@1"/>
-<wire x1="98.552" y1="61.976" x2="98.552" y2="57.912" width="0.2032" layer="91"/>
-<wire x1="98.552" y1="57.912" x2="90.932" y2="57.912" width="0.2032" layer="91"/>
-<label x="91.313" y="57.658" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<label x="60.96" y="59.944" size="1.27" layer="95" xref="yes"/>
-<pinref part="BL" gate="ECOG$1" pin="RESET@1"/>
-<wire x1="56.388" y1="59.944" x2="60.96" y2="59.944" width="0.2032" layer="91"/>
-<wire x1="56.388" y1="54.864" x2="56.388" y2="59.944" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<pinref part="AH" gate="ECOG$1" pin="RESET@1"/>
-<wire x1="98.552" y1="18.796" x2="98.552" y2="14.224" width="0.2032" layer="91"/>
-<wire x1="98.552" y1="14.224" x2="90.678" y2="14.224" width="0.2032" layer="91"/>
-<wire x1="90.678" y1="14.224" x2="90.678" y2="14.478" width="0.2032" layer="91"/>
-<label x="91.059" y="14.097" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -3004,25 +2927,29 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="VUSB" class="0">
 <segment>
-<pinref part="BH" gate="ECOG$1" pin="5V@0"/>
-<pinref part="5V0_PWR2" gate="A" pin="5V0"/>
-</segment>
-<segment>
-<pinref part="AL" gate="ECOG$1" pin="5V@0"/>
-<pinref part="5V0_PWR3" gate="A" pin="5V0"/>
-</segment>
-<segment>
-<pinref part="AH" gate="ECOG$1" pin="5V@0"/>
-<pinref part="5V0_PWR4" gate="A" pin="5V0"/>
-</segment>
-<segment>
-<pinref part="BL" gate="ECOG$1" pin="5V@0"/>
-<pinref part="5V0_PWR5" gate="A" pin="5V0"/>
-</segment>
-<segment>
 <wire x1="226.06" y1="157.48" x2="233.68" y2="157.48" width="0.2032" layer="91"/>
 <label x="233.68" y="157.48" size="1.27" layer="95" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VUSB"/>
+</segment>
+<segment>
+<pinref part="BH" gate="ECOG$1" pin="5V@B7"/>
+<wire x1="48.26" y1="88.9" x2="35.56" y2="88.9" width="0.2032" layer="91"/>
+<label x="35.56" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AL" gate="ECOG$1" pin="5V@B7"/>
+<wire x1="106.68" y1="71.12" x2="119.38" y2="71.12" width="0.2032" layer="91"/>
+<label x="119.38" y="71.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="AH" gate="ECOG$1" pin="5V@B7"/>
+<wire x1="106.68" y1="27.94" x2="119.38" y2="27.94" width="0.2032" layer="91"/>
+<label x="119.38" y="27.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="BL" gate="ECOG$1" pin="5V@B7"/>
+<wire x1="48.26" y1="45.72" x2="35.56" y2="45.72" width="0.2032" layer="91"/>
+<label x="35.56" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SPI-CSA" class="0">
@@ -3039,9 +2966,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="SPI-CSC" class="0">
 <segment>
-<label x="22.86" y="35.56" size="1.778" layer="95"/>
 <pinref part="BL" gate="ECOG$1" pin="SPI-CS@B3"/>
-<wire x1="22.86" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="35.56" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="134.62" x2="172.72" y2="134.62" width="0.2032" layer="91"/>
@@ -3060,6 +2987,11 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U3" gate="G$1" pin="VBAT"/>
 <wire x1="226.06" y1="149.86" x2="228.6" y2="149.86" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="90.678" y1="14.224" x2="90.678" y2="14.478" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
