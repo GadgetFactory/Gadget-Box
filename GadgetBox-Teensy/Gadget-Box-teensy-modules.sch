@@ -2282,24 +2282,30 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <library name="TP4056 charging module">
 <packages>
 <package name="TP4056">
-<wire x1="-8.88238125" y1="12.7" x2="10.16" y2="12.7" width="0.127" layer="21"/>
-<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.05738125" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-12.05738125" x2="-8.88238125" y2="-12.05738125" width="0.127" layer="21"/>
-<wire x1="-8.88238125" y1="-12.05738125" x2="-8.88238125" y2="12.7" width="0.127" layer="21"/>
-<pad name="IN-" x="-7.294878125" y="11.10488125" drill="1" diameter="1.4224" shape="square" rot="R90"/>
-<pad name="IN+" x="8.56488125" y="11.10488125" drill="1" diameter="1.4224" shape="square" rot="R90"/>
-<wire x1="5.039359375" y1="5.36448125" x2="-3.73888125" y2="5.36448125" width="0.127" layer="21"/>
-<wire x1="-3.73888125" y1="12.67968125" x2="-3.73888125" y2="5.36448125" width="0.127" layer="21"/>
-<wire x1="5.039359375" y1="5.36448125" x2="5.039359375" y2="12.67968125" width="0.127" layer="21"/>
-<text x="-1.27" y="8.89" size="1.27" layer="21">USB</text>
-<text x="-2.54" y="3.175" size="1.27" layer="21">TP4056</text>
-<pad name="BAT-" x="-7.3025" y="-10.4775" drill="1" diameter="1.4224" shape="square"/>
-<pad name="BAT+" x="8.5725" y="-10.4775" drill="1" diameter="1.4224" shape="square"/>
-<text x="-6.6675" y="6.35" size="1.016" layer="21" rot="R90">IN -</text>
-<text x="9.2075" y="6.35" size="1.016" layer="21" rot="R90">IN +</text>
-<text x="-6.6675" y="-8.89" size="1.016" layer="21" rot="R90">BAT -</text>
-<text x="9.2075" y="-8.89" size="1.016" layer="21" rot="R90">BAT +</text>
-<text x="-3.175" y="1.905" size="0.8128" layer="21">LI-ION Charger</text>
+<wire x1="-8.6868" y1="15.748" x2="8.7122" y2="15.748" width="0.127" layer="21"/>
+<wire x1="8.7122" y1="15.748" x2="8.7122" y2="-11.938" width="0.127" layer="21"/>
+<wire x1="8.7122" y1="-11.938" x2="-8.6868" y2="-11.938" width="0.127" layer="21"/>
+<wire x1="-8.6868" y1="-11.938" x2="-8.6868" y2="15.748" width="0.127" layer="21"/>
+<pad name="IN-" x="-6.9088" y="13.716" drill="1" diameter="1.4224" shape="square" rot="R90"/>
+<pad name="IN+" x="6.8072" y="13.716" drill="1" diameter="1.4224" shape="square" rot="R90"/>
+<wire x1="4.734559375" y1="8.41248125" x2="-4.04368125" y2="8.41248125" width="0.127" layer="21"/>
+<wire x1="-4.04368125" y1="15.72768125" x2="-4.04368125" y2="8.41248125" width="0.127" layer="21"/>
+<wire x1="4.734559375" y1="8.41248125" x2="4.734559375" y2="15.72768125" width="0.127" layer="21"/>
+<text x="-1.5748" y="11.938" size="1.27" layer="21">USB</text>
+<text x="-3.6068" y="3.302" size="1.27" layer="21">TP4056</text>
+<pad name="OUT-" x="-6.9088" y="-8.89" drill="1" diameter="1.4224" shape="square"/>
+<pad name="OUT+" x="6.8072" y="-8.89" drill="1" diameter="1.4224" shape="square"/>
+<text x="-6.4643" y="9.017" size="1.016" layer="21" rot="R90">IN -</text>
+<text x="7.3787" y="9.017" size="1.016" layer="21" rot="R90">IN +</text>
+<text x="-6.4643" y="-7.493" size="1.016" layer="21" rot="R90">OUT-</text>
+<text x="7.2517" y="-7.493" size="1.016" layer="21" rot="R90">OUT+</text>
+<text x="-4.2418" y="2.032" size="0.8128" layer="21">LI-ION Charger</text>
+<pad name="BAT-" x="-3.6068" y="-8.89" drill="1" diameter="1.4224" shape="square"/>
+<pad name="BAT+" x="3.5052" y="-8.89" drill="1" diameter="1.4224" shape="square"/>
+<text x="-3.1623" y="-7.493" size="1.016" layer="21" rot="R90">BAT -</text>
+<text x="3.9497" y="-7.493" size="1.016" layer="21" rot="R90">BAT +</text>
+<wire x1="-0.5588" y1="-11.938" x2="0.0127" y2="-11.938" width="0.127" layer="51" style="shortdash"/>
+<wire x1="0.0127" y1="-11.938" x2="0.0127" y2="15.748" width="0.127" layer="51" style="shortdash"/>
 </package>
 </packages>
 <symbols>
@@ -2316,8 +2322,10 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-6.858" y="2.54" size="1.778" layer="94">USB Charger</text>
 <pin name="IN-" x="-10.16" y="20.32" length="middle" rot="R270"/>
 <pin name="IN+" x="10.16" y="20.32" length="middle" rot="R270"/>
-<pin name="BAT+" x="10.16" y="-17.78" length="middle" rot="R90"/>
-<pin name="BAT-" x="-10.16" y="-17.78" length="middle" rot="R90"/>
+<pin name="OUT+" x="10.16" y="-17.78" length="middle" rot="R90"/>
+<pin name="OUT-" x="-10.16" y="-17.78" length="middle" rot="R90"/>
+<pin name="BAT-" x="-7.62" y="-17.78" length="middle" rot="R90"/>
+<pin name="BAT+" x="7.62" y="-17.78" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2332,6 +2340,8 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="BAT-" pad="BAT-"/>
 <connect gate="G$1" pin="IN+" pad="IN+"/>
 <connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2390,7 +2400,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND9" library="GadgetFactory" deviceset="GND" device=""/>
 <part name="3V3_PWR9" library="GadgetFactory" deviceset="3V3" device=""/>
 <part name="FRAME2" library="microbuilder" deviceset="FRAME_A4" device=""/>
-<part name="U$21" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$16" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 <part name="PSW1" library="adafruit" deviceset="OS102011MA1Q" device="">
@@ -2407,7 +2416,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="U$9" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$10" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$11" library="microbuilder" deviceset="GND" device=""/>
 <part name="5V0_PWR2" library="GadgetFactory" deviceset="5V0" device=""/>
 <part name="5V0_PWR3" library="GadgetFactory" deviceset="5V0" device=""/>
 <part name="5V0_PWR4" library="GadgetFactory" deviceset="5V0" device=""/>
@@ -2429,6 +2437,9 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$1" library="TP4056 charging module" deviceset="TP4056" device=""/>
 <part name="U$2" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$4" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$5" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$6" library="microbuilder" deviceset="VBAT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3045,6 +3056,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="233.68" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="VBAT" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="VBAT"/>
+<wire x1="226.06" y1="149.86" x2="228.6" y2="149.86" width="0.2032" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -3062,7 +3079,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$3" x="134.62" y="2.54"/>
-<instance part="U$21" gate="G$1" x="88.9" y="83.82"/>
 <instance part="U$16" gate="G$1" x="91.44" y="152.4"/>
 <instance part="U$22" gate="G$1" x="91.44" y="129.54"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -3081,13 +3097,15 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </instance>
 <instance part="U$9" gate="G$1" x="170.18" y="111.76"/>
 <instance part="U$10" gate="G$1" x="170.18" y="76.2"/>
-<instance part="U$11" gate="G$1" x="55.88" y="63.5"/>
 <instance part="JP1" gate="G$1" x="83.82" y="139.7">
 <attribute name="PARTNO" x="83.82" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$1" gate="G$1" x="66.04" y="83.82"/>
 <instance part="U$2" gate="G$1" x="76.2" y="111.76"/>
 <instance part="U$3" gate="G$1" x="55.88" y="106.68" rot="R180"/>
+<instance part="U$4" gate="G$1" x="55.88" y="60.96"/>
+<instance part="U$5" gate="G$1" x="58.42" y="60.96"/>
+<instance part="U$6" gate="G$1" x="73.66" y="60.96" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3104,12 +3122,18 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="170.18" y1="78.74" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="BAT-"/>
-<pinref part="U$11" gate="G$1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="IN-"/>
 <pinref part="U$3" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT-"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="55.88" y1="63.5" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="BAT-"/>
+<pinref part="U$5" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="63.5" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VUSB" class="0">
@@ -3117,28 +3141,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="U$1" gate="G$1" pin="IN+"/>
 <pinref part="U$2" gate="G$1" pin="VBUS"/>
 <wire x1="76.2" y1="104.14" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBATTERY" class="0">
-<segment>
-<pinref part="U$21" gate="G$1" pin="VBAT"/>
-<wire x1="88.9" y1="76.2" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="76.2" x2="88.9" y2="63.5" width="0.2032" layer="91"/>
-<pinref part="PSW1" gate="G$1" pin="S"/>
-<wire x1="88.9" y1="63.5" x2="91.44" y2="63.5" width="0.2032" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="BAT+"/>
-<wire x1="76.2" y1="66.04" x2="76.2" y2="63.5" width="0.2032" layer="91"/>
-<wire x1="76.2" y1="63.5" x2="88.9" y2="63.5" width="0.2032" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$16" gate="G$1" pin="VBAT"/>
-<wire x1="91.44" y1="149.86" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R5" gate="A" pin="2"/>
-<pinref part="U$9" gate="G$1" pin="VBAT"/>
-<wire x1="170.18" y1="109.22" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3163,6 +3165,31 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="PSW1" gate="G$1" pin="P"/>
 <wire x1="101.6" y1="66.04" x2="109.22" y2="66.04" width="0.2032" layer="91"/>
 <label x="109.22" y="66.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VOUT" class="0">
+<segment>
+<pinref part="PSW1" gate="G$1" pin="S"/>
+<wire x1="76.2" y1="63.5" x2="91.44" y2="63.5" width="0.2032" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OUT+"/>
+<wire x1="76.2" y1="63.5" x2="76.2" y2="66.04" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="VBATTTERY" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="VBAT"/>
+<pinref part="U$1" gate="G$1" pin="BAT+"/>
+<wire x1="73.66" y1="63.5" x2="73.66" y2="66.04" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="VBAT"/>
+<pinref part="R5" gate="A" pin="2"/>
+<wire x1="170.18" y1="109.22" x2="170.18" y2="106.68" width="0.2032" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="U$16" gate="G$1" pin="VBAT"/>
+<wire x1="91.44" y1="142.24" x2="91.44" y2="149.86" width="0.2032" layer="91"/>
 </segment>
 </net>
 </nets>
