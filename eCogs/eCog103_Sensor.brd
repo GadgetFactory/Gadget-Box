@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18,7 +18,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -157,7 +157,7 @@
 <text x="38.022" y="23.367" size="0.6096" layer="22" font="vector" rot="MR0">Gadget Factory, LLC</text>
 <text x="16.161" y="24.765" size="1.016" layer="22" font="vector" rot="MR0">3.3V</text>
 <text x="9.43" y="2.286" size="1.016" layer="22" font="vector" rot="MR0">GND</text>
-<text x="19.939" y="12.7" size="1.778" layer="20" font="vector" ratio="15">Cut Out</text>
+<text x="41.061" y="15.3" size="1.778" layer="20" font="vector" ratio="15" rot="R180">Cut Out</text>
 <wire x1="9.971" y1="8.0023" x2="9.971" y2="8.8855" width="0.254" layer="21"/>
 <wire x1="9.971" y1="8.8855" x2="10.16" y2="9.0745" width="0.254" layer="21"/>
 <wire x1="10.16" y1="9.0745" x2="10.3037" y2="9.2182" width="0.254" layer="21"/>
@@ -4891,14 +4891,14 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes">
+<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWSURFACEMOUNT" x="0" y="0" smashed="yes">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="eCogs" package="SENSOR-HJX4" value="SENSOR" x="46.197" y="13.305" smashed="yes" rot="R270"/>
+<element name="U$1" library="eCogs" package="SENSOR-HJX4" value="SENSOR" x="14.803" y="14.695" smashed="yes" rot="R90"/>
 <element name="U$2" library="eCogs" package="LEGEND_ANALOG" value="" x="46.99" y="7.62"/>
 <element name="U$3" library="eCogs" package="LEGEND_ANALOG" value="" x="46.99" y="5.08"/>
-<element name="U$4" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="27.305" y="24.257"/>
-<element name="U$5" library="ohw-logo" package="OSHW_FILLX150_NOTEXT" value="" x="41.91" y="22.86"/>
+<element name="U$4" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="27.305" y="24.357"/>
+<element name="U$5" library="ohw-logo" package="OSHW_FILLX150_NOTEXT" value="" x="39.91" y="22.96"/>
 <element name="U$6" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="28.575" y="3.429" rot="R180"/>
 </elements>
 <signals>
@@ -4921,30 +4921,27 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="U$1" pad="+"/>
 <contactref element="ECOG" pad="3V3"/>
-<wire x1="9.92324375" y1="25.429" x2="41.881" y2="25.429" width="0.254" layer="16"/>
-<wire x1="41.881" y1="25.429" x2="46.99" y2="20.32" width="0.254" layer="16"/>
-<wire x1="46.99" y1="20.32" x2="46.99" y2="17.398" width="0.254" layer="16"/>
-<wire x1="46.99" y1="17.398" x2="44.187" y2="14.595" width="0.254" layer="16"/>
+<wire x1="9.92324375" y1="25.429" x2="9.92324375" y2="24.72324375" width="0.254" layer="16"/>
+<wire x1="9.92324375" y1="24.72324375" x2="8.9" y2="23.7" width="0.254" layer="16"/>
+<via x="8.9" y="23.7" extent="1-16" drill="0.381"/>
+<wire x1="8.9" y1="23.7" x2="8.7" y2="23.7" width="0.254" layer="1"/>
+<wire x1="8.7" y1="23.7" x2="8.6" y2="23.6" width="0.254" layer="1"/>
 </signal>
 <signal name="A2">
 <contactref element="U$1" pad="DO/S"/>
 <contactref element="ECOG" pad="G1"/>
-<wire x1="13.02204375" y1="7.649" x2="13.02204375" y2="7.29795625" width="0.254" layer="16"/>
-<wire x1="13.02204375" y1="7.29795625" x2="15.24" y2="5.08" width="0.254" layer="16"/>
-<wire x1="15.24" y1="5.08" x2="39.37" y2="5.08" width="0.254" layer="16"/>
-<wire x1="39.37" y1="5.08" x2="40.64" y2="6.35" width="0.254" layer="16"/>
-<wire x1="40.64" y1="6.35" x2="40.64" y2="13.588" width="0.254" layer="16"/>
-<wire x1="40.64" y1="13.588" x2="44.187" y2="17.135" width="0.254" layer="16"/>
+<wire x1="13.02204375" y1="7.649" x2="13.597" y2="7.649" width="0.254" layer="16"/>
+<wire x1="13.597" y1="7.649" x2="16.813" y2="10.865" width="0.254" layer="16"/>
 </signal>
 <signal name="A1">
 <contactref element="U$1" pad="AO"/>
 <contactref element="ECOG" pad="G0"/>
-<wire x1="9.92324375" y1="5.1110625" x2="13.9389375" y2="5.1110625" width="0.254" layer="16"/>
-<wire x1="13.9389375" y1="5.1110625" x2="15.24" y2="3.81" width="0.254" layer="16"/>
-<wire x1="15.24" y1="3.81" x2="43.18" y2="3.81" width="0.254" layer="16"/>
-<wire x1="43.18" y1="3.81" x2="44.45" y2="5.08" width="0.254" layer="16"/>
-<wire x1="44.45" y1="5.08" x2="44.45" y2="9.252" width="0.254" layer="16"/>
-<wire x1="44.45" y1="9.252" x2="44.187" y2="9.515" width="0.254" layer="16"/>
+<wire x1="9.92324375" y1="5.1110625" x2="20.1110625" y2="5.1110625" width="0.254" layer="16"/>
+<wire x1="20.1110625" y1="5.1110625" x2="22" y2="7" width="0.254" layer="16"/>
+<wire x1="22" y1="7" x2="22" y2="16" width="0.254" layer="16"/>
+<wire x1="22" y1="16" x2="19.4" y2="18.6" width="0.254" layer="16"/>
+<wire x1="19.4" y1="18.6" x2="16.928" y2="18.6" width="0.254" layer="16"/>
+<wire x1="16.928" y1="18.6" x2="16.813" y2="18.485" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
