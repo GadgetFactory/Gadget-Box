@@ -4965,7 +4965,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWECOG_BUSES_SMD" x="0" y="0" smashed="yes">
+<element name="ECOG" library="eCogs" package="ECOG_BUSES_SMD" value="ECOG_BUSES_ROWSURFACEMOUNT" x="0" y="0" smashed="yes">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP1" library="pinhead" package="1X04" value=".96 I2C OLED LCD" x="25.27" y="25.4" smashed="yes">

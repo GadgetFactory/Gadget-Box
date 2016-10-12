@@ -8,26 +8,26 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="16" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="16" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -36,8 +36,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -45,19 +45,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="3" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="3" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -296,142 +296,101 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="15" y1="28" x2="4" y2="28" width="0.127" layer="20"/>
 </package>
 <package name="ECOG_GENERAL_TH">
-<wire x1="5.09" y1="1.24" x2="5.09" y2="26.64" width="0.127" layer="22"/>
-<wire x1="5.09" y1="1.24" x2="2.59" y2="1.24" width="0.127" layer="22"/>
-<wire x1="5.09" y1="26.64" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<wire x1="2.59" y1="1.24" x2="2.59" y2="26.64" width="0.127" layer="22"/>
-<rectangle x1="3.566" y1="16.226" x2="4.074" y2="16.734" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="13.686" x2="4.074" y2="14.194" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="11.146" x2="4.074" y2="11.654" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="8.606" x2="4.074" y2="9.114" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="6.066" x2="4.074" y2="6.574" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="3.526" x2="4.074" y2="4.034" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="18.766" x2="4.074" y2="19.274" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="21.306" x2="4.074" y2="21.814" layer="22" rot="R90"/>
-<rectangle x1="3.566" y1="22.576" x2="4.074" y2="23.084" layer="52" rot="R90"/>
-<rectangle x1="3.566" y1="23.846" x2="4.074" y2="24.354" layer="22" rot="R90"/>
-<wire x1="43.99" y1="3.96" x2="49.82" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="50.455" y2="3.96" width="0.127" layer="47"/>
-<wire x1="49.82" y1="3.96" x2="49.82" y2="-0.04" width="0.127" layer="47"/>
-<wire x1="46.645" y1="-0.04" x2="50.455" y2="-0.04" width="0.127" layer="47"/>
-<text x="53.63" y="-1.075" size="2.54" layer="47" rot="R90">4.0mm</text>
-<hole x="44" y="4" drill="3.8"/>
-<hole x="44" y="24" drill="3.8"/>
+<wire x1="4.01" y1="24.04" x2="-1.82" y2="24.04" width="0.127" layer="47"/>
+<wire x1="-1.82" y1="24.04" x2="-2.455" y2="24.04" width="0.127" layer="47"/>
+<wire x1="-1.82" y1="24.04" x2="-1.82" y2="28.04" width="0.127" layer="47"/>
+<wire x1="1.355" y1="28.04" x2="-2.455" y2="28.04" width="0.127" layer="47"/>
+<text x="-5.63" y="29.075" size="2.54" layer="47" rot="R270">4.0mm</text>
+<hole x="4" y="24" drill="3.8"/>
+<hole x="4" y="4" drill="3.8"/>
 <polygon width="0" layer="41">
-<vertex x="47.5" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.5" y="23.96"/>
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
 </polygon>
 <polygon width="0" layer="42">
-<vertex x="47.5" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.5" y="23.96"/>
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
 </polygon>
 <polygon width="0" layer="43">
-<vertex x="47.5" y="20.96"/>
-<vertex x="43.99" y="20.96" curve="-90"/>
-<vertex x="40.99" y="23.96"/>
-<vertex x="40.99" y="27.96"/>
-<vertex x="43.99" y="27.96" curve="-90"/>
-<vertex x="47.5" y="23.96"/>
+<vertex x="0.5" y="7.04"/>
+<vertex x="4.01" y="7.04" curve="-90"/>
+<vertex x="7.01" y="4.04"/>
+<vertex x="7.01" y="0.04"/>
+<vertex x="4.01" y="0.04" curve="-90"/>
+<vertex x="0.5" y="4.04"/>
 </polygon>
 <polygon width="0" layer="41">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.5" y="6.96"/>
-<vertex x="47.5" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
 </polygon>
 <polygon width="0" layer="42">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.5" y="6.96"/>
-<vertex x="47.5" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
 </polygon>
 <polygon width="0" layer="43">
-<vertex x="40.99" y="-0.04"/>
-<vertex x="40.99" y="3.96" curve="-90"/>
-<vertex x="43.99" y="6.96"/>
-<vertex x="47.5" y="6.96"/>
-<vertex x="47.5" y="3.96" curve="-90"/>
-<vertex x="43.99" y="-0.04"/>
+<vertex x="7.01" y="28.04"/>
+<vertex x="7.01" y="24.04" curve="-90"/>
+<vertex x="4.01" y="21.04"/>
+<vertex x="0.5" y="21.04"/>
+<vertex x="0.5" y="24.04" curve="-90"/>
+<vertex x="4.01" y="28.04"/>
 </polygon>
-<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
-<wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
-<wire x1="0" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
-<wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
-<wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
-<wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
-<wire x1="44" y1="0" x2="0" y2="0" width="0.127" layer="20"/>
-<pad name="GND" x="3.81" y="25.4" drill="0.8" shape="square"/>
-<pad name="G0" x="3.81" y="22.86" drill="0.8"/>
-<pad name="G1" x="3.81" y="20.32" drill="0.8"/>
-<pad name="G2" x="3.81" y="17.78" drill="0.8"/>
-<pad name="G3" x="3.81" y="15.24" drill="0.8"/>
-<pad name="G4" x="3.81" y="12.7" drill="0.8"/>
-<pad name="G5" x="3.81" y="10.16" drill="0.8"/>
-<pad name="G6" x="3.81" y="7.62" drill="0.8"/>
-<pad name="G7" x="3.81" y="5.08" drill="0.8"/>
-<pad name="3V3" x="3.81" y="2.54" drill="0.8"/>
-</package>
-<package name="ECOG_GENERAL_SMD_ALT">
-<wire x1="37.808203125" y1="1.2709875" x2="37.808203125" y2="26.6709875" width="0.127" layer="22"/>
-<wire x1="37.808203125" y1="1.2709875" x2="35.308203125" y2="1.2709875" width="0.127" layer="22"/>
-<wire x1="37.808203125" y1="26.6709875" x2="35.308203125" y2="26.6709875" width="0.127" layer="22"/>
-<wire x1="35.308203125" y1="1.2709875" x2="35.308203125" y2="26.6709875" width="0.127" layer="22"/>
-<smd name="3V3" x="38.087603125" y="2.5409875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G7" x="34.988803125" y="5.0809875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G6" x="38.087603125" y="7.6209875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G5" x="34.988803125" y="10.1609875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G4" x="38.087603125" y="12.7009875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G3" x="34.988803125" y="15.2409875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G2" x="38.087603125" y="17.7809875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G1" x="34.988803125" y="20.3209875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="G0" x="38.087603125" y="22.8609875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<smd name="GND" x="34.988803125" y="25.4009875" dx="3.5" dy="1" layer="16" roundness="100"/>
-<rectangle x1="36.284203125" y1="16.2569875" x2="36.792203125" y2="16.7649875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="13.7169875" x2="36.792203125" y2="14.2249875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="11.1769875" x2="36.792203125" y2="11.6849875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="8.6369875" x2="36.792203125" y2="9.1449875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="6.0969875" x2="36.792203125" y2="6.6049875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="3.5569875" x2="36.792203125" y2="4.0649875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="18.7969875" x2="36.792203125" y2="19.3049875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="21.3369875" x2="36.792203125" y2="21.8449875" layer="22" rot="R90"/>
-<rectangle x1="36.284203125" y1="23.8769875" x2="36.792203125" y2="24.3849875" layer="22" rot="R90"/>
-<wire x1="0" y1="0" x2="0" y2="28" width="0.127" layer="20"/>
-<wire x1="24" y1="28" x2="24" y2="0" width="0.127" layer="48"/>
-<wire x1="0" y1="14" x2="47.5" y2="14" width="0.127" layer="48"/>
-<wire x1="44" y1="28" x2="47.5" y2="24" width="0.127" layer="20" curve="-90"/>
-<wire x1="47.5" y1="24" x2="47.5" y2="4" width="0.127" layer="20"/>
-<wire x1="47.5" y1="4" x2="44" y2="0" width="0.127" layer="20" curve="-90"/>
-<wire x1="47.4989875" y1="12.737796875" x2="47.4989875" y2="15.237796875" width="0.127" layer="22"/>
-<wire x1="0" y1="28" x2="38" y2="28" width="0.127" layer="20"/>
-<wire x1="38" y1="28" x2="38" y2="27" width="0.127" layer="20"/>
-<wire x1="38" y1="27" x2="43" y2="27" width="0.127" layer="20"/>
-<wire x1="43" y1="27" x2="43" y2="28" width="0.127" layer="20"/>
-<wire x1="43" y1="28" x2="44" y2="28" width="0.127" layer="20"/>
-<wire x1="0" y1="0" x2="38" y2="0" width="0.127" layer="20"/>
-<wire x1="38" y1="0" x2="38" y2="1" width="0.127" layer="20"/>
-<wire x1="38" y1="1" x2="43" y2="1" width="0.127" layer="20"/>
-<wire x1="43" y1="1" x2="43" y2="0" width="0.127" layer="20"/>
-<wire x1="43" y1="0" x2="44" y2="0" width="0.127" layer="20"/>
-<wire x1="1.0469875" y1="2.531796875" x2="6.0309875" y2="2.531796875" width="0.127" layer="22"/>
-<wire x1="6.0309875" y1="2.531796875" x2="6.0309875" y2="5.031796875" width="0.127" layer="22"/>
-<wire x1="1.0469875" y1="5.031796875" x2="6.0309875" y2="5.031796875" width="0.127" layer="22"/>
-<smd name="5V0@1" x="2.2209875" y="2.252396875" dx="3.5" dy="1" layer="16" roundness="100" rot="R270"/>
-<smd name="STABILIZER@2" x="4.7609875" y="5.351196875" dx="3.5" dy="1" layer="16" roundness="100" rot="R270"/>
-<rectangle x1="3.2369875" y1="3.547796875" x2="3.7449875" y2="4.055796875" layer="22"/>
-<wire x1="1.0469875" y1="2.531796875" x2="1.0469875" y2="5.031796875" width="0.127" layer="22"/>
+<wire x1="48" y1="28" x2="48" y2="0" width="0.127" layer="20"/>
+<wire x1="24" y1="0" x2="24" y2="28" width="0.127" layer="48"/>
+<wire x1="48" y1="14" x2="0.5" y2="14" width="0.127" layer="48"/>
+<wire x1="4" y1="0" x2="0.5" y2="4" width="0.127" layer="20" curve="-90"/>
+<wire x1="0.5" y1="4" x2="0.5" y2="24" width="0.127" layer="20"/>
+<wire x1="0.5" y1="24" x2="4" y2="28" width="0.127" layer="20" curve="-90"/>
+<rectangle x1="11.175" y1="23.905" x2="11.683" y2="24.413" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="18.825" x2="11.683" y2="19.333" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="13.745" x2="11.683" y2="14.253" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="8.665" x2="11.683" y2="9.173" layer="22" rot="R180"/>
+<rectangle x1="11.175" y1="6.125" x2="11.683" y2="6.633" layer="22" rot="R180"/>
+<wire x1="48" y1="0" x2="20" y2="0" width="0.127" layer="20"/>
+<wire x1="20" y1="0" x2="20" y2="2" width="0.127" layer="20"/>
+<wire x1="20" y1="2" x2="15" y2="2" width="0.127" layer="20"/>
+<wire x1="15" y1="2" x2="15" y2="0" width="0.127" layer="20"/>
+<wire x1="15" y1="0" x2="4" y2="0" width="0.127" layer="20"/>
+<wire x1="48" y1="28" x2="20" y2="28" width="0.127" layer="20"/>
+<wire x1="20" y1="28" x2="20" y2="26" width="0.127" layer="20"/>
+<wire x1="20" y1="26" x2="15" y2="26" width="0.127" layer="20"/>
+<wire x1="15" y1="26" x2="15" y2="28" width="0.127" layer="20"/>
+<wire x1="15" y1="28" x2="4" y2="28" width="0.127" layer="20"/>
+<wire x1="10.15" y1="26.7" x2="10.15" y2="1.3" width="0.127" layer="22"/>
+<wire x1="10.15" y1="26.7" x2="12.65" y2="26.7" width="0.127" layer="22"/>
+<wire x1="10.15" y1="1.3" x2="12.65" y2="1.3" width="0.127" layer="22"/>
+<wire x1="12.65" y1="26.7" x2="12.65" y2="1.3" width="0.127" layer="22"/>
+<rectangle x1="11.166" y1="11.206" x2="11.674" y2="11.714" layer="22" rot="R270"/>
+<rectangle x1="11.166" y1="16.286" x2="11.674" y2="16.794" layer="22" rot="R270"/>
+<rectangle x1="11.166" y1="21.366" x2="11.674" y2="21.874" layer="22" rot="R270"/>
+<rectangle x1="11.166" y1="4.856" x2="11.674" y2="5.364" layer="52" rot="R270"/>
+<rectangle x1="11.166" y1="3.586" x2="11.674" y2="4.094" layer="22" rot="R270"/>
+<pad name="GND" x="11.43" y="2.54" drill="0.8" shape="square" rot="R180"/>
+<pad name="G0" x="11.43" y="5.08" drill="0.8" rot="R180"/>
+<pad name="G1" x="11.43" y="7.62" drill="0.8" rot="R180"/>
+<pad name="G2" x="11.43" y="10.16" drill="0.8" rot="R180"/>
+<pad name="G3" x="11.43" y="12.7" drill="0.8" rot="R180"/>
+<pad name="G4" x="11.43" y="15.24" drill="0.8" rot="R180"/>
+<pad name="G5" x="11.43" y="17.78" drill="0.8" rot="R180"/>
+<pad name="G6" x="11.43" y="20.32" drill="0.8" rot="R180"/>
+<pad name="G7" x="11.43" y="22.86" drill="0.8" rot="R180"/>
+<pad name="3V3" x="11.43" y="25.4" drill="0.8" rot="R180"/>
 </package>
 </packages>
 <symbols>
@@ -481,7 +440,7 @@ DIN A3, landscape with location and doc. field</description>
 <gate name="ECOG_GENERAL" symbol="ECOG_GENERAL_ROW" x="0" y="0"/>
 </gates>
 <devices>
-<device name="ECOG_GENERAL_SMD" package="ECOG_GENERAL_SMD">
+<device name="SURFACEMOUNT" package="ECOG_GENERAL_SMD">
 <connects>
 <connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
 <connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
@@ -500,24 +459,7 @@ DIN A3, landscape with location and doc. field</description>
 </technology>
 </technologies>
 </device>
-<device name="ECOG_GENERAL_TH" package="ECOG_GENERAL_TH">
-<connects>
-<connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
-<connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
-<connect gate="ECOG_GENERAL" pin="G1" pad="G1"/>
-<connect gate="ECOG_GENERAL" pin="G2" pad="G2"/>
-<connect gate="ECOG_GENERAL" pin="G3" pad="G3"/>
-<connect gate="ECOG_GENERAL" pin="G4" pad="G4"/>
-<connect gate="ECOG_GENERAL" pin="G5" pad="G5"/>
-<connect gate="ECOG_GENERAL" pin="G6" pad="G6"/>
-<connect gate="ECOG_GENERAL" pin="G7" pad="G7"/>
-<connect gate="ECOG_GENERAL" pin="GND" pad="GND"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ECOG_GENERAL_SMD_ALT1" package="ECOG_GENERAL_SMD_ALT">
+<device name="THROUGHOLE" package="ECOG_GENERAL_TH">
 <connects>
 <connect gate="ECOG_GENERAL" pin="3V3" pad="3V3"/>
 <connect gate="ECOG_GENERAL" pin="G0" pad="G0"/>
@@ -574,7 +516,7 @@ DIN A3, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD"/>
+<part name="ECOG" library="eCogs" deviceset="ECOG_GENERAL_ROW" device="SURFACEMOUNT" value="ECOG_GENERAL_ROWSURFACEMOUNT"/>
 <part name="3V3_PWR1" library="eCogs" deviceset="3V3" device=""/>
 <part name="GND1" library="eCogs" deviceset="GND" device=""/>
 </parts>

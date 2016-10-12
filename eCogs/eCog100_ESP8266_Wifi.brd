@@ -785,10 +785,10 @@ Bootload</text>
 <wire x1="1.27" y1="1.778" x2="1.27" y2="3.302" width="0.254" layer="21"/>
 <wire x1="2.032" y1="2.54" x2="0.635" y2="2.54" width="0.254" layer="21"/>
 <wire x1="2.032" y1="25.4" x2="0.635" y2="25.4" width="0.254" layer="21"/>
-<text x="40.608" y="23.241" size="1.016" layer="22" font="vector" rot="MR180">0</text>
-<text x="31.718" y="20.701" size="1.016" layer="22" font="vector" rot="MR180">1</text>
-<text x="34.258" y="18.161" size="1.016" layer="22" font="vector" rot="MR180">2</text>
-<text x="31.718" y="15.621" size="1.016" layer="22" font="vector" rot="MR180">3</text>
+<text x="39.338" y="24.511" size="1.016" layer="22" font="vector" rot="MR180">XC0</text>
+<text x="30.321" y="20.828" size="1.016" layer="22" font="vector" rot="MR180">XC1</text>
+<text x="30.448" y="18.288" size="1.016" layer="22" font="vector" rot="MR180">XC2</text>
+<text x="30.448" y="15.748" size="1.016" layer="22" font="vector" rot="MR180">XC3</text>
 </plain>
 <libraries>
 <library name="eCogs">
@@ -5025,7 +5025,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="48.26" y="27.94" smashed="yes" rot="R180">
+<element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWSURFACEMOUNT" x="48.26" y="27.94" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="48.26" y="27.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="X1" library="adafruit" package="ESP-12" value="" x="19.05" y="13.97" smashed="yes" rot="MR270">
