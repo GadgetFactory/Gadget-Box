@@ -147,14 +147,14 @@
 </layers>
 <board>
 <plain>
-<text x="39.045" y="22.559" size="0.8128" layer="22" font="vector" rot="MR270">ecog107.GadgetFactory.net</text>
-<text x="36.301" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">ecog107 v2.0</text>
-<text x="35.031" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">Remote Control</text>
-<text x="33.761" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">eCogs</text>
-<text x="22.495" y="7.112" size="1.016" layer="22" font="vector" rot="MR0">RECEIVE</text>
-<text x="20.875" y="9.652" size="1.016" layer="22" font="vector" rot="MR0">TRANSMIT</text>
-<text x="39.934" y="18.782" size="0.6096" layer="22" font="vector" rot="MR270">Copyright 2016</text>
-<text x="40.823" y="20.512" size="0.6096" layer="22" font="vector" rot="MR270">Gadget Factory, LLC</text>
+<text x="33.965" y="22.559" size="0.8128" layer="22" font="vector" rot="MR270">ecog107.GadgetFactory.net</text>
+<text x="31.221" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">ecog107 v2.1</text>
+<text x="29.951" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">Remote Control</text>
+<text x="28.681" y="19.702" size="1.016" layer="22" font="vector" rot="MR270">eCogs</text>
+<text x="19.955" y="9.652" size="1.016" layer="22" font="vector" rot="MR0">RECEIVE</text>
+<text x="22.145" y="12.192" size="1.016" layer="22" font="vector" rot="MR0">TRANSMIT</text>
+<text x="34.854" y="18.782" size="0.6096" layer="22" font="vector" rot="MR270">Copyright 2016</text>
+<text x="35.743" y="20.512" size="0.6096" layer="22" font="vector" rot="MR270">Gadget Factory, LLC</text>
 <text x="17.431" y="24.511" size="1.016" layer="22" font="vector" rot="MR0">3.3V</text>
 <text x="17.587" y="2.567" size="1.016" layer="22" font="vector" rot="MR0">GND</text>
 <text x="30.413" y="19.916" size="1.4224" layer="21" font="vector">+</text>
@@ -3214,8 +3214,8 @@
 <wire x1="46.99" y1="24.765" x2="46.99" y2="26.035" width="0.254" layer="21"/>
 <wire x1="46.355" y1="25.4" x2="47.625" y2="25.4" width="0.254" layer="21"/>
 <wire x1="46.355" y1="2.54" x2="47.625" y2="2.54" width="0.254" layer="21"/>
-<text x="9.205" y="7.012" size="1.016" layer="22" font="vector" rot="MR0">1</text>
-<text x="6.665" y="9.552" size="1.016" layer="22" font="vector" rot="MR0">2</text>
+<text x="6.665" y="9.552" size="1.016" layer="22" font="vector" rot="MR0">XC2</text>
+<text x="6.665" y="12.092" size="1.016" layer="22" font="vector" rot="MR0">XC3</text>
 </plain>
 <libraries>
 <library name="eCogs">
@@ -3316,11 +3316,11 @@
 <wire x1="15" y1="26" x2="15" y2="28" width="0.127" layer="20"/>
 <wire x1="15" y1="28" x2="4" y2="28" width="0.127" layer="20"/>
 </package>
-<package name="LEGEND_DIO">
-<circle x="0" y="0" radius="0.740528125" width="0" layer="21"/>
-</package>
 <package name="LEGEND_PWM">
 <rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="21"/>
+</package>
+<package name="LEGEND_DIO">
+<circle x="0" y="0" radius="0.740528125" width="0" layer="21"/>
 </package>
 </packages>
 </library>
@@ -7465,8 +7465,6 @@ design rules under a new name.</description>
 <element name="ECOG" library="eCogs" package="ECOG_GENERAL_SMD" value="ECOG_GENERAL_ROWECOG_GENERAL_SMD" x="0" y="0" smashed="yes">
 <attribute name="DIGIKEY" value="S1013EC-10-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$4" library="eCogs" package="LEGEND_DIO" value="" x="46.99" y="7.62"/>
-<element name="U$2" library="eCogs" package="LEGEND_PWM" value="" x="46.99" y="10.16"/>
 <element name="R1" library="rcl-ez" package="R0805" value="1.0 K" x="22.622" y="21.543" smashed="yes" rot="MR270">
 <attribute name="NAME" x="24.862" y="22.679" size="1.27" layer="26" font="vector" ratio="10" rot="MR270"/>
 <attribute name="VALUE" x="23.257" y="23.8036" size="1.27" layer="28" ratio="10" rot="MR270"/>
@@ -7474,7 +7472,7 @@ design rules under a new name.</description>
 </element>
 <element name="U1" library="adafruit" package="PNA460XM" value="PNA460XM" x="42.46" y="14" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="751-1227-ND" x="42.46" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="42.0888" y="7.1138" size="1.27" layer="26" ratio="10" rot="MR90"/>
+<attribute name="NAME" x="45.8988" y="13.4638" size="1.27" layer="26" ratio="10" rot="MR90"/>
 </element>
 <element name="T1" library="transistor" package="SOT23-BEC" value="MMBT3904LT1G" x="23.495" y="9.906" smashed="yes" rot="MR180">
 <attribute name="DIGIKEY" value="MMBT3904LT1GOSCT-ND" x="23.495" y="9.906" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -7486,18 +7484,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="24.89" y="17.513" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="21.59" y="20.193" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="IR1" library="adafruit" package="LED5MM" value="" x="28.873" y="10.112" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.2396" y="12.737" size="1.27" layer="26" ratio="10" rot="MR270"/>
-<attribute name="VALUE" x="27.0696" y="6.9116" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="DIGIKEY" value="1080-1082-ND" x="28.873" y="10.112" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="IR1" library="adafruit" package="LED5MM" value="" x="41.573" y="5.032" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.9396" y="7.657" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="39.7696" y="1.8316" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="DIGIKEY" value="1080-1082-ND" x="41.573" y="5.032" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IR2" library="adafruit" package="LED5MM" value="" x="28.873" y="17.112" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.2396" y="19.737" size="1.27" layer="26" ratio="10" rot="MR270"/>
-<attribute name="VALUE" x="27.0696" y="13.9116" size="1.27" layer="27" ratio="10" rot="R270"/>
-<attribute name="DIGIKEY" value="1080-1080-ND" x="28.873" y="17.112" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="IR2" library="adafruit" package="LED5MM" value="" x="41.573" y="22.192" smashed="yes" rot="R270">
+<attribute name="NAME" x="45.9396" y="24.817" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="39.7696" y="18.9916" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="DIGIKEY" value="1080-1080-ND" x="41.573" y="22.192" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$5" library="GadgetFactory" package="GADGETBOX_SMALL" value="" x="8.79" y="14" rot="R90"/>
 <element name="U$6" library="ohw-logo" package="OSHW_FILLX150_NOTEXT" value="" x="15.24" y="3.81" rot="R90"/>
+<element name="U$1" library="eCogs" package="LEGEND_PWM" value="" x="46.99" y="12.7"/>
+<element name="U$2" library="eCogs" package="LEGEND_DIO" value="" x="46.99" y="10.16"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -7532,24 +7532,25 @@ design rules under a new name.</description>
 <signal name="N$9">
 <contactref element="T3" pad="C"/>
 <contactref element="IR2" pad="K"/>
-<wire x1="23.495" y1="15.918" x2="28.797" y2="15.918" width="0.6096" layer="16"/>
-<wire x1="28.797" y1="15.918" x2="28.873" y2="15.842" width="0.6096" layer="16"/>
+<wire x1="23.495" y1="15.918" x2="36.569" y2="15.918" width="0.6096" layer="16"/>
+<wire x1="36.569" y1="15.918" x2="41.573" y2="20.922" width="0.6096" layer="16"/>
 </signal>
 <signal name="TRANSMIT">
-<contactref element="ECOG" pad="G2"/>
 <contactref element="R1" pad="1"/>
-<wire x1="9.92324375" y1="10.189" x2="15.269" y2="10.189" width="0.254" layer="16"/>
-<wire x1="15.269" y1="10.189" x2="19.05" y2="13.97" width="0.254" layer="16"/>
-<wire x1="19.05" y1="13.97" x2="19.05" y2="20.574" width="0.254" layer="16"/>
 <wire x1="19.05" y1="20.574" x2="20.828" y2="22.352" width="0.254" layer="16"/>
 <wire x1="20.828" y1="22.352" x2="22.581" y2="22.352" width="0.254" layer="16"/>
 <wire x1="22.581" y1="22.352" x2="22.622" y2="22.393" width="0.254" layer="16"/>
+<contactref element="ECOG" pad="G3"/>
+<wire x1="19.05" y1="20.574" x2="19.05" y2="18.75695625" width="0.254" layer="16"/>
+<wire x1="19.05" y1="18.75695625" x2="13.02204375" y2="12.729" width="0.254" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="T1" pad="C"/>
 <contactref element="IR1" pad="K"/>
-<wire x1="23.495" y1="8.806" x2="28.837" y2="8.806" width="0.6096" layer="16"/>
-<wire x1="28.837" y1="8.806" x2="28.873" y2="8.842" width="0.6096" layer="16"/>
+<wire x1="23.495" y1="8.806" x2="35.644" y2="8.806" width="0.6096" layer="16"/>
+<wire x1="35.644" y1="8.806" x2="40.64" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="40.64" y1="3.81" x2="41.525" y2="3.81" width="0.6096" layer="16"/>
+<wire x1="41.525" y1="3.81" x2="41.573" y2="3.762" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="T1" pad="B"/>
@@ -7560,18 +7561,14 @@ design rules under a new name.</description>
 <wire x1="22.545" y1="18.118" x2="22.545" y2="11.006" width="0.254" layer="16"/>
 </signal>
 <signal name="RECEIVE">
-<contactref element="ECOG" pad="G1"/>
 <contactref element="U1" pad="1"/>
-<wire x1="13.02204375" y1="7.649" x2="17.751" y2="7.649" width="0.254" layer="16"/>
-<wire x1="17.751" y1="7.649" x2="21.59" y2="3.81" width="0.254" layer="16"/>
-<wire x1="21.59" y1="3.81" x2="34.81" y2="3.81" width="0.254" layer="16"/>
-<wire x1="34.81" y1="3.81" x2="42.46" y2="11.46" width="0.254" layer="16"/>
-</signal>
-<signal name="BLAST_RX">
-<contactref element="ECOG" pad="G0"/>
-</signal>
-<signal name="BLAST_TX">
-<contactref element="ECOG" pad="G3"/>
+<contactref element="ECOG" pad="G2"/>
+<wire x1="9.92324375" y1="10.189" x2="19.021" y2="10.189" width="0.254" layer="16"/>
+<wire x1="19.021" y1="10.189" x2="27.94" y2="1.27" width="0.254" layer="16"/>
+<wire x1="27.94" y1="1.27" x2="43.18" y2="1.27" width="0.254" layer="16"/>
+<wire x1="43.18" y1="1.27" x2="45.72" y2="3.81" width="0.254" layer="16"/>
+<wire x1="45.72" y1="3.81" x2="45.72" y2="8.2" width="0.254" layer="16"/>
+<wire x1="45.72" y1="8.2" x2="42.46" y2="11.46" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>

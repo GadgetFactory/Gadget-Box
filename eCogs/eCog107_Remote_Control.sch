@@ -5373,30 +5373,30 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </instance>
 <instance part="3V3_PWR2" gate="A" x="177.8" y="134.62"/>
 <instance part="GND2" gate="A" x="180.34" y="111.76"/>
-<instance part="GND6" gate="1" x="119.38" y="139.7"/>
-<instance part="P+4" gate="VCC" x="119.38" y="162.56"/>
-<instance part="GND8" gate="1" x="104.14" y="154.94"/>
-<instance part="P+7" gate="VCC" x="104.14" y="182.88" smashed="yes">
-<attribute name="VALUE" x="111.76" y="180.34" size="1.778" layer="96" rot="R180"/>
+<instance part="GND6" gate="1" x="127" y="139.7" rot="MR0"/>
+<instance part="P+4" gate="VCC" x="127" y="162.56" rot="MR0"/>
+<instance part="GND8" gate="1" x="142.24" y="154.94" rot="MR0"/>
+<instance part="P+7" gate="VCC" x="142.24" y="182.88" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="134.62" y="180.34" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R1" gate="G$1" x="83.82" y="160.02">
-<attribute name="DIGIKEY" x="83.82" y="160.02" size="1.778" layer="96" display="off"/>
+<instance part="R1" gate="G$1" x="162.56" y="160.02" rot="MR0">
+<attribute name="DIGIKEY" x="162.56" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="T1" gate="G$1" x="101.6" y="162.56" smashed="yes">
-<attribute name="NAME" x="105.41" y="167.64" size="1.778" layer="95"/>
-<attribute name="VALUE" x="105.41" y="165.1" size="1.778" layer="96"/>
-<attribute name="DIGIKEY" x="101.6" y="162.56" size="1.778" layer="96" display="off"/>
+<instance part="T1" gate="G$1" x="144.78" y="162.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="140.97" y="167.64" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="140.97" y="165.1" size="1.778" layer="96" rot="MR0"/>
+<attribute name="DIGIKEY" x="144.78" y="162.56" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="T3" gate="G$1" x="116.84" y="147.32" smashed="yes">
-<attribute name="NAME" x="121.92" y="147.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="121.92" y="144.78" size="1.778" layer="96"/>
-<attribute name="DIGIKEY" x="116.84" y="147.32" size="1.778" layer="96" display="off"/>
+<instance part="T3" gate="G$1" x="129.54" y="147.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="124.46" y="147.32" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="124.46" y="144.78" size="1.778" layer="96" rot="MR0"/>
+<attribute name="DIGIKEY" x="129.54" y="147.32" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="IR1" gate="G$1" x="104.14" y="175.26">
-<attribute name="DIGIKEY" x="104.14" y="175.26" size="1.778" layer="96" display="off"/>
+<instance part="IR1" gate="G$1" x="142.24" y="175.26" rot="MR0">
+<attribute name="DIGIKEY" x="142.24" y="175.26" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="IR2" gate="G$1" x="119.38" y="157.48">
-<attribute name="DIGIKEY" x="119.38" y="157.48" size="1.778" layer="96" display="off"/>
+<instance part="IR2" gate="G$1" x="127" y="157.48" rot="MR0">
+<attribute name="DIGIKEY" x="127" y="157.48" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -5417,7 +5417,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="IR2" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<wire x1="104.14" y1="177.8" x2="104.14" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="177.8" x2="142.24" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="VCC" pin="VCC"/>
 <pinref part="IR1" gate="G$1" pin="A"/>
 </segment>
@@ -5437,48 +5437,25 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="T3" gate="G$1" pin="E"/>
-<junction x="119.38" y="142.24"/>
+<junction x="127" y="142.24"/>
 <pinref part="T3" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="T1" gate="G$1" pin="E"/>
-<junction x="104.14" y="157.48"/>
+<junction x="142.24" y="157.48"/>
 <pinref part="T1" gate="G$1" pin="E"/>
 </segment>
 </net>
 <net name="TRANSMIT" class="0">
 <segment>
-<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
-<wire x1="215.9" y1="124.46" x2="200.66" y2="124.46" width="0.2032" layer="91"/>
-<label x="200.66" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="160.02" x2="58.42" y2="160.02" width="0.2032" layer="91"/>
-<label x="63.5" y="160.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RECEIVE" class="0">
-<segment>
-<pinref part="ECOG" gate="ECOG_GENERAL" pin="G1"/>
-<label x="200.66" y="121.92" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
-<wire x1="177.8" y1="121.92" x2="215.9" y2="121.92" width="0.2032" layer="91"/>
-</segment>
-</net>
-<net name="BLAST_RX" class="0">
-<segment>
-<pinref part="ECOG" gate="ECOG_GENERAL" pin="G0"/>
-<wire x1="215.9" y1="119.38" x2="200.66" y2="119.38" width="0.2032" layer="91"/>
-<label x="200.66" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BLAST_TX" class="0">
-<segment>
 <pinref part="ECOG" gate="ECOG_GENERAL" pin="G3"/>
-<wire x1="215.9" y1="127" x2="200.66" y2="127" width="0.2032" layer="91"/>
+<wire x1="215.9" y1="127" x2="193.04" y2="127" width="0.2032" layer="91"/>
 <label x="200.66" y="127" size="1.778" layer="95"/>
+<wire x1="193.04" y1="127" x2="193.04" y2="160.02" width="0.2032" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="160.02" x2="193.04" y2="160.02" width="0.2032" layer="91"/>
+<label x="182.88" y="160.02" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5489,23 +5466,33 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="104.14" y1="170.18" x2="104.14" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="170.18" x2="142.24" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="C"/>
 <pinref part="IR1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="114.3" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="147.32" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="162.56" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="157.48" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="157.48" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="147.32" x2="147.32" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="147.32" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="157.48" x2="157.48" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="157.48" x2="157.48" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 <pinref part="T3" gate="G$1" pin="B"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="160.02" x2="88.9" y2="162.56" width="0.1524" layer="91"/>
-<junction x="88.9" y="160.02"/>
+<wire x1="157.48" y1="160.02" x2="157.48" y2="162.56" width="0.1524" layer="91"/>
+<junction x="157.48" y="160.02"/>
+</segment>
+</net>
+<net name="RECEIVE" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="OUT"/>
+<wire x1="177.8" y1="121.92" x2="193.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="121.92" x2="193.04" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="ECOG" gate="ECOG_GENERAL" pin="G2"/>
+<wire x1="193.04" y1="124.46" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
+<label x="200.66" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
