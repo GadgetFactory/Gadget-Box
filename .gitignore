@@ -7,7 +7,7 @@ text
 boms
 *bom*
 *gerbers*
-
+*archive*
 
 # Windows image file caches
 Thumbs.db
@@ -63,3 +63,6 @@ Gadget-Box-Case Dimensions.brd
 *.7z
 GadgetBox-328pb/Gadget-Box-328pb_UpdatePartNumAttributes.scr
 *.scr
+*.mp4
+GadgetBox-328pb/PCB Technology Requirement Format V.00.xls
+GadgetBox-328pb/20160913_132018.jpg
