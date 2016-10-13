@@ -166,7 +166,7 @@ GadgetBox.GadgetFactory.net</text>
 <text x="49.3395" y="46.9265" size="0.762" layer="22" font="vector" ratio="15" rot="MR180" align="bottom-center">Vcc</text>
 <text x="51.78425" y="46.9265" size="0.762" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">Gnd</text>
 <text x="54.32425" y="46.9265" size="0.762" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">Gnd</text>
-<text x="17.78" y="43.18" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">BAT</text>
+<text x="18.542" y="41.783" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">BAT</text>
 <wire x1="67.2296" y1="47.8867" x2="67.2296" y2="47.752" width="0.254" layer="200"/>
 <wire x1="67.2296" y1="47.752" x2="67.2296" y2="47.498" width="0.254" layer="200"/>
 <wire x1="67.2296" y1="47.498" x2="67.2296" y2="47.3642" width="0.254" layer="200"/>
@@ -20878,8 +20878,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="68.248" y="27.698" size="0.05" layer="27" font="vector" ratio="0" rot="R180"/>
 <attribute name="PARTNO" value="RC0603JR-0710KL,YAGEO (VA),dk,311-10KGRCT-ND,RES SMD 10K OHM 5% 1/10W 0603 , REF36" x="66.548" y="28.448" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="SparkFun" package="JST-2-PTH-NS" value="" x="15.24" y="49.911" rot="MR90">
-<attribute name="PARTNO" value="B2B-PH-SM4-TB(LF)(SN),JST SALES AMERICA INC (VA),dk,455-1734-1-ND ,&quot;2 Positions Header, Shrouded Connector 0.079 (2.00mm) Through Hole Tin &quot;, REF87" x="15.24" y="49.911" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="JP1" library="SparkFun" package="JST-2-PTH-NS" value="" x="16.256" y="50.038" rot="MR180">
+<attribute name="PARTNO" value="B2B-PH-SM4-TB(LF)(SN),JST SALES AMERICA INC (VA),dk,455-1734-1-ND ,&quot;2 Positions Header, Shrouded Connector 0.079 (2.00mm) Through Hole Tin &quot;, REF87" x="16.256" y="50.038" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="IC1A" library="we-chip" package="TQFP32" value="ATMEGA328PB-AU" x="48.006" y="27.94" smashed="yes" rot="R315">
 <attribute name="NAME" x="48.904025" y="28.838028125" size="0.8128" layer="25" font="vector" ratio="10" rot="R315" align="center"/>
@@ -21868,8 +21868,10 @@ design rules under a new name.</description>
 <wire x1="19.558" y1="29.972" x2="20.066" y2="29.464" width="0.6096" layer="1"/>
 <wire x1="20.066" y1="29.464" x2="21.281" y2="29.464" width="0.6096" layer="1"/>
 <wire x1="21.281" y1="29.464" x2="21.336" y2="29.519" width="0.6096" layer="1"/>
-<wire x1="16.621" y1="35.449" x2="16.621" y2="49.53" width="0.6096" layer="1"/>
-<wire x1="16.621" y1="49.53" x2="15.24" y2="50.911" width="0.6096" layer="1"/>
+<wire x1="16.621" y1="35.449" x2="16.621" y2="47.736" width="0.6096" layer="1"/>
+<wire x1="16.621" y1="47.736" x2="17.145" y2="48.26" width="0.6096" layer="1"/>
+<wire x1="17.145" y1="48.26" x2="17.145" y2="49.927" width="0.6096" layer="1"/>
+<wire x1="17.145" y1="49.927" x2="17.256" y2="50.038" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="CHG" pad="C"/>
