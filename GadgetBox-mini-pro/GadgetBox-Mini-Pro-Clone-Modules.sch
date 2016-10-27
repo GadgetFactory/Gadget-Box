@@ -2470,8 +2470,6 @@ http://www.xganon.com</description>
 <sheets>
 <sheet>
 <plain>
-<text x="101.6" y="187.96" size="1.27" layer="91">Todo: Figure out how to power from charger.</text>
-<text x="101.6" y="185.42" size="1.27" layer="91">TODO: Double check IN+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="A" x="0" y="0"/>
@@ -3133,7 +3131,7 @@ http://www.xganon.com</description>
 </sheet>
 <sheet>
 <plain>
-<text x="53.34" y="170.18" size="1.778" layer="94">POWER AND FILTERING</text>
+<text x="53.34" y="170.18" size="1.778" layer="94">Switch and Connectors</text>
 <wire x1="5.08" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="111.76" y1="121.92" x2="111.76" y2="175.26" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="134.62" y1="38.1" x2="134.62" y2="53.34" width="0.1524" layer="94" style="shortdash"/>
