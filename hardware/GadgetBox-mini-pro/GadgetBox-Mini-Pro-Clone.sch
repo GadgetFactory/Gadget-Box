@@ -4674,6 +4674,8 @@ http://www.xganon.com</description>
 <sheets>
 <sheet>
 <plain>
+<text x="78.74" y="-5.08" size="1.778" layer="94">This work is licensed under the Creative Commons Attribution-ShareAlike License.</text>
+<text x="-2.54" y="-7.62" size="1.778" layer="94">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="A" x="0" y="0"/>
@@ -5375,6 +5377,8 @@ http://www.xganon.com</description>
 <text x="48.26" y="116.84" size="1.778" layer="94">BATTERY CHARGE &amp; MONITOR</text>
 <wire x1="5.08" y1="71.12" x2="134.62" y2="71.12" width="0.1524" layer="94" style="shortdash"/>
 <text x="142.24" y="119.38" size="1.778" layer="94">Measure Battery (Populate R10 with 0 ohm jumper)</text>
+<text x="58.42" y="-5.08" size="1.778" layer="94">This work is licensed under the Creative Commons Attribution-ShareAlike License.</text>
+<text x="0" y="-7.62" size="1.778" layer="94">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$3" x="134.62" y="2.54"/>
