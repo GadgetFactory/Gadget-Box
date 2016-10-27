@@ -46,8 +46,8 @@ char auth[] = "YourAuthToken";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "gadgetfactory";
-char pass[] = "9442944294";
+char ssid[] = "yourssid";
+char pass[] = "yourpass";
 
 #include <SoftwareSerial.h>
 
