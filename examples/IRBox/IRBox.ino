@@ -13,11 +13,11 @@
  *       Blynk
  *       
  * GadgetBox Motherboards supported:      
- *       Arduino Mini Pro
+ *       Arduino Mini Pro (Only 4 IR commands)
  *       Teensy (Be sure to install the Teensy version of IRremote)
  *       
  * Blynk App:
- *       Clone the following project in Blynk http://tinyurl.com/hjrc5pu* 
+ *       Clone the following project in Blynk http://tinyurl.com/hjrc5pu
  *       
  * Blynk Virtual Pins:      
  *       V0:      The table to select which IR command to learn
@@ -42,19 +42,19 @@
 #include <GadgetBox.h>          //Install GadgetBox Library from Library Manager
 #include <IRremote.h>           //Install IRremote library from Library Manager
 
-//#define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
+//#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
+
+#if defined(SKETCHDEBUG)  
+  #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
+#endif
 #include <ESP8266_Lib.h>        //Install Blynk Library from Library Manager
 #include <BlynkSimpleShieldEsp8266.h>
 
-//#define SKETCHDEBUG                   //Uncomment to print out debug info, uses more space...
-
-int RECV_PIN = BC1;
-int BUTTON_PIN = DC0;
-//int STATUS_PIN = DC3;
+int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "YourAuthToken";
+char auth[] = "yourauth";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
@@ -85,6 +85,9 @@ void setup()
   // Set console baud rate
   Serial.begin(9600);
   delay(10);
+  EspSerial.begin(115200);
+  EspSerial.println("AT+CIOBAUD=9600");
+  delay(1000);
 
   irrecv.enableIRIn(); // Start the receiver
 
@@ -217,6 +220,7 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 1);
           Blynk.virtualWrite(V21,codeType,codeValue,codeLen);
           break;
+  #if !defined(SKETCHDEBUG)            
         case 2:
           Blynk.virtualWrite(V0, "pick", 2);
           Blynk.virtualWrite(V22,codeType,codeValue,codeLen);
@@ -229,10 +233,11 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 4);
           Blynk.virtualWrite(V24,codeType,codeValue,codeLen);
           break;  
+#elif !defined(ARDUINO_AVR_PRO)            
         case 5:
           Blynk.virtualWrite(V0, "pick", 5);
           Blynk.virtualWrite(V25,codeType,codeValue,codeLen);
-          break; 
+          break;          
         case 6:
           Blynk.virtualWrite(V0, "pick", 6);
           Blynk.virtualWrite(V26,codeType,codeValue,codeLen);
@@ -253,6 +258,7 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 10);
           Blynk.virtualWrite(V30,codeType,codeValue,codeLen);
           break;                                                                       
+#endif          
         default:
           break;
       }
@@ -287,7 +293,7 @@ BLYNK_WRITE(V1)
     Blynk.syncVirtual(V21); 
   }
 }
-
+#if !defined(SKETCHDEBUG)  
 BLYNK_WRITE(V2)
 {
   if(param[0].asInt()){
@@ -308,48 +314,48 @@ BLYNK_WRITE(V4)
     Blynk.syncVirtual(V24); 
   }
 }
-
-BLYNK_WRITE(V5)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V25); 
+#elif !defined(ARDUINO_AVR_PRO) 
+  BLYNK_WRITE(V5)
+  {
+    if(param[0].asInt()){
+      Blynk.syncVirtual(V25); 
+    }
   }
-}
 
-BLYNK_WRITE(V6)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V26); 
+  BLYNK_WRITE(V6)
+  {
+    if(param[0].asInt()){
+      Blynk.syncVirtual(V26); 
+    }
   }
-}
+  
+  BLYNK_WRITE(V7)
+  {
+    if(param[0].asInt()){
+      Blynk.syncVirtual(V27); 
+    }
+  }
+  
+  BLYNK_WRITE(V8)
+  {
+    if(param[0].asInt()){
+      Blynk.syncVirtual(V28); 
+    }
+  }
 
-BLYNK_WRITE(V7)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V27); 
+  BLYNK_WRITE(V9)
+  {
+    if(param[0].asInt()){
+      Blynk.syncVirtual(V29); 
+    }
   }
-}
-
-BLYNK_WRITE(V8)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V28); 
+  
+  BLYNK_WRITE(V10)
+  {
+  }  if(param[0].asInt()){
+      Blynk.syncVirtual(V30); 
   }
-}
-
-BLYNK_WRITE(V9)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V29); 
-  }
-}
-
-BLYNK_WRITE(V10)
-{
-  if(param[0].asInt()){
-    Blynk.syncVirtual(V30); 
-  }
-}
+#endif
 
 BLYNK_WRITE(V21)
 {
@@ -358,7 +364,7 @@ BLYNK_WRITE(V21)
     codeLen = param[2].asInt();
     sendCode(0);    
 }
-
+#if !defined(SKETCHDEBUG)  
 BLYNK_WRITE(V22)
 {
     codeType = param[0].asInt();
@@ -382,54 +388,55 @@ BLYNK_WRITE(V24)
     codeLen = param[2].asInt();
     sendCode(0);
 }
+#elif !defined(ARDUINO_AVR_PRO) 
+  BLYNK_WRITE(V25)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
 
-BLYNK_WRITE(V25)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
+  BLYNK_WRITE(V26)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
+  
+  BLYNK_WRITE(V27)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
+  
+  BLYNK_WRITE(V28)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
 
-BLYNK_WRITE(V26)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
+  BLYNK_WRITE(V29)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
 
-BLYNK_WRITE(V27)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
-
-BLYNK_WRITE(V28)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
-
-BLYNK_WRITE(V29)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
-
-BLYNK_WRITE(V30)
-{
-    codeType = param[0].asInt();
-    codeValue = param[1].asInt();
-    codeLen = param[2].asInt();
-    sendCode(0);
-}
+  BLYNK_WRITE(V30)
+  {
+      codeType = param[0].asInt();
+      codeValue = param[1].asInt();
+      codeLen = param[2].asInt();
+      sendCode(0);
+  }
+#endif
 
 // This function will run every time Blynk connection is established
 BLYNK_CONNECTED() {
@@ -437,15 +444,18 @@ BLYNK_CONNECTED() {
   Blynk.virtualWrite(V0, "clr");
   Blynk.virtualWrite(V0, "add", 0, "Button", "Virtual Pin");
   Blynk.virtualWrite(V0, "add", 1, "IR1", "V1");
+  #if !defined(SKETCHDEBUG)  
   Blynk.virtualWrite(V0, "add", 2, "IR2", "V2");
   Blynk.virtualWrite(V0, "add", 3, "IR3", "V3");
   Blynk.virtualWrite(V0, "add", 4, "IR4", "V4");
-  Blynk.virtualWrite(V0, "add", 5, "IR5", "V5");
-  Blynk.virtualWrite(V0, "add", 6, "IR6", "V6");    
-  Blynk.virtualWrite(V0, "add", 7, "IR7", "V7"); 
-  Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
-  Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
-  Blynk.virtualWrite(V0, "add", 10, "IR10", "V10"); 
+  #elif !defined(ARDUINO_AVR_PRO) 
+    Blynk.virtualWrite(V0, "add", 5, "IR5", "V5"); 
+    Blynk.virtualWrite(V0, "add", 6, "IR6", "V6");   
+    Blynk.virtualWrite(V0, "add", 7, "IR7", "V7"); 
+    Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
+    Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
+    Blynk.virtualWrite(V0, "add", 10, "IR10", "V10"); 
+  #endif
 
   lcd.clear();
   lcd.print(0,0,"Tap a line");
