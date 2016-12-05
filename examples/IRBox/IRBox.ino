@@ -1,4 +1,30 @@
 /**************************************************************
+ * This is an example for GadgetBox to create a Learning IR Remote control using Blynk
+ * 
+ * There are up to 10 IR commands that can be learned. Raw IR commands not supported.
+ * 
+ * eCogs Used:
+ *       eCog107 - Remote Control - Connect to eCog B
+ *       eCog100 - Wifi - Connect to eCog C
+ * 
+ * Libraries required (Install with Library Manager):
+ *       GadgetBox
+ *       IRremote
+ *       Blynk
+ *       
+ * GadgetBox Motherboards supported:      
+ *       Arduino Mini Pro
+ *       Teensy (Be sure to install the Teensy version of IRremote)
+ *       
+ * Blynk App:
+ *       Clone the following project in Blynk http://tinyurl.com/hjrc5pu* 
+ *       
+ * Blynk Virtual Pins:      
+ *       V0:      The table to select which IR command to learn
+ *       V1-V10:  Trigger a send of the IR command - connect a button or timer to send out IR command 
+ *       V21-V30: Stores the IR command that is learned in the Blynk cloud
+ *       V31:     LCD widget for feedback while learning
+ ***************************************************************       
  * Blynk is a platform with iOS and Android apps to control
  * Arduino, Raspberry Pi and the likes over the Internet.
  * You can easily build graphic interfaces for all your
@@ -12,29 +38,15 @@
  * Blynk library is licensed under MIT license
  * This example code is in public domain.
  *
- **************************************************************
- *
- * This example shows how to use ESP8266 Shield (with AT commands)
- * to connect your project to Blynk.
- *
- * Note: Ensure a stable serial connection to ESP8266!
- *       Firmware version 1.0.0 (AT v0.22) is needed.
- *       You can change ESP baud rate. Connect to AT console and call:
- *           AT+UART_DEF=9600,8,1,0,0
- *       In general, Soft Serial may be unstable.
- *       It is highly recommended to switch to Hard Serial.
- *
- * Change WiFi ssid, pass, and Blynk auth token to run :)
- * Feel free to apply it to any other example. It's simple!
- *
  **************************************************************/
-#include <GadgetBox.h>
+#include <GadgetBox.h>          //Install GadgetBox Library from Library Manager
+#include <IRremote.h>           //Install IRremote library from Library Manager
 
 //#define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
-#include <ESP8266_Lib.h>
+#include <ESP8266_Lib.h>        //Install Blynk Library from Library Manager
 #include <BlynkSimpleShieldEsp8266.h>
 
-#include <IRremote.h>
+//#define SKETCHDEBUG                   //Uncomment to print out debug info, uses more space...
 
 int RECV_PIN = BC1;
 int BUTTON_PIN = DC0;
@@ -49,15 +61,12 @@ char auth[] = "YourAuthToken";
 char ssid[] = "yourssid";
 char pass[] = "yourpass";
 
-#include <SoftwareSerial.h>
-
-
-// Hardware Serial on Teensy
-//#define EspSerial Serial  //For Teensy
-
-// or Software Serial on Mini Pro
-//SoftwareSerial EspSerial(GB13, CC1); // RX, TX (For Pro Mini)
-SoftwareSerial EspSerial(GB13, CC1); // RX, TX   (For GB 328pb)
+#if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
+  #define EspSerial Serial  
+#elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
+  #include <SoftwareSerial.h>
+  SoftwareSerial EspSerial(CC0, CC1); // RX, TX (For Pro Mini)
+#endif
 
 // Your ESP8266 baud rate:
 #define ESP8266_BAUD 9600
@@ -84,8 +93,11 @@ void setup()
   delay(10);
 
   Blynk.begin(auth, wifi, ssid, pass);
+}
 
-  //pinMode(STATUS_PIN, OUTPUT);
+void loop()
+{
+  Blynk.run();
 }
 
 // Storage for the recorded code
@@ -101,68 +113,51 @@ void storeCode(decode_results *results) {
   codeType = results->decode_type;
   int count = results->rawlen;
   if (codeType == UNKNOWN) {
-    //Serial.println("Received unknown code, saving as raw");
-    //codeLen = results->rawlen - 1;
-    // To store raw codes:
-    // Drop first value (gap)
-    // Convert from ticks to microseconds
-    // Tweak marks shorter, and spaces longer to cancel out IR receiver distortion
-//    for (int i = 1; i <= codeLen; i++) {
-//      if (i % 2) {
-//        // Mark
-//        rawCodes[i - 1] = results->rawbuf[i]*USECPERTICK - MARK_EXCESS;
-//        //Serial.print(" m");
-//      } 
-//      else {
-//        // Space
-//        rawCodes[i - 1] = results->rawbuf[i]*USECPERTICK + MARK_EXCESS;
-//        //Serial.print(" s");
-//      }
-//      //Serial.print(rawCodes[i - 1], DEC);
-//    }
-    //Serial.println("");
   }
   else {
     lcd.clear();
     if (codeType == NEC) {
-      //Serial.print("Received NEC: ");
-      //lcd.print(0,1,"NEC ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received NEC: ");
+      #endif
       if (results->value == REPEAT) {
-        // Don't record a NEC repeat value as that's useless.
-        //Serial.println("repeat; ignoring.");
         return;
       }
     } 
     else if (codeType == SONY) {
-      //Serial.print("Received SONY: ");
-      //lcd.print(0,1,"SONY ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received SONY: ");
+      #endif      
     } 
     else if (codeType == PANASONIC) {
-      //Serial.print("Received PANASONIC: ");
-      //lcd.print(0,1,"PANAS ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received PANASONIC: ");
+      #endif  
     }
     else if (codeType == JVC) {
-      //Serial.print("Received JVC: ");
-      //lcd.print(0,1,"JVC ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received JVC: ");
+      #endif        
     }
     else if (codeType == RC5) {
-      //Serial.print("Received RC5: ");
-      //lcd.print(0,1,"RC5 ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received RC5: ");
+      #endif        
     } 
     else if (codeType == RC6) {
-      //Serial.print("Received RC6: ");
-      //lcd.print(0,1,"RC6 ");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Received RC6: ");
+      #endif        
     } 
     else {
-//      Serial.print("Unexpected codeType ");
-//      Serial.print(codeType, DEC);
-//      Serial.println("");
+      #if defined(SKETCHDEBUG)
+        Serial.print("Unexpected codeType ");
+        Serial.print(codeType, DEC);
+        Serial.println("");
+      #endif        
     }
-    //Serial.print(results->value, HEX);
     lcd.print(5,1,results->value);
     lcd.print(14,1,results->bits);
-    //Serial.print(" Code Length ");
-    //Serial.println(results->bits, DEC);
     codeValue = results->value;
     codeLen = results->bits;
   }
@@ -172,28 +167,19 @@ void sendCode(int repeat) {
   if (codeType == NEC) {
     if (repeat) {
       irsend.sendNEC(REPEAT, codeLen);
-      //Serial.println("Sent NEC repeat");
     } 
     else {
       irsend.sendNEC(codeValue, codeLen);
-      //Serial.print("Sent NEC ");
-      //Serial.println(codeValue, HEX);
     }
   } 
   else if (codeType == SONY) {
     irsend.sendSony(codeValue, codeLen);
-    //Serial.print("Sent Sony ");
-    //Serial.println(codeValue, HEX);
   } 
   else if (codeType == PANASONIC) {
     irsend.sendPanasonic(codeValue, codeLen);
-    //Serial.print("Sent Panasonic");
-    //Serial.println(codeValue, HEX);
   }
   else if (codeType == JVC) {
     irsend.sendPanasonic(codeValue, codeLen);
-    //Serial.print("Sent JVC");
-    //Serial.println(codeValue, HEX);
   }
   else if (codeType == RC5 || codeType == RC6) {
     if (!repeat) {
@@ -204,35 +190,27 @@ void sendCode(int repeat) {
     codeValue = codeValue & ~(1 << (codeLen - 1));
     codeValue = codeValue | (toggle << (codeLen - 1));
     if (codeType == RC5) {
-      //Serial.print("Sent RC5 ");
-      //Serial.println(codeValue, HEX);
       irsend.sendRC5(codeValue, codeLen);
     } 
     else {
       irsend.sendRC6(codeValue, codeLen);
-      //Serial.print("Sent RC6 ");
-      //Serial.println(codeValue, HEX);
     }
   } 
   else if (codeType == UNKNOWN /* i.e. raw */) {
     // Assume 38 KHz
-    //irsend.sendRaw(rawCodes, codeLen, 38);
-    //Serial.println("Sent raw");
+    //irsend.sendRaw(rawCodes, codeLen, 38);    Raw is disabled to save space...
   }
 }
 
 void learnIR(int rowId) {
-  //Serial.println("Waiting for IR Command");
   lcd.clear();
   lcd.print(0,0,"Waiting for IR");
   int found = 0;
   irrecv.enableIRIn();
   for(int i = 0;i<50;i++){
     if(irrecv.decode(&results)){
-      //digitalWrite(STATUS_PIN, HIGH);
       storeCode(&results);
       found = 1;
-      //digitalWrite(STATUS_PIN, LOW);
       switch (rowId)
       {
         case 1:
@@ -250,19 +228,40 @@ void learnIR(int rowId) {
         case 4:
           Blynk.virtualWrite(V0, "pick", 4);
           Blynk.virtualWrite(V24,codeType,codeValue,codeLen);
-          break;              
+          break;  
+        case 5:
+          Blynk.virtualWrite(V0, "pick", 5);
+          Blynk.virtualWrite(V25,codeType,codeValue,codeLen);
+          break; 
+        case 6:
+          Blynk.virtualWrite(V0, "pick", 6);
+          Blynk.virtualWrite(V26,codeType,codeValue,codeLen);
+          break;    
+        case 7:
+          Blynk.virtualWrite(V0, "pick", 7);
+          Blynk.virtualWrite(V27,codeType,codeValue,codeLen);
+          break;  
+        case 8:
+          Blynk.virtualWrite(V0, "pick", 8);
+          Blynk.virtualWrite(V28,codeType,codeValue,codeLen);
+          break;  
+        case 9:
+          Blynk.virtualWrite(V0, "pick", 9);
+          Blynk.virtualWrite(V29,codeType,codeValue,codeLen);
+          break;  
+        case 10:
+          Blynk.virtualWrite(V0, "pick", 10);
+          Blynk.virtualWrite(V30,codeType,codeValue,codeLen);
+          break;                                                                       
         default:
-          //Serial.println("Unknown item selected");
           break;
       }
-      //Serial.println("IR Command Found");
       lcd.print(0,0,"IR Found");
       break; 
     }
     delay(100);
   }
   if (!found) {
-    //Serial.println("IR Command Timeout");  
     lcd.clear(); 
     lcd.print(0,0,"IR Timeout");
   }
@@ -310,16 +309,54 @@ BLYNK_WRITE(V4)
   }
 }
 
+BLYNK_WRITE(V5)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V25); 
+  }
+}
+
+BLYNK_WRITE(V6)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V26); 
+  }
+}
+
+BLYNK_WRITE(V7)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V27); 
+  }
+}
+
+BLYNK_WRITE(V8)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V28); 
+  }
+}
+
+BLYNK_WRITE(V9)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V29); 
+  }
+}
+
+BLYNK_WRITE(V10)
+{
+  if(param[0].asInt()){
+    Blynk.syncVirtual(V30); 
+  }
+}
 
 BLYNK_WRITE(V21)
 {
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    //digitalWrite(STATUS_PIN, HIGH);
-    sendCode(0);
-    //digitalWrite(STATUS_PIN, LOW);
-    //delay(50); // Wait a bit between retransmissions      
+    sendCode(0);    
 }
 
 BLYNK_WRITE(V22)
@@ -327,10 +364,7 @@ BLYNK_WRITE(V22)
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    //digitalWrite(STATUS_PIN, HIGH);
     sendCode(0);
-    //digitalWrite(STATUS_PIN, LOW);
-    //delay(50); // Wait a bit between retransmissions  
 }
 
 BLYNK_WRITE(V23)
@@ -338,10 +372,7 @@ BLYNK_WRITE(V23)
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    //digitalWrite(STATUS_PIN, HIGH);
     sendCode(0);
-    //digitalWrite(STATUS_PIN, LOW);
-    //delay(50); // Wait a bit between retransmissions  
 }
 
 BLYNK_WRITE(V24)
@@ -349,10 +380,55 @@ BLYNK_WRITE(V24)
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    //digitalWrite(STATUS_PIN, HIGH);
     sendCode(0);
-    //digitalWrite(STATUS_PIN, LOW);
-    //delay(50); // Wait a bit between retransmissions  
+}
+
+BLYNK_WRITE(V25)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
+}
+
+BLYNK_WRITE(V26)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
+}
+
+BLYNK_WRITE(V27)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
+}
+
+BLYNK_WRITE(V28)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
+}
+
+BLYNK_WRITE(V29)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
+}
+
+BLYNK_WRITE(V30)
+{
+    codeType = param[0].asInt();
+    codeValue = param[1].asInt();
+    codeLen = param[2].asInt();
+    sendCode(0);
 }
 
 // This function will run every time Blynk connection is established
@@ -364,14 +440,15 @@ BLYNK_CONNECTED() {
   Blynk.virtualWrite(V0, "add", 2, "IR2", "V2");
   Blynk.virtualWrite(V0, "add", 3, "IR3", "V3");
   Blynk.virtualWrite(V0, "add", 4, "IR4", "V4");
+  Blynk.virtualWrite(V0, "add", 5, "IR5", "V5");
+  Blynk.virtualWrite(V0, "add", 6, "IR6", "V6");    
+  Blynk.virtualWrite(V0, "add", 7, "IR7", "V7"); 
+  Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
+  Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
+  Blynk.virtualWrite(V0, "add", 10, "IR10", "V10"); 
 
   lcd.clear();
   lcd.print(0,0,"Tap a line");
   lcd.print(0,1,"to Learn IR");
-}
-
-void loop()
-{
-  Blynk.run();
 }
 

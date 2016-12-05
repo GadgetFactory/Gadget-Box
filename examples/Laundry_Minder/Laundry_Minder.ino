@@ -1,12 +1,44 @@
-//Made with Arduino Mini Pro
-// Vibration sensor on D
-// Display on any location
-
-//V0 is Motion detector Count
-//V1 is Laundry Done
-//V2 is the Graph that counts motion in last minute
-//V3 is reset
-//V4 Analog sound
+/*******************************************************************
+ * This is a GadgetBox example that uses a vibration sensor to alert you when laundry is done
+ * 
+ * eCogs Used:
+ *      eCog103 - Sensor - Connect a vibration sensor - Connect to eCog A on motherboard
+ *      eCog100 - Wifi - Connect to eCog C on motherboard
+ *      (Optional) eCog101 - I2C OLED TFT - Any open eCog location
+ *      (Optional) eCog103 - Sensor - Audio Sensor - Connect to eCog D on motherboard
+ *      
+ * Libraries required (Install with Library Manager):
+ *      GadgetBox
+ *      Blynk
+ *      
+ * GadgetBox Motherboards supported:
+ *      Arduino Mini Pro
+ *      
+ * Blynk App:
+ *      Clone the following project in Blynk http://tinyurl.com/joze5j4
+ *      
+ * Blynk Virtual Pins:
+ *      V0:   A count of the total amount of vibrations detected
+ *      V1:   An LED indicating when laundry is done
+ *      V2:   How many Vibrations/minute
+ *      V3:   Reset all counts
+ *      V4:   The sound level
+ * 
+ *******************************************************************       
+ * Blynk is a platform with iOS and Android apps to control
+ * Arduino, Raspberry Pi and the likes over the Internet.
+ * You can easily build graphic interfaces for all your
+ * projects by simply dragging and dropping widgets.
+ *
+ *   Downloads, docs, tutorials: http://www.blynk.cc
+ *   Blynk community:            http://community.blynk.cc
+ *   Social networks:            http://www.fb.com/blynkapp
+ *                               http://twitter.com/blynk_app
+ *
+ * Blynk library is licensed under MIT license
+ * This example code is in public domain.
+ *
+ *******************************************************************/
 
 #include <GadgetBox.h>
 
@@ -27,12 +59,12 @@ char auth[] = "yourauth";
 char ssid[] = "ssid";
 char pass[] = "password";
 
-// Hardware Serial on Teensy
-#define EspSerial Serial1  //For Teensy
-
-// or Software Serial on Mini Pro
-//SoftwareSerial EspSerial(GB13, CC1); // RX, TX (For Pro Mini)
-//SoftwareSerial EspSerial(GB13, CC1); // RX, TX   (For GB 328pb)
+#if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
+  #define EspSerial Serial1  
+#elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
+  #include <SoftwareSerial.h>
+  SoftwareSerial EspSerial(CC0, CC1); // RX, TX (For Pro Mini)
+#endif
 
 // Your ESP8266 baud rate:
 #define ESP8266_BAUD 9600
@@ -57,8 +89,7 @@ void setup() {
   // initialize the button pin as a input:
   pinMode(vibrationPin, INPUT);
   pinMode(audioAnalogPin, INPUT);
-  // initialize the LED as an output:
-  //pinMode(ledPin, OUTPUT);
+
   // initialize serial communication:
   Serial.begin(9600);
 
@@ -78,51 +109,6 @@ void setup() {
 
   Blynk.begin(auth, wifi, ssid, pass);
 
-}
-
-BLYNK_READ(V0) {
-  Blynk.virtualWrite(V0,vibrationCounter);
-}
-
-BLYNK_READ(V2) {
-  Serial.println("In vibrations per minute check");
-  if (!vibrationsPerMinute && vibrationCounter > 0) { // No Vibrations in the last minute send alert
-    Blynk.virtualWrite(V1,255);
-    if (!notificationSent) {
-      notificationSent = 1;
-      Blynk.notify("Laundry is quiet for 1 minute");
-      Serial.println("Laundry is quiet for 1 minute");
-    }
-  }
-  Blynk.virtualWrite(V2,vibrationsPerMinute);
-  vibrationsPerMinute = 0;
-}
-
-BLYNK_WRITE(V3){   //Reset everything
-  vibrationCounter = 0;   // counter for the number of button presses
-  vibrationsPerMinute = 0;
-  notificationSent = 0;
-  Blynk.virtualWrite(V1,0);
-  Serial.println("Reset");
-  display.setCursor(1,0);
-  display.clearDisplay();
-  display.print("Reset");
-  display.display();
-}
-
-BLYNK_READ(V4){
-  int sensorVal = analogRead(audioAnalogPin);
-  //Serial.println(sensorVal);
-  Blynk.virtualWrite(V4,sensorVal);
-}
-
-BLYNK_CONNECTED() {
-  Blynk.virtualWrite(V1,0);
-  display.clearDisplay();
-  
-  display.setCursor(0,0);
-  display.print("Wifi On, waiting for motion");
-  display.display();
 }
 
 void loop() {
@@ -159,4 +145,49 @@ void loop() {
   //for next time through the loop
   lastvibrationState = vibrationState;
   
+}
+
+BLYNK_READ(V0) {
+  Blynk.virtualWrite(V0,vibrationCounter);
+}
+
+BLYNK_READ(V2) {
+  Serial.println("In vibrations per minute check");
+  if (!vibrationsPerMinute && vibrationCounter > 0) { // No Vibrations in the last minute send alert
+    Blynk.virtualWrite(V1,255);
+    if (!notificationSent) {
+      notificationSent = 1;
+      Blynk.notify("Laundry has been quiet for 1 minute");
+      Serial.println("Laundry is quiet for 1 minute");
+    }
+  }
+  Blynk.virtualWrite(V2,vibrationsPerMinute);
+  vibrationsPerMinute = 0;
+}
+
+BLYNK_WRITE(V3){   //Reset everything
+  vibrationCounter = 0;   // counter for the number of button presses
+  vibrationsPerMinute = 0;
+  notificationSent = 0;
+  Blynk.virtualWrite(V1,0);
+  Serial.println("Reset");
+  display.setCursor(1,0);
+  display.clearDisplay();
+  display.print("Reset");
+  display.display();
+}
+
+BLYNK_READ(V4){
+  int sensorVal = analogRead(audioAnalogPin);
+  //Serial.println(sensorVal);
+  Blynk.virtualWrite(V4,sensorVal);
+}
+
+BLYNK_CONNECTED() {
+  Blynk.virtualWrite(V1,0);
+  display.clearDisplay();
+  
+  display.setCursor(0,0);
+  display.print("Wifi On, waiting for motion");
+  display.display();
 }
