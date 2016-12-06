@@ -168,8 +168,18 @@
   #elif defined(ESP8266)
       #define GB0 3
       #define GB1 1
-      #define GB2 5
-      #define GB3 4
+      #define GB2 4
+      #define GB3 5
+
+      #define AC4 GB3
+      #define AC5 GB2
+      #define AC6 GB1
+      #define AC7 GB0
+
+      #define BC0 GB0
+      #define BC1 GB1
+      #define BC2 GB2
+      #define BC3 GB3
       
       #define MOSI 13
       #define MISO 12
