@@ -52,12 +52,12 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "1b7f1d984ac14b89a7ca6e355155053e";
+char auth[] = "yourauth";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "gadgetfactory";
-char pass[] = "9442944294";
+char ssid[] = "yourssid";
+char pass[] = "yourpass";
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
