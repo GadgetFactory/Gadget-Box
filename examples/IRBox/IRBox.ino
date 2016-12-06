@@ -11,6 +11,7 @@
  *       GadgetBox
  *       IRremote
  *       Blynk
+ *       IRremoteESP8266 if on NodeMCU. Install manually from https://github.com/markszabo/IRremoteESP8266
  *       
  * GadgetBox Motherboards supported:      
  *       Arduino Mini Pro (Only 4 IR commands)
@@ -40,62 +41,72 @@
  *
  **************************************************************/
 #include <GadgetBox.h>          //Install GadgetBox Library from Library Manager
-#include <IRremote.h>           //Install IRremote library from Library Manager
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
 
 #if defined(SKETCHDEBUG)  
   #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
 #endif
-#include <ESP8266_Lib.h>        //Install Blynk Library from Library Manager
-#include <BlynkSimpleShieldEsp8266.h>
 
-int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default
+
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "yourauth";
+char auth[] = "1b7f1d984ac14b89a7ca6e355155053e";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "yourssid";
-char pass[] = "yourpass";
+char ssid[] = "gadgetfactory";
+char pass[] = "9442944294";
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
-  #define EspSerial Serial  
+  #define EspSerial Serial2
 #elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
   #include <SoftwareSerial.h>
   SoftwareSerial EspSerial(CC0, CC1); // RX, TX (For Pro Mini)
+#elif defined(ESP8266)
+  #include <ESP8266WiFi.h>
+  #include <BlynkSimpleEsp8266.h>
+  #include <IRremoteESP8266.h>    //Install IRremoteESP8266 library from https://github.com/markszabo/IRremoteESP8266
 #endif
 
-// Your ESP8266 baud rate:
-#define ESP8266_BAUD 9600
+#if defined(ESP8266)
+  IRsend irsend(BC3);
+  #define BC2 GB2  
+  int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default
+#else
+  // Your ESP8266 baud rate:
+  #define ESP8266_BAUD 9600 
+  ESP8266 wifi(&EspSerial); 
+  IRsend irsend();
+  #include <IRremote.h>           //Install IRremote library from Library Manager
+  int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default 
+#endif
 
 IRrecv irrecv(RECV_PIN);
-IRsend irsend;
 
 decode_results results;
-
-ESP8266 wifi(&EspSerial);
 
 WidgetLCD lcd(V31);
 
 void setup()
 {
+  irrecv.enableIRIn(); // Start the receiver
+#if defined(ESP8266)
+  Blynk.begin(auth, ssid, pass);
+  irsend.begin();
+#else
   // Set console baud rate
   Serial.begin(9600);
   delay(10);
   EspSerial.begin(115200);
   EspSerial.println("AT+CIOBAUD=9600");
   delay(1000);
-
-  irrecv.enableIRIn(); // Start the receiver
-
+  Blynk.begin(auth, wifi, ssid, pass);
   // Set ESP8266 baud rate
   EspSerial.begin(ESP8266_BAUD);
-  delay(10);
-
-  Blynk.begin(auth, wifi, ssid, pass);
+  delay(10);  
+#endif
 }
 
 void loop()
@@ -115,55 +126,55 @@ int toggle = 0; // The RC5/6 toggle state
 void storeCode(decode_results *results) {
   codeType = results->decode_type;
   int count = results->rawlen;
-  if (codeType == UNKNOWN) {
-  }
-  else {
-    lcd.clear();
-    if (codeType == NEC) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received NEC: ");
-      #endif
-      if (results->value == REPEAT) {
-        return;
-      }
-    } 
-    else if (codeType == SONY) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received SONY: ");
-      #endif      
-    } 
-    else if (codeType == PANASONIC) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received PANASONIC: ");
-      #endif  
-    }
-    else if (codeType == JVC) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received JVC: ");
-      #endif        
-    }
-    else if (codeType == RC5) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received RC5: ");
-      #endif        
-    } 
-    else if (codeType == RC6) {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Received RC6: ");
-      #endif        
-    } 
-    else {
-      #if defined(SKETCHDEBUG)
-        Serial.print("Unexpected codeType ");
-        Serial.print(codeType, DEC);
-        Serial.println("");
-      #endif        
-    }
+//  if (codeType == UNKNOWN) {
+//  }
+//  else {
+//    lcd.clear();
+//    if (codeType == NEC) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received NEC: ");
+//      #endif
+//      if (results->value == REPEAT) {
+//        return;
+//      }
+//    } 
+//    else if (codeType == SONY) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received SONY: ");
+//      #endif      
+//    } 
+//    else if (codeType == PANASONIC) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received PANASONIC: ");
+//      #endif  
+//    }
+//    else if (codeType == JVC) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received JVC: ");
+//      #endif        
+//    }
+//    else if (codeType == RC5) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received RC5: ");
+//      #endif        
+//    } 
+//    else if (codeType == RC6) {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Received RC6: ");
+//      #endif        
+//    } 
+//    else {
+//      #if defined(SKETCHDEBUG)
+//        Serial.print("Unexpected codeType ");
+//        Serial.print(codeType, DEC);
+//        Serial.println("");
+//      #endif        
+//    }
     lcd.print(5,1,results->value);
     lcd.print(14,1,results->bits);
     codeValue = results->value;
     codeLen = results->bits;
-  }
+//  }
 }
 
 void sendCode(int repeat) {
@@ -220,7 +231,7 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 1);
           Blynk.virtualWrite(V21,codeType,codeValue,codeLen);
           break;
-  #if !defined(SKETCHDEBUG)            
+#if !defined(SKETCHDEBUG)            
         case 2:
           Blynk.virtualWrite(V0, "pick", 2);
           Blynk.virtualWrite(V22,codeType,codeValue,codeLen);
@@ -233,7 +244,7 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 4);
           Blynk.virtualWrite(V24,codeType,codeValue,codeLen);
           break;  
-#elif !defined(ARDUINO_AVR_PRO)            
+#if !defined(ARDUINO_AVR_PRO)            
         case 5:
           Blynk.virtualWrite(V0, "pick", 5);
           Blynk.virtualWrite(V25,codeType,codeValue,codeLen);
@@ -258,7 +269,8 @@ void learnIR(int rowId) {
           Blynk.virtualWrite(V0, "pick", 10);
           Blynk.virtualWrite(V30,codeType,codeValue,codeLen);
           break;                                                                       
-#endif          
+#endif
+#endif           
         default:
           break;
       }
@@ -314,7 +326,7 @@ BLYNK_WRITE(V4)
     Blynk.syncVirtual(V24); 
   }
 }
-#elif !defined(ARDUINO_AVR_PRO) 
+#if !defined(ARDUINO_AVR_PRO) 
   BLYNK_WRITE(V5)
   {
     if(param[0].asInt()){
@@ -352,10 +364,12 @@ BLYNK_WRITE(V4)
   
   BLYNK_WRITE(V10)
   {
-  }  if(param[0].asInt()){
+    if(param[0].asInt()){
       Blynk.syncVirtual(V30); 
+    }
   }
 #endif
+#endif 
 
 BLYNK_WRITE(V21)
 {
@@ -388,7 +402,7 @@ BLYNK_WRITE(V24)
     codeLen = param[2].asInt();
     sendCode(0);
 }
-#elif !defined(ARDUINO_AVR_PRO) 
+#if !defined(ARDUINO_AVR_PRO) 
   BLYNK_WRITE(V25)
   {
       codeType = param[0].asInt();
@@ -437,6 +451,7 @@ BLYNK_WRITE(V24)
       sendCode(0);
   }
 #endif
+#endif 
 
 // This function will run every time Blynk connection is established
 BLYNK_CONNECTED() {
@@ -448,13 +463,14 @@ BLYNK_CONNECTED() {
   Blynk.virtualWrite(V0, "add", 2, "IR2", "V2");
   Blynk.virtualWrite(V0, "add", 3, "IR3", "V3");
   Blynk.virtualWrite(V0, "add", 4, "IR4", "V4");
-  #elif !defined(ARDUINO_AVR_PRO) 
+  #if !defined(ARDUINO_AVR_PRO) 
     Blynk.virtualWrite(V0, "add", 5, "IR5", "V5"); 
     Blynk.virtualWrite(V0, "add", 6, "IR6", "V6");   
     Blynk.virtualWrite(V0, "add", 7, "IR7", "V7"); 
     Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
     Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
     Blynk.virtualWrite(V0, "add", 10, "IR10", "V10"); 
+  #endif
   #endif
 
   lcd.clear();
