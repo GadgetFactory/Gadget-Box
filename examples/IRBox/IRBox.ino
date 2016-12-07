@@ -72,14 +72,15 @@ char pass[] = "yourpass";
 
 #if defined(ESP8266)
   IRsend irsend(BC3);
-  #define BC2 GB2  
   int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default
 #else
+  #include <ESP8266_Lib.h>
+  #include <BlynkSimpleShieldEsp8266.h>
+  #include <IRremote.h>           //Install IRremote library from Library Manager  
   // Your ESP8266 baud rate:
   #define ESP8266_BAUD 9600 
   ESP8266 wifi(&EspSerial); 
-  IRsend irsend();
-  #include <IRremote.h>           //Install IRremote library from Library Manager
+  IRsend irsend;
   int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default 
 #endif
 
@@ -473,6 +474,20 @@ BLYNK_CONNECTED() {
   #endif
   #endif
 
+#if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
+  lcd.clear();
+  lcd.print(0,0,"Teensy");
+  lcd.print(0,1,"Connected");
+#elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
+  lcd.clear();
+  lcd.print(0,0,"Mini Pro");
+#elif defined(ESP8266)
+  lcd.clear();
+  lcd.print(0,0,"NodeMCU");
+  lcd.print(0,1,"Connected");
+#endif
+
+  delay(4000);
   lcd.clear();
   lcd.print(0,0,"Tap a line");
   lcd.print(0,1,"to Learn IR");
