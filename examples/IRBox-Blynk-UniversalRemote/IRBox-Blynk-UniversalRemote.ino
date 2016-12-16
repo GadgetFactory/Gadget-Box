@@ -44,15 +44,10 @@
  *
  **************************************************************/
 #include <GadgetBox.h>          //Install GadgetBox Library from Library Manager
-#include "password.h"
+#include "password.h"           //Open password.h and update your credentials
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
-
-#define BLYNK_PRINT Serial
-
-#if defined(SKETCHDEBUG)  
-  #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
-#endif
+//#define BLYNK_PRINT Serial
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
@@ -87,8 +82,17 @@
 SimpleTimer timer;
 
 #if !defined(SMALL)
+#define FLIPDISPLAY       //Should the OLED display be flipped? Comment out if not.
 String currentTime;
 String currentDate;
+
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
+#define OLED_RESET 99
+Adafruit_SSD1306 display(OLED_RESET);
 
 WidgetTerminal terminal(V14);
 WidgetRTC rtc;
@@ -109,6 +113,7 @@ void setup()
 #if defined(ESP8266)
   Blynk.begin(auth, ssid, pass);
   irsend.begin();
+  Wire.begin(0,SCL);
 #else
   delay(10);
   EspSerial.begin(115200);
@@ -121,6 +126,19 @@ void setup()
 #endif
 
 #if !defined(SMALL)
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
+  display.clearDisplay();
+  #if defined(FLIPDISPLAY)
+    display.setRotation(90);
+  #endif
+  display.setTextSize(2);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("GadgetBox");
+  display.println("Waiting");
+  display.println("For Blynk");    
+  display.display();
+
   while (Blynk.connect() == false) {
     // Wait until connected
   }
@@ -128,8 +146,10 @@ void setup()
   // Begin synchronizing time
   rtc.begin();
 
-  // Display digital clock every 10 seconds
-  timer.setInterval(15000L, clockDisplay);  
+  // Display digital clock every 30 seconds on Blynk app
+  timer.setInterval(30000L, blynkClockDisplay);
+  // Display digital clock every 1 seconds on OLED Display
+  timer.setInterval(1000L, clockDisplay);  
 #endif
 }
 
@@ -502,6 +522,8 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      sendCode(0);
+      sendCode(0);
       terminal.print("IR9 Sent at: ");
       terminal.println(currentTime);
       terminal.flush();
@@ -512,6 +534,8 @@ BLYNK_WRITE(V24)
       codeType = param[0].asInt();
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
+      sendCode(0);
+      sendCode(0);
       sendCode(0);
       terminal.print("IR10 Sent at: ");
       terminal.println(currentTime);
@@ -537,8 +561,6 @@ BLYNK_CONNECTED() {
     Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
     Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
     Blynk.virtualWrite(V0, "add", 10, "IR10", "V10");
-    terminal.println("GadgetBox Online");
-    terminal.flush();
   #endif
   #endif
 
@@ -553,6 +575,20 @@ BLYNK_CONNECTED() {
   lcd.clear();
   lcd.print(0,0,"NodeMCU");
   lcd.print(0,1,"Connected");
+#endif
+
+#if !defined(SMALL)
+  terminal.println("GadgetBox Online");
+  terminal.flush();
+
+  display.clearDisplay();
+  display.setRotation(90);
+  display.setTextSize(2);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("GadgetBox");
+  display.println("Connected");    
+  display.display(); 
 #endif
 
   delay(4000);
@@ -572,14 +608,11 @@ void printDigits(int digits)
   Serial.print(digits);
 }
 
-// Digital clock display of the time
-void clockDisplay()
+// Digital clock display of the time on Blynk App
+void blynkClockDisplay()
 {
-  // You can call hour(), minute(), ... at any time
-  // Please see Time library examples for details
-
   currentTime = String(hour()) + ":" + minute() + ":" + second();
-  currentDate = String(day()) + " " + month() + " " + year();
+  currentDate = String(month()) + " " + day() + " " + year();
   Serial.print("Current time: ");
   Serial.print(currentTime);
   Serial.print(" ");
@@ -589,6 +622,24 @@ void clockDisplay()
   // Send time to the App
   Blynk.virtualWrite(V16, currentTime);
   // Send date to the App
-  Blynk.virtualWrite(V17, currentDate);
+  Blynk.virtualWrite(V17, currentDate);  
+}
+
+// Digital clock display of the time on OLED display
+void clockDisplay()
+{
+  currentTime = String(hour()) + ":" + minute() + ":" + second();
+  currentDate = String(month()) + " " + day() + " " + year();
+
+  display.clearDisplay();
+  display.setCursor(0,0);
+  display.println("GadgetBox");
+  if (Blynk.connected())
+    display.println("Connected");    
+  else
+    display.println("Offline");
+  display.println(currentTime);   
+  display.print(currentDate);  
+  display.display();   
 }
 #endif
