@@ -44,6 +44,7 @@
  *
  **************************************************************/
 #include <GadgetBox.h>          //Install GadgetBox Library from Library Manager
+#include "password.h"
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
 
@@ -52,17 +53,6 @@
 #if defined(SKETCHDEBUG)  
   #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
 #endif
-
-
-
-// You should get Auth Token in the Blynk App.
-// Go to the Project Settings (nut icon).
-char auth[] = "1b7f1d984ac14b89a7ca6e355155053e";
-
-// Your WiFi credentials.
-// Set password to "" for open networks.
-char ssid[] = "gadgetfactory";
-char pass[] = "9442944294";
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
