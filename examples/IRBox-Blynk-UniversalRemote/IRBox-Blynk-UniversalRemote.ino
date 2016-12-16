@@ -4,7 +4,7 @@
  * There are up to 10 IR commands that can be learned. Raw IR commands not supported.
  * 
  * eCogs Used:
- *       eCog107 - Remote Control - Connect to eCog B
+ *       eCog107 - Remote Control - Connect to eCog B (Except for Teensy - Move to eCog D for the Teensy)
  *       eCog100 - Wifi - Connect to eCog C
  * 
  * Libraries required (Install with Library Manager):
@@ -23,6 +23,9 @@
  * Blynk Virtual Pins:      
  *       V0:      The table to select which IR command to learn
  *       V1-V10:  Trigger a send of the IR command - connect a button or timer to send out IR command 
+ *       V14:     Terminal for feedback
+ *       V15:     RTC (Real Time Clock)
+ *       V16:     Time Now
  *       V21-V30: Stores the IR command that is learned in the Blynk cloud
  *       V31:     LCD widget for feedback while learning
  ***************************************************************       
@@ -44,6 +47,8 @@
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
 
+#define BLYNK_PRINT Serial
+
 #if defined(SKETCHDEBUG)  
   #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
 #endif
@@ -52,18 +57,19 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "yourauth";
+char auth[] = "1b7f1d984ac14b89a7ca6e355155053e";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "yourssid";
-char pass[] = "yourpass";
+char ssid[] = "gadgetfactory";
+char pass[] = "9442944294";
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
 #elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
   #include <SoftwareSerial.h>
   SoftwareSerial EspSerial(CC0, CC1); // RX, TX (For Pro Mini)
+  #define SMALL
 #elif defined(ESP8266)
   #include <ESP8266WiFi.h>
   #include <BlynkSimpleEsp8266.h>
@@ -84,6 +90,22 @@ char pass[] = "yourpass";
   int RECV_PIN = BC2;             //Pin for IR Receiver - on eCog B by default 
 #endif
 
+#include <SimpleTimer.h>
+#include <TimeLib.h>
+#include <WidgetRTC.h>
+
+SimpleTimer timer;
+
+#if !defined(SMALL)
+String currentTime;
+String currentDate;
+
+WidgetTerminal terminal(V14);
+WidgetRTC rtc;
+
+BLYNK_ATTACH_WIDGET(rtc, V15);
+#endif
+
 IRrecv irrecv(RECV_PIN);
 
 decode_results results;
@@ -93,12 +115,11 @@ WidgetLCD lcd(V31);
 void setup()
 {
   irrecv.enableIRIn(); // Start the receiver
+  Serial.begin(9600);
 #if defined(ESP8266)
   Blynk.begin(auth, ssid, pass);
   irsend.begin();
 #else
-  // Set console baud rate
-  Serial.begin(9600);
   delay(10);
   EspSerial.begin(115200);
   EspSerial.println("AT+CIOBAUD=9600");
@@ -108,11 +129,26 @@ void setup()
   EspSerial.begin(ESP8266_BAUD);
   delay(10);  
 #endif
+
+#if !defined(SMALL)
+  while (Blynk.connect() == false) {
+    // Wait until connected
+  }
+
+  // Begin synchronizing time
+  rtc.begin();
+
+  // Display digital clock every 10 seconds
+  timer.setInterval(15000L, clockDisplay);  
+#endif
 }
 
 void loop()
 {
   Blynk.run();
+#if !defined(SMALL)  
+  timer.run();
+#endif  
 }
 
 // Storage for the recorded code
@@ -275,7 +311,7 @@ void learnIR(int rowId) {
         default:
           break;
       }
-      lcd.print(0,0,"IR Found");
+      lcd.print(0,0,"IR Found      ");
       break; 
     }
     delay(100);
@@ -303,7 +339,7 @@ BLYNK_WRITE(V0)
 BLYNK_WRITE(V1)
 {
   if(param[0].asInt()){
-    Blynk.syncVirtual(V21); 
+    Blynk.syncVirtual(V21);     
   }
 }
 #if !defined(SKETCHDEBUG)  
@@ -327,7 +363,7 @@ BLYNK_WRITE(V4)
     Blynk.syncVirtual(V24); 
   }
 }
-#if !defined(ARDUINO_AVR_PRO) 
+#if !defined(SMALL) 
   BLYNK_WRITE(V5)
   {
     if(param[0].asInt()){
@@ -358,6 +394,7 @@ BLYNK_WRITE(V4)
 
   BLYNK_WRITE(V9)
   {
+    Serial.println("V9");
     if(param[0].asInt()){
       Blynk.syncVirtual(V29); 
     }
@@ -365,6 +402,7 @@ BLYNK_WRITE(V4)
   
   BLYNK_WRITE(V10)
   {
+    Serial.println("V10");
     if(param[0].asInt()){
       Blynk.syncVirtual(V30); 
     }
@@ -377,7 +415,12 @@ BLYNK_WRITE(V21)
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    sendCode(0);    
+    sendCode(0);  
+    #if !defined(SMALL)
+    terminal.print("IR1 Sent at: ");
+    terminal.println(currentTime);
+    terminal.flush();
+    #endif      
 }
 #if !defined(SKETCHDEBUG)  
 BLYNK_WRITE(V22)
@@ -386,6 +429,11 @@ BLYNK_WRITE(V22)
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
     sendCode(0);
+    #if !defined(SMALL)
+    terminal.print("IR2 Sent at: ");
+    terminal.println(currentTime);
+    terminal.flush();
+    #endif    
 }
 
 BLYNK_WRITE(V23)
@@ -394,6 +442,11 @@ BLYNK_WRITE(V23)
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
     sendCode(0);
+    #if !defined(SMALL)
+    terminal.print("IR3 Sent at: ");
+    terminal.println(currentTime);
+    terminal.flush();
+    #endif       
 }
 
 BLYNK_WRITE(V24)
@@ -402,14 +455,22 @@ BLYNK_WRITE(V24)
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
     sendCode(0);
+    #if !defined(SMALL)
+    terminal.print("IR4 Sent at: ");
+    terminal.println(currentTime);
+    terminal.flush();
+    #endif         
 }
-#if !defined(ARDUINO_AVR_PRO) 
+#if !defined(SMALL) 
   BLYNK_WRITE(V25)
   {
       codeType = param[0].asInt();
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR5 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
 
   BLYNK_WRITE(V26)
@@ -418,6 +479,9 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR6 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
   
   BLYNK_WRITE(V27)
@@ -426,6 +490,9 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR7 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
   
   BLYNK_WRITE(V28)
@@ -434,6 +501,9 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR8 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
 
   BLYNK_WRITE(V29)
@@ -442,6 +512,9 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR9 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
 
   BLYNK_WRITE(V30)
@@ -450,6 +523,9 @@ BLYNK_WRITE(V24)
       codeValue = param[1].asInt();
       codeLen = param[2].asInt();
       sendCode(0);
+      terminal.print("IR10 Sent at: ");
+      terminal.println(currentTime);
+      terminal.flush();
   }
 #endif
 #endif 
@@ -464,13 +540,15 @@ BLYNK_CONNECTED() {
   Blynk.virtualWrite(V0, "add", 2, "IR2", "V2");
   Blynk.virtualWrite(V0, "add", 3, "IR3", "V3");
   Blynk.virtualWrite(V0, "add", 4, "IR4", "V4");
-  #if !defined(ARDUINO_AVR_PRO) 
+  #if !defined(SMALL) 
     Blynk.virtualWrite(V0, "add", 5, "IR5", "V5"); 
     Blynk.virtualWrite(V0, "add", 6, "IR6", "V6");   
     Blynk.virtualWrite(V0, "add", 7, "IR7", "V7"); 
     Blynk.virtualWrite(V0, "add", 8, "IR8", "V8"); 
     Blynk.virtualWrite(V0, "add", 9, "IR9", "V9"); 
-    Blynk.virtualWrite(V0, "add", 10, "IR10", "V10"); 
+    Blynk.virtualWrite(V0, "add", 10, "IR10", "V10");
+    terminal.println("GadgetBox Online");
+    terminal.flush();
   #endif
   #endif
 
@@ -493,3 +571,34 @@ BLYNK_CONNECTED() {
   lcd.print(0,1,"to Learn IR");
 }
 
+#if !defined(SMALL)
+// Utility function for digital clock display: prints preceding colon and leading 0
+void printDigits(int digits)
+{
+  Serial.print(":");
+  if (digits < 10) {
+    Serial.print('0');
+  }
+  Serial.print(digits);
+}
+
+// Digital clock display of the time
+void clockDisplay()
+{
+  // You can call hour(), minute(), ... at any time
+  // Please see Time library examples for details
+
+  currentTime = String(hour()) + ":" + minute() + ":" + second();
+  currentDate = String(day()) + " " + month() + " " + year();
+  Serial.print("Current time: ");
+  Serial.print(currentTime);
+  Serial.print(" ");
+  Serial.print(currentDate);
+  Serial.println();
+
+  // Send time to the App
+  Blynk.virtualWrite(V16, currentTime);
+  // Send date to the App
+  Blynk.virtualWrite(V17, currentDate);
+}
+#endif
