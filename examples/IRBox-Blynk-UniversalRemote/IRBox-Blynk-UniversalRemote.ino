@@ -98,6 +98,9 @@ WidgetTerminal terminal(V14);
 WidgetRTC rtc;
 
 BLYNK_ATTACH_WIDGET(rtc, V15);
+
+boolean receiveEnable = true;
+int receiveTmn = 0;
 #endif
 
 IRrecv irrecv(RECV_PIN);
@@ -149,15 +152,29 @@ void setup()
   // Display digital clock every 30 seconds on Blynk app
   timer.setInterval(30000L, blynkClockDisplay);
   // Display digital clock every 1 seconds on OLED Display
-  timer.setInterval(1000L, clockDisplay);  
+  timer.setInterval(10000L, clockDisplay); 
+  //This disables the receiver when sending
+  receiveTmn = timer.setInterval(5000L, enableReceiver);
 #endif
 }
 
 void loop()
 {
   Blynk.run();
-#if !defined(SMALL)  
+#if !defined(SMALL) 
   timer.run();
+
+  if (receiveEnable) {
+    if (irrecv.decode(&results)) {
+      Serial.println(results.value, HEX);
+      terminal.print("IR Received: ");
+      terminal.print(results.value, HEX);
+      terminal.print(" length: ");
+      terminal.println(results.bits);
+      terminal.flush();
+      irrecv.resume();
+    }
+  }
 #endif  
 }
 
@@ -225,6 +242,12 @@ void storeCode(decode_results *results) {
 }
 
 void sendCode(int repeat) {
+#if !defined(SMALL)
+  if (receiveEnable)
+    irsend.sendNEC(codeValue,codeLen);  //Just clear the sender
+  receiveEnable = false;
+  timer.restartTimer(receiveTmn);
+#endif
   if (codeType == NEC) {
     if (repeat) {
       irsend.sendNEC(REPEAT, codeLen);
@@ -261,6 +284,8 @@ void sendCode(int repeat) {
     // Assume 38 KHz
     //irsend.sendRaw(rawCodes, codeLen, 38);    Raw is disabled to save space...
   }
+  //timer.setTimeout(10000, enableReceiver);
+  
 }
 
 void learnIR(int rowId) {
@@ -425,7 +450,7 @@ BLYNK_WRITE(V21)
     codeType = param[0].asInt();
     codeValue = param[1].asInt();
     codeLen = param[2].asInt();
-    sendCode(0);  
+    sendCode(0); 
     #if !defined(SMALL)
     terminal.print("IR1 Sent at: ");
     terminal.println(currentTime);
@@ -641,5 +666,15 @@ void clockDisplay()
   display.println(currentTime);   
   display.print(currentDate);  
   display.display();   
+}
+
+void enableReceiver()
+{
+  if (!receiveEnable) {
+    receiveEnable = true;
+    irrecv.enableIRIn();
+//    irrecv.resume();
+    Serial.println("Receiving");    
+  }
 }
 #endif
