@@ -287,8 +287,6 @@ void sendCode(int repeat) {
     // Assume 38 KHz
     //irsend.sendRaw(rawCodes, codeLen, 38);    Raw is disabled to save space...
   }
-  //timer.setTimeout(10000, enableReceiver);
-  
 }
 
 void learnIR(int rowId) {
@@ -592,11 +590,11 @@ BLYNK_CONNECTED() {
   #endif
   #endif
 
-#if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
+#if defined(CORE_TEENSY)
   lcd.clear();
   lcd.print(0,0,"Teensy");
   lcd.print(0,1,"Connected");
-#elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
+#elif defined(ARDUINO_AVR_PRO)
   lcd.clear();
   lcd.print(0,0,"Mini Pro");
 #elif defined(ESP8266)
