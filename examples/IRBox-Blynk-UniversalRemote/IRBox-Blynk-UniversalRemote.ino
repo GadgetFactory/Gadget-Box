@@ -47,7 +47,7 @@
 #include "password.h"           //Open password.h and update your credentials
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
-//#define BLYNK_PRINT Serial
+#define BLYNK_PRINT Serial
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
@@ -59,6 +59,9 @@
   #include <ESP8266WiFi.h>
   #include <BlynkSimpleEsp8266.h>
   #include <IRremoteESP8266.h>    //Install IRremoteESP8266 library from https://github.com/markszabo/IRremoteESP8266
+  #include <DNSServer.h>
+  #include <ESP8266WebServer.h>
+  #include <WiFiManager.h>         //https://github.com/tzapu/WiFiManager  
 #endif
 
 #if defined(ESP8266)
@@ -114,7 +117,11 @@ void setup()
   irrecv.enableIRIn(); // Start the receiver
   Serial.begin(9600);
 #if defined(ESP8266)
-  Blynk.begin(auth, ssid, pass);
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("IRBox");
+  //wifiManager.resetSettings();    //Uncomment this to wipe WiFi settings from EEPROM on boot.
+  //Blynk.begin(auth, ssid, pass);
+  Blynk.config(auth);
   irsend.begin();
   Wire.begin(0,SCL);
 #else
