@@ -154,7 +154,7 @@ void setup()
   // Display digital clock every 1 seconds on OLED Display
   timer.setInterval(10000L, clockDisplay); 
   //This disables the receiver when sending
-  receiveTmn = timer.setInterval(5000L, enableReceiver);
+  receiveTmn = timer.setInterval(2000L, enableReceiver);
 #endif
 }
 
@@ -166,12 +166,7 @@ void loop()
 
   if (receiveEnable) {
     if (irrecv.decode(&results)) {
-      Serial.println(results.value, HEX);
-      terminal.print("IR Received: ");
-      terminal.print(results.value, HEX);
-      terminal.print(" length: ");
-      terminal.println(results.bits);
-      terminal.flush();
+      storeCode(&results);
       irrecv.resume();
     }
   }
@@ -190,61 +185,69 @@ int toggle = 0; // The RC5/6 toggle state
 void storeCode(decode_results *results) {
   codeType = results->decode_type;
   int count = results->rawlen;
-//  if (codeType == UNKNOWN) {
-//  }
-//  else {
-//    lcd.clear();
-//    if (codeType == NEC) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received NEC: ");
-//      #endif
-//      if (results->value == REPEAT) {
-//        return;
-//      }
-//    } 
-//    else if (codeType == SONY) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received SONY: ");
-//      #endif      
-//    } 
-//    else if (codeType == PANASONIC) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received PANASONIC: ");
-//      #endif  
-//    }
-//    else if (codeType == JVC) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received JVC: ");
-//      #endif        
-//    }
-//    else if (codeType == RC5) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received RC5: ");
-//      #endif        
-//    } 
-//    else if (codeType == RC6) {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Received RC6: ");
-//      #endif        
-//    } 
-//    else {
-//      #if defined(SKETCHDEBUG)
-//        Serial.print("Unexpected codeType ");
-//        Serial.print(codeType, DEC);
-//        Serial.println("");
-//      #endif        
-//    }
+#if !defined(SMALL)  
+  //terminal.print("IR Received: ");
+  if (codeType == UNKNOWN) {
+  }
+  else {
+    if (codeType == NEC) {
+        Serial.print("Received NEC: ");
+        terminal.print("Received NEC: ");
+      if (results->value == REPEAT) {
+        return;
+      }
+    } 
+    else if (codeType == SONY) {
+        Serial.print("Received SONY: ");
+        terminal.print("Received SONY: ");    
+    } 
+    else if (codeType == PANASONIC) {
+        Serial.print("Received PANASONIC: "); 
+        terminal.print("Received PANASONIC: "); 
+    }
+    else if (codeType == JVC) {
+        Serial.print("Received JVC: ");
+        terminal.print("Received JVC: ");  
+    }
+    else if (codeType == RC5) {
+        Serial.print("Received RC5: ");
+        terminal.print("Received RC5: ");   
+    } 
+    else if (codeType == RC6) {
+        Serial.print("Received RC6: "); 
+        terminal.print("Received RC6: ");     
+    } 
+    else {
+        Serial.print("Unexpected codeType ");
+        Serial.print(codeType, DEC);
+        Serial.println("");  
+        terminal.print("Unexpected codeType: ");     
+    }
+  }
+    terminal.print(results->value, HEX);
+    terminal.print(" length: ");
+    terminal.println(results->bits);
+    terminal.flush();  
+    Serial.print(results->value, HEX);
+    Serial.print(" length: ");
+    Serial.println(results->bits);    
+#endif
     lcd.print(5,1,results->value);
     lcd.print(14,1,results->bits);
     codeValue = results->value;
     codeLen = results->bits;
-//  }
 }
 
 void sendCode(int repeat) {
 #if !defined(SMALL)
-  if (receiveEnable)
+  if (receiveEnable){
     irsend.sendNEC(codeValue,codeLen);  //Just clear the sender
+    irsend.sendNEC(codeValue,codeLen);  //Just clear the sender
+    irsend.sendNEC(codeValue,codeLen);  //Just clear the sender
+    Serial.println("Stopping IR Receive while Sending");
+    terminal.println("Stopping IR Receive while Sending");
+    terminal.flush();    
+  }
   receiveEnable = false;
   timer.restartTimer(receiveTmn);
 #endif
@@ -674,7 +677,9 @@ void enableReceiver()
     receiveEnable = true;
     irrecv.enableIRIn();
 //    irrecv.resume();
-    Serial.println("Receiving");    
+    Serial.println("IR Receive Enabled.");    
+    terminal.println("IR Receive Enabled.");
+    terminal.flush();
   }
 }
 #endif
