@@ -51,11 +51,13 @@
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
+  #define BLYNK_PRINT Serial
 #elif defined(ARDUINO_AVR_PRO)  // or Software Serial on eCog C for Mini Pro
   #include <SoftwareSerial.h>
   SoftwareSerial EspSerial(CC0, CC1); // RX, TX (For Pro Mini)
   #define SMALL
 #elif defined(ESP8266)
+  #define BLYNK_PRINT Serial
   #include "GadgetBox_esp8266.h"
   const char* GBName = "IRBox";
 #endif
