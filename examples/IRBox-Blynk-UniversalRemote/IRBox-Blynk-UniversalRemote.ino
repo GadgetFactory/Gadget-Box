@@ -47,7 +47,7 @@
 #include "password.h"           //Open password.h and update your credentials
 
 //#define SKETCHDEBUG             //Uncomment to print out debug info, uses more space... Only provides one IR command
-#define BLYNK_PRINT Serial
+//#define BLYNK_PRINT Serial
 
 #if defined(CORE_TEENSY)        //Use Hardware Serial for Teensy
   #define EspSerial Serial2
