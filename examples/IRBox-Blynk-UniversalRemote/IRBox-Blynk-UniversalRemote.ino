@@ -84,6 +84,8 @@ SimpleTimer timer;
 #define FLIPDISPLAY       //Should the OLED display be flipped? Comment out if not.
 String currentTime;
 String currentDate;
+int retries = 5;
+int reconnects = 0;
 
 #include <SPI.h>
 #include <Wire.h>
@@ -127,7 +129,7 @@ void setup()
   display.println("For WiFi");    
   display.display();
 
-  startWifiManager(GBName);   //Comment this out if you want to just type credentials into password.h
+  //startWifiManager(GBName);   //Comment this out if you want to just type credentials into password.h
 
   //config blynk
   if (strlen(settings.blynkToken) == 0) {
@@ -166,7 +168,6 @@ void setup()
   display.println("For Blynk");    
   display.display();
 
-  int retries = 5;
   while (Blynk.connect() == false) {
     // Wait until connected
     if (retries == 0){
@@ -642,7 +643,22 @@ BLYNK_CONNECTED() {
 #if !defined(SMALL)
   terminal.print(GBName);
   terminal.println(" Online");
+  terminal.print(reconnects);
+  terminal.println(" reconnects so far.");
   terminal.flush();
+
+  Serial.print(reconnects);
+  Serial.println(" reconnects so far.");
+  if (reconnects == 4) {
+    terminal.println("Too many reconnects, please stop Blynk App, wait 20 seconds, and restart.");
+    terminal.println("There is a bug in the Blynk App...");
+    terminal.flush();
+    #if defined(ESP8266)
+      restart();
+    #endif
+  }
+  else 
+    reconnects++;  
 
   display.clearDisplay();
   display.setRotation(90);
@@ -653,6 +669,8 @@ BLYNK_CONNECTED() {
   display.println("Connected");    
   display.display(); 
 #endif
+
+
 
   delay(4000);
   lcd.clear();
