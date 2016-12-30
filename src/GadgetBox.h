@@ -137,10 +137,10 @@
       #define DC6 GB14
       #define DC7 GB15
       
-      #define CSA 2
-      #define CSB 7
-      #define CSC 8
-      #define CSD 17
+      #define CSA GB7
+      #define CSB 4
+      #define CSC GB15
+      #define CSD GB8
   
   #elif defined(ARDUINO_RASPI)
       #define GB0 15
@@ -185,13 +185,13 @@
       #define MISO 12
       #define SCK 14
       
-      #define SDA 16
+      #define SDA 0
       #define SCL 2
       
-      #define CSA 5
-      #define CSB 4
-      #define CSC 0
-      #define CSD 15
+      #define CSA 4
+      #define CSB 5
+      #define CSC 15
+      #define CSD 16
   
   #endif
 
