@@ -55,7 +55,7 @@
   * as the Atmega 328 doesn't like analogWrite to A6 / A7
   *
   */
- void gfDigitalWrite(uint8_t buttonPin, pinState)
+ void gfDigitalWrite(uint8_t buttonPin, uint8_t pinState)
  {
    if (buttonPin == A6 || buttonPin == A7)
    {
@@ -93,7 +93,7 @@
    }
 
    // Make LED 1 mimic Arduino LED if eCog Button 2 is held down
-   if (gfDigitalRead(eCogButton2))
+   if (gfDigitalRead(eCogButton2) == HIGH)
    {
       gfDigitalWrite(eCogLED1, HIGH);
    }
@@ -103,7 +103,7 @@
    digitalWrite(ArduinoLED, LOW);
 
    // Make LED 1 mimic Arduino LED if eCog Button 2 is held down
-   if (gfDigitalRead(eCogButton2))
+   if (gfDigitalRead(eCogButton2) == HIGH)
    {
       gfDigitalWrite(eCogLED1, LOW);
    }
