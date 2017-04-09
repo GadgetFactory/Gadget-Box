@@ -19,8 +19,8 @@
  #include <GadgetBox.h>
  
  #define eCogButton1 DC0
- #define eCogButton2 DC1 // Analog Only Pin! (A6/GB9)
- #define eCogButton3 DC2 // Analog Only Pin! (A7/GB10)
+ #define eCogButton2 DC1 // analogRead Only Pin when in eCog C or D! (A6/GB9)
+ #define eCogButton3 DC2 // analogRead Only Pin when in eCog C or D! (A7/GB10)
  #define eCogButton4 DC3
  
  #define ArduinoLED 13   // Arduino soldered to Arduino Mini Pro
