@@ -3,7 +3,7 @@
  * 
  * eCogs Used:
  *       eCog106 - Button & LED - Connect to eCog D
- *          -- Outputs Status to Serial Port
+ *          -- Outputs Status to Serial Port @ 9600 Baud
  * 
  * Libraries required (Install with Library Manager):
  *       GadgetBox
